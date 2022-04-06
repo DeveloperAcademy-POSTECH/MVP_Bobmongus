@@ -18,9 +18,9 @@ struct UserCell: View {
             Image("bob")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 120, height: 120)
+                .frame(width: 80, height: 80)
             Text("READY!")
-                .font(.largeTitle)
+                .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(
                     .red

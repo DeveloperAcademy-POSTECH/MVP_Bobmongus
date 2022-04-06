@@ -11,6 +11,7 @@ struct RoomPageView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var isClick: Bool = false
+    @State private var isReady: Bool = false
     
     var backBtn: some View {
         Button {
@@ -28,6 +29,9 @@ struct RoomPageView: View {
     
     var body: some View {
         VStack {
+            
+            Spacer().frame(height: 100)
+            
             Button {
                 self.isClick.toggle()
             } label: {
@@ -36,9 +40,44 @@ struct RoomPageView: View {
                     .foregroundColor(.purple)
             }
             
-            Text(openLink)
+            Spacer().frame(height: 50)
+            
+            VStack(spacing: 0) {
+                ForEach(0...1, id: \.self) { _ in
+                    HStack(spacing: 20) {
+                        ForEach(0...2, id: \.self) { _ in
+                            UserCell()
+                        }
+                    }
+                }
+            }
+            
+//            Spacer()
+            
+            Divider()
+            
+            Text("오픈카카오 링크 : \(openLink)")
                 .font(.body)
+                .fontWeight(.bold)
 //                .hidden() //Display when allready
+            
+            Spacer()
+            
+            Button {
+                self.isReady.toggle()
+            } label: {
+                isReady ?
+                Text("Start")
+                    .fontWeight(.bold) :
+                Text("Ready")
+                    .fontWeight(.bold)
+            }
+            .foregroundColor(.white)
+            .background(RoundedRectangle(cornerRadius: 10)
+                .frame(width: 120, height: 40)
+                .foregroundColor(.purple))
+
+            Spacer()
             
         }
         .navigationTitle("title") //추후
