@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EA0E34427FD7984007901B0 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0E34327FD7984007901B0 /* ResetPasswordView.swift */; };
 		0EE83C1827FD5E5900940397 /* bobmongusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C1727FD5E5900940397 /* bobmongusApp.swift */; };
 		0EE83C1A27FD5E5900940397 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C1927FD5E5900940397 /* ContentView.swift */; };
 		0EE83C1C27FD5E5A00940397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE83C1B27FD5E5A00940397 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EA0E34327FD7984007901B0 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		0EE83C1427FD5E5900940397 /* bobmongus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bobmongus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE83C1727FD5E5900940397 /* bobmongusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusApp.swift; sourceTree = "<group>"; };
 		0EE83C1927FD5E5900940397 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				0EE83C1727FD5E5900940397 /* bobmongusApp.swift */,
 				0EE83C1927FD5E5900940397 /* ContentView.swift */,
+				0EA0E34327FD7984007901B0 /* ResetPasswordView.swift */,
 				0EE83C1B27FD5E5A00940397 /* Assets.xcassets */,
 				0EE83C1D27FD5E5A00940397 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA0E34427FD7984007901B0 /* ResetPasswordView.swift in Sources */,
 				0EE83C1A27FD5E5900940397 /* ContentView.swift in Sources */,
 				0EE83C1827FD5E5900940397 /* bobmongusApp.swift in Sources */,
 			);
