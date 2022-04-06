@@ -17,22 +17,33 @@ struct ResetPasswordView: View {
             TextField("가입한 이메일", text: $email)
                 .padding(.horizontal)
                 .textFieldStyle(.roundedBorder)
-            Text("이메일: \(email)")
+//            Text("이메일: \(email)")
             
-            Button("인증번호 발송") {}
+            Button(action: {
+            }, label: {
+                Text("인증번호 발송")
+                    .padding()
+                    .foregroundColor(Color.white)
+                    .background(Color(red: 0.519, green: 0.24, blue: 0.527))
+                    .cornerRadius(10)
+            })
             .padding(.vertical)
-            .buttonStyle(UnionButtonStyle())
 //            Image("bobmongusApp")
             
             
             
-            SecureField("가입한 이메일", text: $certificationNumber)
+            SecureField("인증번호 작성", text: $certificationNumber)
                 .padding(.horizontal)
                 .textFieldStyle(.roundedBorder)
-            Text("인증번호 : \(certificationNumber)")
-            Button("인증") {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-            }
+//            Text("인증번호 : \(certificationNumber)")
+            Button(action: {
+            }, label: {
+                Text("인증하기")
+                    .padding()
+                    .foregroundColor(Color.white)
+                    .background(Color(red: 0.519, green: 0.24, blue: 0.527))
+                    .cornerRadius(10)
+            })
             .padding(.vertical)
         }
         
@@ -42,24 +53,24 @@ struct ResetPasswordView: View {
 }
 
 
-struct UnionButtonStyle: ButtonStyle {
-    
-    var backgroundColor: Color = Color(red: 112, green: 60, blue: 134)
-    var cornerRadius: CGFloat = 10
-    
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .foregroundColor(.white)
-            .padding()
-            .background(
-                Color(red: 0.519, green: 0.24, blue: 0.527)
-            )
-            .foregroundColor(.white)
-            
-            
-    }
-    
-}
+//struct UnionButtonStyle: ButtonStyle {
+//
+//    var backgroundColor: Color = Color(red: 112, green: 60, blue: 134)
+//    var cornerRadius: CGFloat = 10
+//
+//    func makeBody(configuration: Configuration) -> some View {
+//        configuration.label
+//            .foregroundColor(.white)
+//            .padding()
+//            .background(
+//                Color(red: 0.519, green: 0.24, blue: 0.527)
+//            )
+//            .foregroundColor(.white)
+//
+//
+//    }
+//
+//}
 
 
 struct ResetPasswordView_Previews: PreviewProvider {
