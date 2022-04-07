@@ -1,0 +1,38 @@
+[
+    {
+        "id":0,
+        "email":"hyuryu22@pos.idserve.net",
+        "nickname": "빅썬",
+        "password": "12345qwert",
+        "isMakingRoom": false,
+        "isReady": false,
+        "roomnum": -1
+    },
+    {
+        "id":1,
+        "email":"kangpark22@pos.idserve.net",
+        "nickname": "케이",
+        "password": "12345qwert",
+        "isMakingRoom": false,
+        "isReady": false,
+        "roomnum": -1
+    },
+    {
+        "id":2,
+        "email":"yunjeon22@pos.idserve.net",
+        "nickname": "준",
+        "password": "12345qwert",
+        "isMakingRoom": false,
+        "isReady": false,
+        "roomnum": -1
+    },
+    {
+        "id":3,
+        "email":"seobaek22@pos.idserve.net",
+        "nickname": "루이",
+        "password": "12345qwert",
+        "isMakingRoom": false,
+        "isReady": false,
+        "roomnum": -1
+    },
+]

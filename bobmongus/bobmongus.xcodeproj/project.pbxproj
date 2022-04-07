@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0EA0E34427FD7984007901B0 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0E34327FD7984007901B0 /* ResetPasswordView.swift */; };
+		0EC86F9C27FEC86E009A0009 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC86F9B27FEC86E009A0009 /* AuthenticationView.swift */; };
 		0EE83C1827FD5E5900940397 /* bobmongusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C1727FD5E5900940397 /* bobmongusApp.swift */; };
 		0EE83C1A27FD5E5900940397 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C1927FD5E5900940397 /* ContentView.swift */; };
 		0EE83C1C27FD5E5A00940397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE83C1B27FD5E5A00940397 /* Assets.xcassets */; };
@@ -15,6 +16,9 @@
 		0EE83C2927FD5E5A00940397 /* bobmongusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C2827FD5E5A00940397 /* bobmongusTests.swift */; };
 		0EE83C3327FD5E5A00940397 /* bobmongusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C3227FD5E5A00940397 /* bobmongusUITests.swift */; };
 		0EE83C3527FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */; };
+		0EF6571F27FEBACA00212DC8 /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EF6571E27FEBACA00212DC8 /* userData.json */; };
+		0EF6572327FEC0FB00212DC8 /* BobmongusUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF6572227FEC0FB00212DC8 /* BobmongusUser.swift */; };
+		0EF6572527FEC4C200212DC8 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF6572427FEC4C200212DC8 /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		0EA0E34327FD7984007901B0 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		0EC86F9B27FEC86E009A0009 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		0EE83C1427FD5E5900940397 /* bobmongus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bobmongus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE83C1727FD5E5900940397 /* bobmongusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusApp.swift; sourceTree = "<group>"; };
 		0EE83C1927FD5E5900940397 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +51,9 @@
 		0EE83C2E27FD5E5A00940397 /* bobmongusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bobmongusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE83C3227FD5E5A00940397 /* bobmongusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusUITests.swift; sourceTree = "<group>"; };
 		0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0EF6571E27FEBACA00212DC8 /* userData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userData.json; sourceTree = "<group>"; };
+		0EF6572227FEC0FB00212DC8 /* BobmongusUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobmongusUser.swift; sourceTree = "<group>"; };
+		0EF6572427FEC4C200212DC8 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EC86F9A27FEC7C0009A0009 /* ResetPasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				0EA0E34327FD7984007901B0 /* ResetPasswordView.swift */,
+				0EC86F9B27FEC86E009A0009 /* AuthenticationView.swift */,
+				0EF6571E27FEBACA00212DC8 /* userData.json */,
+				0EF6572227FEC0FB00212DC8 /* BobmongusUser.swift */,
+				0EF6572427FEC4C200212DC8 /* ModelData.swift */,
+			);
+			path = ResetPasswordView;
+			sourceTree = "<group>";
+		};
 		0EE83C0B27FD5E5900940397 = {
 			isa = PBXGroup;
 			children = (
@@ -96,9 +116,9 @@
 		0EE83C1627FD5E5900940397 /* bobmongus */ = {
 			isa = PBXGroup;
 			children = (
+				0EF6572627FEC6D700212DC8 /* Views */,
 				0EE83C1727FD5E5900940397 /* bobmongusApp.swift */,
 				0EE83C1927FD5E5900940397 /* ContentView.swift */,
-				0EA0E34327FD7984007901B0 /* ResetPasswordView.swift */,
 				0EE83C1B27FD5E5A00940397 /* Assets.xcassets */,
 				0EE83C1D27FD5E5A00940397 /* Preview Content */,
 			);
@@ -128,6 +148,14 @@
 				0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */,
 			);
 			path = bobmongusUITests;
+			sourceTree = "<group>";
+		};
+		0EF6572627FEC6D700212DC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0EC86F9A27FEC7C0009A0009 /* ResetPasswordView */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EF6571F27FEBACA00212DC8 /* userData.json in Resources */,
 				0EE83C1F27FD5E5A00940397 /* Preview Assets.xcassets in Resources */,
 				0EE83C1C27FD5E5A00940397 /* Assets.xcassets in Resources */,
 			);
@@ -261,6 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EA0E34427FD7984007901B0 /* ResetPasswordView.swift in Sources */,
+				0EF6572327FEC0FB00212DC8 /* BobmongusUser.swift in Sources */,
+				0EC86F9C27FEC86E009A0009 /* AuthenticationView.swift in Sources */,
+				0EF6572527FEC4C200212DC8 /* ModelData.swift in Sources */,
 				0EE83C1A27FD5E5900940397 /* ContentView.swift in Sources */,
 				0EE83C1827FD5E5900940397 /* bobmongusApp.swift in Sources */,
 			);
