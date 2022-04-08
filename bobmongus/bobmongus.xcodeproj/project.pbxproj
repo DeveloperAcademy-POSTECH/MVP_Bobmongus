@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EA0D4AA28001D6B00B9ED4D /* settingsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EA0D4A928001D6B00B9ED4D /* settingsData.json */; };
 		0EA0E34427FD7984007901B0 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0E34327FD7984007901B0 /* ResetPasswordView.swift */; };
 		0EC86F9C27FEC86E009A0009 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC86F9B27FEC86E009A0009 /* AuthenticationView.swift */; };
 		0EE83C1827FD5E5900940397 /* bobmongusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C1727FD5E5900940397 /* bobmongusApp.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EA0D4A928001D6B00B9ED4D /* settingsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = settingsData.json; sourceTree = "<group>"; };
 		0EA0E34327FD7984007901B0 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		0EC86F9B27FEC86E009A0009 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		0EE83C1427FD5E5900940397 /* bobmongus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bobmongus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 				0EF6572627FEC6D700212DC8 /* Views */,
 				0EE83C1727FD5E5900940397 /* bobmongusApp.swift */,
 				0EE83C1927FD5E5900940397 /* ContentView.swift */,
+				0EA0D4A928001D6B00B9ED4D /* settingsData.json */,
 				0EE83C1B27FD5E5A00940397 /* Assets.xcassets */,
 				0EE83C1D27FD5E5A00940397 /* Preview Content */,
 			);
@@ -262,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA0D4AA28001D6B00B9ED4D /* settingsData.json in Resources */,
 				0EF6571F27FEBACA00212DC8 /* userData.json in Resources */,
 				0EE83C1F27FD5E5A00940397 /* Preview Assets.xcassets in Resources */,
 				0EE83C1C27FD5E5A00940397 /* Assets.xcassets in Resources */,

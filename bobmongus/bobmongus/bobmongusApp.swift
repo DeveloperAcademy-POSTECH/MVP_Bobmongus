@@ -11,8 +11,9 @@ import SwiftUI
 struct bobmongusApp: App {
     var body: some Scene {
         WindowGroup {
-            AuthenticationView()
+//            AuthenticationView()
 //            ContentView()
+            ResetPasswordView()
         }
     }
 }
