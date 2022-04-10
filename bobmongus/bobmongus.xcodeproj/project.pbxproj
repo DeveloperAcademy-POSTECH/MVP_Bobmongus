@@ -15,6 +15,7 @@
 		0EE83C3327FD5E5A00940397 /* bobmongusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C3227FD5E5A00940397 /* bobmongusUITests.swift */; };
 		0EE83C3527FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */; };
 		961C05792802AE7F002FEEAE /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C05782802AE7F002FEEAE /* Room.swift */; };
+		961C057C2802B021002FEEAE /* dummyrooms.json in Resources */ = {isa = PBXBuildFile; fileRef = 961C057B2802B021002FEEAE /* dummyrooms.json */; };
 		9681F1D227FD6C2500A00E20 /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681F1D127FD6C2500A00E20 /* RoomView.swift */; };
 		9681F1D527FD7BDF00A00E20 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681F1D427FD7BDF00A00E20 /* UserCell.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		0EE83C3227FD5E5A00940397 /* bobmongusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusUITests.swift; sourceTree = "<group>"; };
 		0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		961C05782802AE7F002FEEAE /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		961C057B2802B021002FEEAE /* dummyrooms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dummyrooms.json; sourceTree = "<group>"; };
 		9681F1D127FD6C2500A00E20 /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
 		9681F1D427FD7BDF00A00E20 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				961C05782802AE7F002FEEAE /* Room.swift */,
+				961C057B2802B021002FEEAE /* dummyrooms.json */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE83C1F27FD5E5A00940397 /* Preview Assets.xcassets in Resources */,
+				961C057C2802B021002FEEAE /* dummyrooms.json in Resources */,
 				0EE83C1C27FD5E5A00940397 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
