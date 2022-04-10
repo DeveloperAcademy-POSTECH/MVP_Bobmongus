@@ -93,5 +93,6 @@ struct RoomView: View {
 struct RoomPageView_Previews: PreviewProvider {
     static var previews: some View {
         RoomView()
+            .environmentObject(ModelData())
     }
 }
