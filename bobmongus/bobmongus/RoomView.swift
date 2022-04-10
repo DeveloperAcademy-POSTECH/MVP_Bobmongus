@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RoomPageView: View {
+struct RoomView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var isClick: Bool = false
@@ -92,6 +92,6 @@ struct RoomPageView: View {
 
 struct RoomPageView_Previews: PreviewProvider {
     static var previews: some View {
-        RoomPageView()
+        RoomView()
     }
 }
