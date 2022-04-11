@@ -100,7 +100,7 @@ struct TestRoomListView: View {
                                     .frame(width:140, height:45)
                                     .foregroundColor(.white)
                                     .background(.purple)
-                                    .font(.largeTitle)
+                                    .font(.custom("DungGeunMo", size: 32))
                                     .cornerRadius(6)
                                     .shadow(color: .primary, radius: 1, x: 2, y: 2)
                                     .padding(.top, 5)
@@ -169,21 +169,27 @@ struct TestRoomCell: View {
                 .foregroundColor(.white)
             HStack {
                 Text("\(room.nowPersons.count)/\(room.persons)") // 인원수
+                    .font(.custom("DungGeunMo", size: 20))
+                    .frame(width: 40)
+                
                 Rectangle() // Devider
                     .fill(Color.black)
                     .frame(width: 2, height: 40)
                 Spacer()
                 Text(room.roomTitle) // 방 타이틀
+                    .font(.custom("DungGeunMo", size: 20))
                 Spacer()
                 Rectangle() // Devider
                     .fill(Color.black)
                     .frame(width: 2, height: 40)
-                Text("\(room.endTime)") // 방 남은시간
+                Text("\(room.endTime)분") // 방 남은시간
+                    .font(.custom("DungGeunMo", size: 20))
+                    .frame(width: 40)
             }
             .foregroundColor(.black)    // 방 내부 글자색
             .padding()
         }
-        .padding(.horizontal, 6)    // 양 옆에 패딩을 넣어준다
+        .padding(.horizontal, 6)        // 방 양으로 패딩
     }
 }
 
