@@ -21,7 +21,20 @@ struct TestRoomListView: View {
             ZStack {
                 
                 VStack {
-                    
+                    HStack { // 상단 설명 아이콘 영역
+                        VStack {
+                            Image("mainPeople")
+                                .resizable().frame(width: 46, height: 46)
+                            .padding(.leading, 20)
+                        }
+                        Spacer()
+                        Image("mainTitle")
+                            .resizable().frame(width: 64, height: 64)
+                        Spacer()
+                        Image("mainBoom")
+                            .resizable().frame(width: 48, height: 46)
+                            .padding(.trailing, 20)
+                    } // HStack end
                     ScrollView {
                         
                         VStack {
@@ -52,9 +65,15 @@ struct TestRoomListView: View {
                                 
                                 EmptyView()
                             }
-                        }
-                    }
-                }
+                        }   // VStack(Rooms) end
+                    }   // ScrollView end
+                }   // VStack end
+                .navigationBarHidden(true)
+                .background(
+                    Image("mainBackground")
+                        .resizable()
+                        .edgesIgnoringSafeArea(.all)
+                )
                 
                 VStack {
                     
