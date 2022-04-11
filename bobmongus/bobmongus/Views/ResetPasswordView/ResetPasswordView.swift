@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ResetPasswordView: View {
-    @StateObject var dataManager = DataManager()
+//    @StateObject var dataManager = DataManager()
 //    @StateObject var userList = UserLists()
     
-    @ObservedObject var use:U
+    @ObservedObject var users:User
     
     var email: String
     @State var id = 0
@@ -22,14 +22,15 @@ struct ResetPasswordView: View {
     @State private var passwordAuth = false
 //    @State var email = "hyuryu22@pos.idserve.net"
 //    @ObservedObject var datas = ReadData()
+    @State var showDetail = false
     
     var body: some View {
         VStack{
 //            확인!
-            ForEach(use.us) {user in
-                Text("\(user.email)")
-                Text("\(user.password)")
-            }
+//            ForEach(users.users) {user in
+//                Text("\(user.email)")
+//                Text("\(user.password)")
+//            }
             
 //            ForEach(dataManager.jsonArray) { jsonValue in
 //
@@ -60,59 +61,77 @@ struct ResetPasswordView: View {
             }.padding(.horizontal, 60.0)
             
             
-            Button(action: {
-                if password == checkpassword {
-                    
-                    for i in use.us.indices {
-                        if use.us[i].email == email {
-                            use.us[i].password = password
-                            passwordAuth = true
-                            passwordResetSuccess = true
+            
+            VStack {
+                NavigationLink(destination: AuthenticationView(), isActive: $showDetail) {EmptyView()}
+                Button(action:{
+                    if password == checkpassword {
+                        for i in users.users.indices {
+                            if users.users[i].email == email {
+                                users.users[i].password = password
+                                passwordAuth = true
+                                passwordResetSuccess = true
+//                                showDetail = true
+                            }
                         }
                     }
-                    
-                    
-                    for j in users.indices {
-                        if users[j].email == email {
-                            users[j].password = password
-                            passwordAuth = true
-                            passwordResetSuccess = true
-                        }
+                    else {
+                        passwordAuth = false
+                        passwordResetFail = true
                     }
-                    
-//                  데이터 쓰기
-//                    for i in dataManager.jsonArray.indices {
-//                        print(dataManager.jsonArray[i].password)
-//                        if dataManager.jsonArray[i].email == email {
-//                            print(dataManager.jsonArray[i].password)
-//                            dataManager.jsonArray[i].password = password
-//                            dataManager.saveToFile()
-//                            passwordAuth = true
-//                            passwordResetSuccess = true
-//                            break
-//                        }
-//                    }
+                }, label: {
+                    Text("비밀번호 변경")
+                        .padding()
+                        .foregroundColor(Color.white)
+                        .background(Color(red: 0.519, green: 0.24, blue: 0.527))
+                        .cornerRadius(10)
+                })
+            }
+            .alert("비밀번호가 변경되었습니다.", isPresented: $passwordResetSuccess){
+                Button("OK", role: .cancel) {
+                    showDetail = true
                 }
-                else {
-                    passwordAuth = false
-                    passwordResetFail = true
-                }
-                
-            }, label: {
-                Text("비밀번호 변경")
-                    .padding()
-                    .foregroundColor(Color.white)
-                    .background(Color(red: 0.519, green: 0.24, blue: 0.527))
-                    .cornerRadius(10)
-            })
-            .alert("비밀번호가 변경되었습니다.", isPresented: $passwordResetSuccess){}
+            }
             .alert("비밀번호가 다르게 입력되었습니다. 다시 입력해주세요.", isPresented: $passwordResetFail){}
             .padding(.vertical)
+            
+            
+            
+            
+//            Button(action: {
+//                if password == checkpassword {
+//
+//                    for i in users.users.indices {
+//                        if users.users[i].email == email {
+//                            users.users[i].password = password
+//                            passwordAuth = true
+//                            passwordResetSuccess = true
+//                        }
+//                    }
+//
+//
+//                }
+//                else {
+//                    passwordAuth = false
+//                    passwordResetFail = true
+//                }
+//
+//
+//            }, label: {
+//                Text("비밀번호 변경")
+//                    .padding()
+//                    .foregroundColor(Color.white)
+//                    .background(Color(red: 0.519, green: 0.24, blue: 0.527))
+//                    .cornerRadius(10)
+//            })
+//            .alert("비밀번호가 변경되었습니다.", isPresented: $passwordResetSuccess){}
+//            .alert("비밀번호가 다르게 입력되었습니다. 다시 입력해주세요.", isPresented: $passwordResetFail){}
+//            .padding(.vertical)
+            
         }
         
-        
-
     }
+    
 }
 
 
@@ -120,6 +139,6 @@ struct ResetPasswordView: View {
 
 //struct ResetPasswordView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        ResetPasswordView(email:"hyuryu22@pos.idserve.net", use)
+//        ResetPasswordView(email:"hyuryu22@pos.idserve.net", users:User)
 //    }
 //}

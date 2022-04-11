@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AuthenticationView: View {
     
-    @StateObject var dataManager = DataManager()
+//    @StateObject var dataManager = DataManager()
     @State private var email = ""
     @State private var certificationNumber = ""
     @State private var isAuthenticated = false
@@ -18,16 +18,17 @@ struct AuthenticationView: View {
     @State private var showSendFailModal = false
     @State private var showSuccessAuthenticateModal = false
     @State private var showFailAuthenticateModal = false
-    @StateObject var use = U()
+    @StateObject var users = User()
+//    @ObservedObject var users = User()
     
     var body: some View {
         
         NavigationView{
             VStack {
-                ForEach(use.us) {user in
-                    Text("\(user.email)")
-                    Text("\(user.password)")
-                }
+//                ForEach(users.users) {user in
+//                    Text("\(user.email)")
+//                    Text("\(user.password)")
+//                }
                 
 //                ForEach(dataManager.jsonArray) { jsonValue in
 //                                Text("Username is \(jsonValue.password)")
@@ -44,7 +45,8 @@ struct AuthenticationView: View {
                     .textFieldStyle(.roundedBorder)
                 //              인증번호 발송 로직
                 Button(action: {
-                    for user in users {
+                    
+                    for user in users.users {
                         let userEmail = user.email
                         if userEmail == email {
                             isSendedEmail = true
@@ -105,7 +107,7 @@ struct AuthenticationView: View {
                 
 //              인증 되었을때만 누를 수 있음.
                 if isAuthenticated == true && email != "" && certificationNumber != "" {
-                    NavigationLink(destination: ResetPasswordView(use:use, email:email)) {
+                    NavigationLink(destination: ResetPasswordView(users:users, email:email)) {
                         Text("비밀번호 초기화")
                             .frame(width: 300, height: 50, alignment: .center)
                             .background(Color(red: 0.519, green: 0.24, blue: 0.527))
