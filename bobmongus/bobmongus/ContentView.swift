@@ -55,6 +55,9 @@ struct ContentView: View {
     //네비게이션 뷰 끝
 }
 
+
+
+
 struct ModalContentView: View {
     @Binding var showModal: Bool
     //초기값 2명으로 설정
@@ -104,9 +107,10 @@ struct ModalContentView: View {
             
             
             //방만들기 버튼
-            VStack(alignment: .center) {
+            VStack {
                 Button(action: {
                     withAnimation {
+                        //방내부로 이어지는 네비게이션 링크 넣어야함
                         //self.showModal.toggle()
                     }
                 }) {
@@ -119,19 +123,18 @@ struct ModalContentView: View {
                     }.padding(10.0)
                         .background(
                             RoundedRectangle(cornerRadius: 10)
-                                //.stroke(lineWidth: 2)
                                 .shadow(color:.black, radius: 0, x:2 ,y: 3)
 
                                 .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
-                               
                         )
                 }
                 .foregroundColor(/*@START_MENU_TOKEN@*/Color.white/*@END_MENU_TOKEN@*/)
+                //버튼 중앙배치
                 Spacer().frame(maxWidth:.infinity)
             }
             .padding(.top, 5.0)
             //Vstack기준 10개 넘기면 에러 Extra argument in call
-        }.padding(30)
+        }.padding(20)
     }
 }
 
