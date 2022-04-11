@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "mainBoom.png",
+      "filename" : "eggmong.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "eggmong2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

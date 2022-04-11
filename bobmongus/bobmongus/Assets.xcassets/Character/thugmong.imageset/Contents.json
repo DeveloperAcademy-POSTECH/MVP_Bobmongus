@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "mainPeople.png",
+      "filename" : "thugmong.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "thugmong2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
