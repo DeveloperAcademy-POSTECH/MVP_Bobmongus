@@ -15,6 +15,8 @@ struct TestRoomListView: View {
     @State var newRoom: Room = Room(id: 100, isStart: false, roomTitle: "title", roomDetail: "detail", nowPersons: [], persons: 100, endTime: 100, linkURL: "linkURL")
     
     var body: some View {
+        // height: 실행중인 아이폰의 세로길이를 11로 나눈 값
+        let height = (UIScreen.main.bounds.height) / 11
         
         NavigationView {
             
@@ -38,21 +40,18 @@ struct TestRoomListView: View {
                     ScrollView {
                         
                         VStack {
-                            
-                            if modelData.rooms.count != 0 {
+                            // 생성된 방을 불러온다.
+                            ForEach(0..<modelData.rooms.count, id: \.self) { index in
                                 
-                                ForEach(0...modelData.rooms.count-1, id: \.self) { index in
+                                NavigationLink {
                                     
-                                    NavigationLink {
-                                        
-                                        TestRoomView(room: $modelData.rooms[index])
-                                            .navigationBarTitleDisplayMode(.inline)
-                                        
-                                    } label: {
-                                        
-                                        TestRoomCell(room: modelData.rooms[index])
-                                        
-                                    }
+                                    TestRoomView(room: $modelData.rooms[index])
+                                        .navigationBarTitleDisplayMode(.inline)
+                                    
+                                } label: {
+                                    TestRoomCell(room: modelData.rooms[index])
+                                        .frame(height: height)  // 각 방의 세로 길이
+                                    
                                 }
                             }
                             
@@ -67,6 +66,9 @@ struct TestRoomListView: View {
                             }
                         }   // VStack(Rooms) end
                     }   // ScrollView end
+                    // 하단부에 사라지는 효과를 위해 mask 사용
+                    .mask(LinearGradient(gradient: Gradient(colors: [.black, .black, .black, .clear]), startPoint: .center, endPoint: .bottom))
+                    
                     HStack {    // 하단부 버튼 영역
                         NavigationLink( // 마이페이지
                             destination: EmptyView(),
@@ -162,33 +164,26 @@ struct TestRoomCell: View {
     
     var body: some View {
         
-        let lightPurple = "#A265BC"
-        
         ZStack {
-            
-            RoomCellShape()
-                .foregroundColor(Color(hex: lightPurple))
-            
+            RoomCellShape() // 방 모양 생성
+                .foregroundColor(.white)
             HStack {
-                
-                Text("\(room.nowPersons.count)/\(room.persons)")
-                
-                Divider()
+                Text("\(room.nowPersons.count)/\(room.persons)") // 인원수
+                Rectangle() // Devider
+                    .fill(Color.black)
+                    .frame(width: 2, height: 40)
                 Spacer()
-                
-                Text(room.roomTitle)
-                
+                Text(room.roomTitle) // 방 타이틀
                 Spacer()
-                Divider()
-                
-                Text("\(room.endTime)")
-    
+                Rectangle() // Devider
+                    .fill(Color.black)
+                    .frame(width: 2, height: 40)
+                Text("\(room.endTime)") // 방 남은시간
             }
-            .foregroundColor(.white)
+            .foregroundColor(.black)    // 방 내부 글자색
             .padding()
-            
         }
-        .padding(.horizontal)
+        .padding(.horizontal, 6)    // 양 옆에 패딩을 넣어준다
     }
 }
 
