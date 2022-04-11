@@ -67,6 +67,63 @@ struct TestRoomListView: View {
                             }
                         }   // VStack(Rooms) end
                     }   // ScrollView end
+                    HStack {    // 하단부 버튼 영역
+                        NavigationLink( // 마이페이지
+                            destination: EmptyView(),
+                            label: {
+                                Image(systemName: "person.fill")
+                                    .frame(width:46, height:46)
+                                    .foregroundColor(.white)
+                                    .background(.purple)
+                                    .font(.largeTitle)
+                                    .cornerRadius(6)
+                                    .shadow(color: .primary, radius: 1, x: 2, y: 2)
+                                    .padding(.top, 5)
+                            }
+                        )
+                        .padding(.leading, 40)
+                        Spacer()
+                        
+                        Button {
+                            withAnimation {
+                                
+                                self.showModal.toggle()
+                                
+                            }
+                        } label: {
+                            
+                            HStack {
+                                
+                                Text("방만들기")
+                                    .frame(width:140, height:45)
+                                    .foregroundColor(.white)
+                                    .background(.purple)
+                                    .font(.largeTitle)
+                                    .cornerRadius(6)
+                                    .shadow(color: .primary, radius: 1, x: 2, y: 2)
+                                    .padding(.top, 5)
+                                
+                            }
+                        }
+                        
+                        Spacer()
+
+                        Button {
+                            print()
+                        } label: {
+                            Image(systemName: "arrow.counterclockwise")
+                                .padding(40)
+                                .frame(width:45, height:45)
+                                .foregroundColor(.white)
+                                .background(.purple)
+                                .font(.largeTitle)
+                                .cornerRadius(6)
+                                .shadow(color: .primary, radius: 1, x: 2, y: 2)
+                                .padding(.top, 5)
+                                
+                        }
+                        .padding(.trailing, 40)
+                    }   // HStack end
                 }   // VStack end
                 .navigationBarHidden(true)
                 .background(
@@ -74,29 +131,6 @@ struct TestRoomListView: View {
                         .resizable()
                         .edgesIgnoringSafeArea(.all)
                 )
-                
-                VStack {
-                    
-                    Spacer()
-                    
-                    Button {
-                        withAnimation {
-                            
-                            self.showModal.toggle()
-                            
-                        }
-                    } label: {
-                        
-                        HStack {
-                            
-                            Image(systemName: "plus.circle.fill")
-                                .imageScale(.large)
-                            
-                            Text("방만들기")
-                            
-                        }
-                    }
-                }
                 
                 if showModal {
                     
