@@ -9,21 +9,33 @@ import SwiftUI
 
 struct ResetPasswordView: View {
     @StateObject var dataManager = DataManager()
+//    @StateObject var userList = UserLists()
+    
+    @ObservedObject var use:U
+    
+    var email: String
+    @State var id = 0
     @State private var password = ""
     @State private var checkpassword = ""
     @State private var passwordResetSuccess = false
     @State private var passwordResetFail = false
     @State private var passwordAuth = false
-    @State var email = "hyuryu22@pos.idserve.net"
+//    @State var email = "hyuryu22@pos.idserve.net"
 //    @ObservedObject var datas = ReadData()
-    
     
     var body: some View {
         VStack{
 //            확인!
-            ForEach(dataManager.jsonArray) { jsonValue in
-                            Text("Username is \(jsonValue.password)")
-                        }
+            ForEach(use.us) {user in
+                Text("\(user.email)")
+                Text("\(user.password)")
+            }
+            
+//            ForEach(dataManager.jsonArray) { jsonValue in
+//
+//                            Text("Username is \(jsonValue.password)")
+//                        }
+            
             
             Image("logo-img")
                 .resizable()
@@ -51,18 +63,35 @@ struct ResetPasswordView: View {
             Button(action: {
                 if password == checkpassword {
                     
-//                  데이터 쓰기
-                    for i in dataManager.jsonArray.indices {
-                        print(dataManager.jsonArray[i].password)
-                        if dataManager.jsonArray[i].email == email {
-                            print(dataManager.jsonArray[i].password)
-                            dataManager.jsonArray[i].password = password
-                            dataManager.saveToFile()
+                    for i in use.us.indices {
+                        if use.us[i].email == email {
+                            use.us[i].password = password
                             passwordAuth = true
                             passwordResetSuccess = true
-                            break
                         }
                     }
+                    
+                    
+                    for j in users.indices {
+                        if users[j].email == email {
+                            users[j].password = password
+                            passwordAuth = true
+                            passwordResetSuccess = true
+                        }
+                    }
+                    
+//                  데이터 쓰기
+//                    for i in dataManager.jsonArray.indices {
+//                        print(dataManager.jsonArray[i].password)
+//                        if dataManager.jsonArray[i].email == email {
+//                            print(dataManager.jsonArray[i].password)
+//                            dataManager.jsonArray[i].password = password
+//                            dataManager.saveToFile()
+//                            passwordAuth = true
+//                            passwordResetSuccess = true
+//                            break
+//                        }
+//                    }
                 }
                 else {
                     passwordAuth = false
@@ -70,7 +99,7 @@ struct ResetPasswordView: View {
                 }
                 
             }, label: {
-                Text("비밀번호 초기화")
+                Text("비밀번호 변경")
                     .padding()
                     .foregroundColor(Color.white)
                     .background(Color(red: 0.519, green: 0.24, blue: 0.527))
@@ -89,8 +118,8 @@ struct ResetPasswordView: View {
 
 
 
-struct ResetPasswordView_Previews: PreviewProvider {
-    static var previews: some View {
-        ResetPasswordView()
-    }
-}
+//struct ResetPasswordView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ResetPasswordView(email:"hyuryu22@pos.idserve.net", use)
+//    }
+//}

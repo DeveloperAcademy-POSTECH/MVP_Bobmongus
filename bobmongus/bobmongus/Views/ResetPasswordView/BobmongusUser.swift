@@ -8,7 +8,7 @@
 import Foundation
 
 struct BobmongusUser: Hashable, Codable, Identifiable {
-    var id: Int
+    var id : Int
     var email: String
     var nickname: String
     var password: String
@@ -16,3 +16,8 @@ struct BobmongusUser: Hashable, Codable, Identifiable {
     var isReady: Bool
     var roomnum: Int
 }
+
+//class UserLists: ObservableObject {
+//    @Published var user_list = [BobmongusUser]()
+//    
+//}

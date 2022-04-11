@@ -7,6 +7,10 @@
 
 import Foundation
 
+class U: ObservableObject {
+    @Published var us: [BobmongusUser] = load("userData.json")
+}
+
 var users: [BobmongusUser] = load("userData.json")
 //var users = loadJsonFile()
 
