@@ -14,6 +14,9 @@
 		0EE83C2927FD5E5A00940397 /* bobmongusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C2827FD5E5A00940397 /* bobmongusTests.swift */; };
 		0EE83C3327FD5E5A00940397 /* bobmongusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C3227FD5E5A00940397 /* bobmongusUITests.swift */; };
 		0EE83C3527FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */; };
+		A0CDF84D2803FCD100C7C1CB /* DungGeunMo.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0CDF84C2803FCD100C7C1CB /* DungGeunMo.otf */; };
+		A0CDF84E2803FCD100C7C1CB /* DungGeunMo.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0CDF84C2803FCD100C7C1CB /* DungGeunMo.otf */; };
+		A0CDF84F2803FCD100C7C1CB /* DungGeunMo.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0CDF84C2803FCD100C7C1CB /* DungGeunMo.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,7 @@
 		0EE83C2E27FD5E5A00940397 /* bobmongusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bobmongusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE83C3227FD5E5A00940397 /* bobmongusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusUITests.swift; sourceTree = "<group>"; };
 		0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0CDF84C2803FCD100C7C1CB /* DungGeunMo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DungGeunMo.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			children = (
 				0EE83C1727FD5E5900940397 /* bobmongusApp.swift */,
 				0EE83C1927FD5E5900940397 /* ContentView.swift */,
+				A0CDF84C2803FCD100C7C1CB /* DungGeunMo.otf */,
 				0EE83C1B27FD5E5A00940397 /* Assets.xcassets */,
 				0EE83C1D27FD5E5A00940397 /* Preview Content */,
 			);
@@ -232,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE83C1F27FD5E5A00940397 /* Preview Assets.xcassets in Resources */,
+				A0CDF84D2803FCD100C7C1CB /* DungGeunMo.otf in Resources */,
 				0EE83C1C27FD5E5A00940397 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0CDF84E2803FCD100C7C1CB /* DungGeunMo.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0CDF84F2803FCD100C7C1CB /* DungGeunMo.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,8 +425,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"bobmongus/Preview Content\"";
+				DEVELOPMENT_TEAM = WW4JM95G8V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bobmongus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,8 +455,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"bobmongus/Preview Content\"";
+				DEVELOPMENT_TEAM = WW4JM95G8V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bobmongus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
