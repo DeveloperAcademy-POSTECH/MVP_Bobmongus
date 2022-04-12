@@ -1,0 +1,143 @@
+[
+    {
+        "id": "0f096708-e68f-4822-b2c7-a272e64b6d8f",
+        "isStart": false,
+        "roomTitle": "이따 저녁시간 후에 배드민턴 치실분 모집",
+        "roomDetail": "오늘 저녁에 xxx에 있는 배드민턴장에서 함께 운동하실 분들 구해요!! 아직 저 혼자라서 세 분정도 모시고 복식으로 할 수 있었으면 좋겠습니다 ㅋㅋㅋㅋㅋ 선착순~!!!",
+        "nowPersons": [
+            {
+                "id": "4a7e4f65-1e0c-4f9f-baaa-ee15e9d0ef0a",
+                "userName": "곰민",
+                "email": "gommin1@gmail.com",
+                "password": "imgommin1!",
+                "icon": "bobmong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Gommin",
+                "userAddress": "자취요~~"
+            },
+            {
+                "id": "a0c2557a-64e5-44ce-982b-bd01dce2b232",
+                "userName": "제이슨",
+                "email": "jason1@gmail.com",
+                "password": "jason1!",
+                "icon": "jjamong",
+                "isLogin": true,
+                "isReady": false,
+                "isMakingRoom": false,
+                "nickName": "Jason",
+                "userAddress": "언제나 C5"
+            },
+            {
+                "id": "388e1e72-07c7-4d51-a4cf-37877a5df815",
+                "userName": "주디",
+                "email": "judy1@gmail.com",
+                "password": "judy1!",
+                "icon": "thugmong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Judy",
+                "userAddress": "xx역 근처!"
+            }
+        ],
+        "persons": 4,
+        "endTime": 40,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com"
+    },
+    {
+        "id": "95da5236-b5e6-450d-870b-87b30625873d",
+        "isStart": false,
+        "roomTitle": "피자 먹고 싶은 사람 모여라~!",
+        "roomDetail": "도미노피자 포항점! 배달요금은 5000원이고, 확정한 메뉴는 따로 없어서 대화방 파지면 서로 얘기놔눠봐요! 따로 먹을 사람보단 함께 모여서 친목을 다지고픈 사람들 모이세요 ㅎㅎ 감사합니다.",
+        "nowPersons": [
+            {
+                "id": "58a1a949-32cb-4652-a94c-6a9ea49f4ce3",
+                "userName": "빅썬",
+                "email": "bigsun1@gmail.com",
+                "password": "bigsun1!",
+                "icon": "angelmong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "BigSun",
+                "userAddress": "포스빌(C5 근처)"
+            },
+            {
+                "id": "deee8907-296e-4404-801b-b06289c63a76",
+                "userName": "안토니",
+                "email": "antony1@gmail.com",
+                "password": "antony1!",
+                "icon": "eggmong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Antony",
+                "userAddress": "포스빌입니다."
+            },
+            {
+                "id": "287ffb39-95f9-40a3-88f8-4bad04e38dec",
+                "userName": "준",
+                "email": "joon1@gmail.com",
+                "password": "joon1!",
+                "icon": "bobmong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Joon",
+                "userAddress": "포스빌 6동!"
+            },
+            {
+                "id": "9e80cfda-0d9b-4420-9f74-31e77710eb7f",
+                "userName": "케이",
+                "email": "k1@gmail.com",
+                "password": "k1!",
+                "icon": "bobmong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "K",
+                "userAddress": "포항역 근처자취"
+            },
+            {
+                "id": "0e0e65a7-f198-4003-aaad-8448b3b78ad0",
+                "userName": "루이",
+                "email": "louie1@gmail.com",
+                "password": "louie1!",
+                "icon": "usmong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Louie",
+                "userAddress": "여자 생활관~"
+            }
+        ],
+        "persons": 6,
+        "endTime": 50,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com"
+    },
+    {
+        "id": "7007d3b0-d530-48de-9f41-393c0526ebd5",
+        "isStart": false,
+        "roomTitle": "소고기 먹으러 가실분!",
+        "roomDetail": "포항 시내에 나가면 가성비 갑인 소고기 집 있다고 하는데, 같이 가실분들 모집해요 ~!!! 1.5kg에 7만원입니다~!!! 3~4명정도 모이면 확정하려구 합니다 ㅎㅎ 맛저맛저~!",
+        "nowPersons": [
+            {
+                "id": "f7aba304-860f-44a9-bc00-0bf2922e7f50",
+                "userName": "스위프티스트",
+                "email": "swiftist1@gmail.com",
+                "password": "swiftist1!",
+                "icon": "jjamong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Swiftist",
+                "userAddress": "포스빌 6동~"
+            }
+        ],
+        "persons": 4,
+        "endTime": 60,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com"
+    }
+]

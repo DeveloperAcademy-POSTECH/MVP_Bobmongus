@@ -1,0 +1,71 @@
+//
+//  ModelData.swift
+//  bobmongus
+//
+//  Created by Hyeonsoo Kim on 2022/04/10.
+//
+
+import SwiftUI
+import Combine
+
+final class ModelData: ObservableObject {
+    
+    
+    @Published var users: [Room.User] = loadJson("dummyusers.json")
+    
+    @Published var rooms: [Room] = loadJson("dummyrooms.json")
+    
+    @Published var myProfile: Room.User {
+        didSet {
+            UserDefaults.standard.set(encodeToJson(myProfile), forKey: "myProfile")
+        }
+    }
+    
+    init() { //마지막에 저장된 값으로 초기화됨. 앱 시동 후 불러와질 때?!
+        self.myProfile = decodeToUser(UserDefaults.standard.data(forKey: "myProfile") ??
+                                      encodeToJson(Room.User(id: UUID(), userName: "name", email: "email", password: "password", icon: "bobmong", isLogin: false, isReady: false, isMakingRoom: false, nickName: "nickName", userAddress: "userAddress"))
+        )
+    }
+
+}
+
+//var testRooms: [Room] = loadJson("dummyrooms.json")
+
+func loadJson<T: Decodable>(_ filename: String) -> T {
+    
+    let data: Data
+    
+    guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
+    else {
+        fatalError("\(filename) not found.")
+    }
+    
+    do {
+        data = try Data(contentsOf: file)
+    } catch {
+        fatalError("Could not load \(filename): \(error)")
+    }
+    
+    do {
+        return try JSONDecoder().decode(T.self, from: data)
+    } catch {
+        fatalError("Unable to parse \(filename): \(error)")
+    }
+}
+
+
+func encodeToJson(_ user: Room.User) -> Data {
+    do {
+        return try JSONEncoder().encode(user.self)
+    } catch {
+        fatalError("Unable to encode")
+    }
+}
+
+func decodeToUser(_ data: Data) -> Room.User {
+    do {
+        return try JSONDecoder().decode(Room.User.self, from: data)
+    } catch {
+        fatalError("Unable to decode")
+    }
+}
