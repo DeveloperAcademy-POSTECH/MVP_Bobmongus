@@ -15,7 +15,8 @@ struct TestRoomMakingView: View {
     @Binding var newRoom: Room
     
     @State var persons = 2
-    @State var endTime = Date()
+    @State var roomTime = Date()
+//    @State var temp = roomTime.description.components(separatedBy: ":")
     
     @State var roomTitle: String = ""
     @State var roomDetail: String = ""
@@ -80,7 +81,7 @@ struct TestRoomMakingView: View {
                 
             }
             
-            DatePicker(selection: $endTime, displayedComponents: .hourAndMinute, label: {
+            DatePicker(selection: $roomTime, displayedComponents: .hourAndMinute, label: {
                 
                 Image(systemName: "timer")
                 
