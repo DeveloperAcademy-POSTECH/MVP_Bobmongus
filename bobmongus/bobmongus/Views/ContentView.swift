@@ -1,16 +1,15 @@
 //
 //  ContentView.swift
-//  bobmongus
+//  LoginTest
 //
-//  Created by ryu hyunsun on 2022/04/06.
+//  Created by Chicken on 2022/04/04.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+       EntranceView()
     }
 }
 

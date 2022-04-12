@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0EE83C1827FD5E5900940397 /* bobmongusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C1727FD5E5900940397 /* bobmongusApp.swift */; };
-		0EE83C1A27FD5E5900940397 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C1927FD5E5900940397 /* ContentView.swift */; };
 		0EE83C1C27FD5E5A00940397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE83C1B27FD5E5A00940397 /* Assets.xcassets */; };
 		0EE83C1F27FD5E5A00940397 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE83C1E27FD5E5A00940397 /* Preview Assets.xcassets */; };
 		0EE83C2927FD5E5A00940397 /* bobmongusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C2827FD5E5A00940397 /* bobmongusTests.swift */; };
 		0EE83C3327FD5E5A00940397 /* bobmongusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C3227FD5E5A00940397 /* bobmongusUITests.swift */; };
 		0EE83C3527FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */; };
+		3600D94C2805600C008F159B /* DungGeunMo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3600D93C2805600C008F159B /* DungGeunMo.otf */; };
+		3600D94D2805600C008F159B /* EntranceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D93D2805600C008F159B /* EntranceView.swift */; };
+		3600D94E2805600C008F159B /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D93E2805600C008F159B /* Test.swift */; };
+		3600D94F2805600C008F159B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D93F2805600C008F159B /* LoginView.swift */; };
+		3600D9502805600C008F159B /* DummyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D9412805600C008F159B /* DummyUser.swift */; };
+		3600D9512805600C008F159B /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D9422805600C008F159B /* CheckboxStyle.swift */; };
+		3600D9522805600C008F159B /* Dummy.json in Resources */ = {isa = PBXBuildFile; fileRef = 3600D9432805600C008F159B /* Dummy.json */; };
+		3600D9532805600C008F159B /* PrivacyPolicyBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D9442805600C008F159B /* PrivacyPolicyBoxView.swift */; };
+		3600D9542805600C008F159B /* TempPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D9452805600C008F159B /* TempPasswordView.swift */; };
+		3600D9552805600C008F159B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D9462805600C008F159B /* ModelData.swift */; };
+		3600D9562805600C008F159B /* TextInRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D9472805600C008F159B /* TextInRectangleView.swift */; };
+		3600D9572805600C008F159B /* TempMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D9482805600C008F159B /* TempMainView.swift */; };
+		3600D9582805600C008F159B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D9492805600C008F159B /* SignUpView.swift */; };
+		3600D9592805600C008F159B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D94A2805600C008F159B /* ContentView.swift */; };
+		3600D95A2805600C008F159B /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D94B2805600C008F159B /* PrivacyPolicyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +50,6 @@
 /* Begin PBXFileReference section */
 		0EE83C1427FD5E5900940397 /* bobmongus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bobmongus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE83C1727FD5E5900940397 /* bobmongusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusApp.swift; sourceTree = "<group>"; };
-		0EE83C1927FD5E5900940397 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0EE83C1B27FD5E5A00940397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EE83C1E27FD5E5A00940397 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EE83C2427FD5E5A00940397 /* bobmongusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bobmongusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +57,22 @@
 		0EE83C2E27FD5E5A00940397 /* bobmongusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bobmongusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE83C3227FD5E5A00940397 /* bobmongusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusUITests.swift; sourceTree = "<group>"; };
 		0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3600D93C2805600C008F159B /* DungGeunMo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DungGeunMo.otf; sourceTree = "<group>"; };
+		3600D93D2805600C008F159B /* EntranceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntranceView.swift; sourceTree = "<group>"; };
+		3600D93E2805600C008F159B /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		3600D93F2805600C008F159B /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3600D9412805600C008F159B /* DummyUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyUser.swift; sourceTree = "<group>"; };
+		3600D9422805600C008F159B /* CheckboxStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
+		3600D9432805600C008F159B /* Dummy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dummy.json; sourceTree = "<group>"; };
+		3600D9442805600C008F159B /* PrivacyPolicyBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyBoxView.swift; sourceTree = "<group>"; };
+		3600D9452805600C008F159B /* TempPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempPasswordView.swift; sourceTree = "<group>"; };
+		3600D9462805600C008F159B /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		3600D9472805600C008F159B /* TextInRectangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInRectangleView.swift; sourceTree = "<group>"; };
+		3600D9482805600C008F159B /* TempMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempMainView.swift; sourceTree = "<group>"; };
+		3600D9492805600C008F159B /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		3600D94A2805600C008F159B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Views/ContentView.swift; sourceTree = "<group>"; };
+		3600D94B2805600C008F159B /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		3600D95B28056102008F159B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +123,10 @@
 		0EE83C1627FD5E5900940397 /* bobmongus */ = {
 			isa = PBXGroup;
 			children = (
+				3600D95B28056102008F159B /* Info.plist */,
 				0EE83C1727FD5E5900940397 /* bobmongusApp.swift */,
-				0EE83C1927FD5E5900940397 /* ContentView.swift */,
+				3600D94A2805600C008F159B /* ContentView.swift */,
+				3600D93B2805600C008F159B /* Views */,
 				0EE83C1B27FD5E5A00940397 /* Assets.xcassets */,
 				0EE83C1D27FD5E5A00940397 /* Preview Content */,
 			);
@@ -125,6 +156,35 @@
 				0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */,
 			);
 			path = bobmongusUITests;
+			sourceTree = "<group>";
+		};
+		3600D93B2805600C008F159B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3600D93C2805600C008F159B /* DungGeunMo.otf */,
+				3600D93D2805600C008F159B /* EntranceView.swift */,
+				3600D93F2805600C008F159B /* LoginView.swift */,
+				3600D94B2805600C008F159B /* PrivacyPolicyView.swift */,
+				3600D9492805600C008F159B /* SignUpView.swift */,
+				3600D93E2805600C008F159B /* Test.swift */,
+				3600D9402805600C008F159B /* Resources */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3600D9402805600C008F159B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3600D9432805600C008F159B /* Dummy.json */,
+				3600D9412805600C008F159B /* DummyUser.swift */,
+				3600D9462805600C008F159B /* ModelData.swift */,
+				3600D9472805600C008F159B /* TextInRectangleView.swift */,
+				3600D9422805600C008F159B /* CheckboxStyle.swift */,
+				3600D9442805600C008F159B /* PrivacyPolicyBoxView.swift */,
+				3600D9482805600C008F159B /* TempMainView.swift */,
+				3600D9452805600C008F159B /* TempPasswordView.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +292,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE83C1F27FD5E5A00940397 /* Preview Assets.xcassets in Resources */,
+				3600D94C2805600C008F159B /* DungGeunMo.otf in Resources */,
+				3600D9522805600C008F159B /* Dummy.json in Resources */,
 				0EE83C1C27FD5E5A00940397 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +319,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EE83C1A27FD5E5900940397 /* ContentView.swift in Sources */,
+				3600D9512805600C008F159B /* CheckboxStyle.swift in Sources */,
+				3600D94D2805600C008F159B /* EntranceView.swift in Sources */,
+				3600D9592805600C008F159B /* ContentView.swift in Sources */,
+				3600D95A2805600C008F159B /* PrivacyPolicyView.swift in Sources */,
+				3600D9542805600C008F159B /* TempPasswordView.swift in Sources */,
+				3600D9502805600C008F159B /* DummyUser.swift in Sources */,
+				3600D94E2805600C008F159B /* Test.swift in Sources */,
+				3600D94F2805600C008F159B /* LoginView.swift in Sources */,
+				3600D9572805600C008F159B /* TempMainView.swift in Sources */,
+				3600D9582805600C008F159B /* SignUpView.swift in Sources */,
+				3600D9552805600C008F159B /* ModelData.swift in Sources */,
 				0EE83C1827FD5E5900940397 /* bobmongusApp.swift in Sources */,
+				3600D9562805600C008F159B /* TextInRectangleView.swift in Sources */,
+				3600D9532805600C008F159B /* PrivacyPolicyBoxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +493,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"bobmongus/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bobmongus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +522,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"bobmongus/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bobmongus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
