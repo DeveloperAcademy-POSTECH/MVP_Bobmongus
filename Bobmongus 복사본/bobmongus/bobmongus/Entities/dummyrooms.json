@@ -1,0 +1,507 @@
+[
+    {
+        "id": 0,
+        "isStart": false,
+        "roomTitle": "가나다라마가나다라마가나다라마가나다라마가나",
+        "roomDetail": "오늘 저녁에 xxx에 있는 배드민턴장에서 함께 운동하실 분들 구해요!! 아직 저 혼자라서 세 분정도 모시고 복식으로 할 수 있었으면 좋겠습니다 ㅋㅋㅋㅋㅋ 선착순~!!!",
+        "nowPersons": [
+            {
+                "id": 11,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Gommin",
+                "userAddress": "자취요~~"
+            },
+            {
+                "id": 12,
+                "icon": "jjamong",
+                "isReady": false,
+                "isMakingRoom": false,
+                "nickName": "Jason",
+                "userAddress": "언제나 C5"
+            },
+            {
+                "id": 13,
+                "icon": "thugmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Judy",
+                "userAddress": "xx역 근처!"
+            }
+        ],
+        "persons": 4,
+        "endTime": 30,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com",
+        "roomTimeStr": "11:14:00 PM"
+    },
+    {
+        "id": 1,
+        "isStart": false,
+        "roomTitle": "피자 먹고 싶은 사람 모여라~!",
+        "roomDetail": "도미노피자 포항점! 배달요금은 5000원이고, 확정한 메뉴는 따로 없어서 대화방 파지면 서로 얘기놔눠봐요! 따로 먹을 사람보단 함께 모여서 친목을 다지고픈 사람들 모이세요 ㅎㅎ 감사합니다.",
+        "nowPersons": [
+            {
+                "id": 1,
+                "icon": "angelmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "BigSun",
+                "userAddress": "포스빌(C5 근처)"
+            },
+            {
+                "id": 2,
+                "icon": "eggmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Antony",
+                "userAddress": "포스빌입니다."
+            },
+            {
+                "id": 3,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Joon",
+                "userAddress": "포스빌 6동!"
+            },
+            {
+                "id": 4,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "K",
+                "userAddress": "포항역 근처자취"
+            },
+            {
+                "id": 5,
+                "icon": "usmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Louie",
+                "userAddress": "여자 생활관~"
+            }
+        ],
+        "persons": 6,
+        "endTime": 60,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com",
+        "roomTimeStr": "11:17:00 PM"
+    },
+    {
+        "id": 2,
+        "isStart": false,
+        "roomTitle": "테스트입니다람쥐1",
+        "roomDetail": "도미노피자 포항점! 배달요금은 5000원이고, 확정한 메뉴는 따로 없어서 대화방 파지면 서로 얘기놔눠봐요! 따로 먹을 사람보단 함께 모여서 친목을 다지고픈 사람들 모이세요 ㅎㅎ 감사합니다.",
+        "nowPersons": [
+            {
+                "id": 1,
+                "icon": "angelmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "BigSun",
+                "userAddress": "포스빌(C5 근처)"
+            },
+            {
+                "id": 2,
+                "icon": "eggmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Antony",
+                "userAddress": "포스빌입니다."
+            },
+            {
+                "id": 3,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Joon",
+                "userAddress": "포스빌 6동!"
+            },
+            {
+                "id": 4,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "K",
+                "userAddress": "포항역 근처자취"
+            },
+            {
+                "id": 5,
+                "icon": "usmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Louie",
+                "userAddress": "여자 생활관~"
+            }
+        ],
+        "persons": 6,
+        "endTime": 60,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com",
+        "roomTimeStr": "11:17:00 PM"
+    },
+    {
+        "id": 3,
+        "isStart": false,
+        "roomTitle": "테스트입니다람쥐3",
+        "roomDetail": "도미노피자 포항점! 배달요금은 5000원이고, 확정한 메뉴는 따로 없어서 대화방 파지면 서로 얘기놔눠봐요! 따로 먹을 사람보단 함께 모여서 친목을 다지고픈 사람들 모이세요 ㅎㅎ 감사합니다.",
+        "nowPersons": [
+            {
+                "id": 1,
+                "icon": "angelmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "BigSun",
+                "userAddress": "포스빌(C5 근처)"
+            },
+            {
+                "id": 2,
+                "icon": "eggmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Antony",
+                "userAddress": "포스빌입니다."
+            },
+            {
+                "id": 3,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Joon",
+                "userAddress": "포스빌 6동!"
+            },
+            {
+                "id": 4,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "K",
+                "userAddress": "포항역 근처자취"
+            },
+            {
+                "id": 5,
+                "icon": "usmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Louie",
+                "userAddress": "여자 생활관~"
+            }
+        ],
+        "persons": 6,
+        "endTime": 60,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com",
+        "roomTimeStr": "11:17:00 PM"
+    },
+    {
+        "id": 4,
+        "isStart": false,
+        "roomTitle": "테스트입니다람쥐4",
+        "roomDetail": "도미노피자 포항점! 배달요금은 5000원이고, 확정한 메뉴는 따로 없어서 대화방 파지면 서로 얘기놔눠봐요! 따로 먹을 사람보단 함께 모여서 친목을 다지고픈 사람들 모이세요 ㅎㅎ 감사합니다.",
+        "nowPersons": [
+            {
+                "id": 1,
+                "icon": "angelmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "BigSun",
+                "userAddress": "포스빌(C5 근처)"
+            },
+            {
+                "id": 2,
+                "icon": "eggmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Antony",
+                "userAddress": "포스빌입니다."
+            },
+            {
+                "id": 3,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Joon",
+                "userAddress": "포스빌 6동!"
+            },
+            {
+                "id": 4,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "K",
+                "userAddress": "포항역 근처자취"
+            },
+            {
+                "id": 5,
+                "icon": "usmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Louie",
+                "userAddress": "여자 생활관~"
+            }
+        ],
+        "persons": 6,
+        "endTime": 60,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com",
+        "roomTimeStr": "11:17:00 PM"
+    },
+    {
+        "id": 5,
+        "isStart": false,
+        "roomTitle": "테스트입니다람쥐5",
+        "roomDetail": "도미노피자 포항점! 배달요금은 5000원이고, 확정한 메뉴는 따로 없어서 대화방 파지면 서로 얘기놔눠봐요! 따로 먹을 사람보단 함께 모여서 친목을 다지고픈 사람들 모이세요 ㅎㅎ 감사합니다.",
+        "nowPersons": [
+            {
+                "id": 1,
+                "icon": "angelmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "BigSun",
+                "userAddress": "포스빌(C5 근처)"
+            },
+            {
+                "id": 2,
+                "icon": "eggmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Antony",
+                "userAddress": "포스빌입니다."
+            },
+            {
+                "id": 3,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Joon",
+                "userAddress": "포스빌 6동!"
+            },
+            {
+                "id": 4,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "K",
+                "userAddress": "포항역 근처자취"
+            },
+            {
+                "id": 5,
+                "icon": "usmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Louie",
+                "userAddress": "여자 생활관~"
+            }
+        ],
+        "persons": 6,
+        "endTime": 60,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com",
+        "roomTimeStr": "11:17:00 PM"
+    },
+    {
+        "id": 6,
+        "isStart": false,
+        "roomTitle": "테스트입니다람쥐6",
+        "roomDetail": "도미노피자 포항점! 배달요금은 5000원이고, 확정한 메뉴는 따로 없어서 대화방 파지면 서로 얘기놔눠봐요! 따로 먹을 사람보단 함께 모여서 친목을 다지고픈 사람들 모이세요 ㅎㅎ 감사합니다.",
+        "nowPersons": [
+            {
+                "id": 1,
+                "icon": "angelmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "BigSun",
+                "userAddress": "포스빌(C5 근처)"
+            },
+            {
+                "id": 2,
+                "icon": "eggmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Antony",
+                "userAddress": "포스빌입니다."
+            },
+            {
+                "id": 3,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Joon",
+                "userAddress": "포스빌 6동!"
+            },
+            {
+                "id": 4,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "K",
+                "userAddress": "포항역 근처자취"
+            },
+            {
+                "id": 5,
+                "icon": "usmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Louie",
+                "userAddress": "여자 생활관~"
+            }
+        ],
+        "persons": 6,
+        "endTime": 60,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com",
+        "roomTimeStr": "11:17:00 PM"
+    },
+    {
+        "id": 7,
+        "isStart": false,
+        "roomTitle": "테스트입니다람쥐7",
+        "roomDetail": "도미노피자 포항점! 배달요금은 5000원이고, 확정한 메뉴는 따로 없어서 대화방 파지면 서로 얘기놔눠봐요! 따로 먹을 사람보단 함께 모여서 친목을 다지고픈 사람들 모이세요 ㅎㅎ 감사합니다.",
+        "nowPersons": [
+            {
+                "id": 1,
+                "icon": "angelmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "BigSun",
+                "userAddress": "포스빌(C5 근처)"
+            },
+            {
+                "id": 2,
+                "icon": "eggmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Antony",
+                "userAddress": "포스빌입니다."
+            },
+            {
+                "id": 3,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Joon",
+                "userAddress": "포스빌 6동!"
+            },
+            {
+                "id": 4,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "K",
+                "userAddress": "포항역 근처자취"
+            },
+            {
+                "id": 5,
+                "icon": "usmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Louie",
+                "userAddress": "여자 생활관~"
+            }
+        ],
+        "persons": 6,
+        "endTime": 60,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com",
+        "roomTimeStr": "11:17:00 PM"
+    },
+    {
+        "id": 8,
+        "isStart": false,
+        "roomTitle": "테스트입니다람쥐8",
+        "roomDetail": "도미노피자 포항점! 배달요금은 5000원이고, 확정한 메뉴는 따로 없어서 대화방 파지면 서로 얘기놔눠봐요! 따로 먹을 사람보단 함께 모여서 친목을 다지고픈 사람들 모이세요 ㅎㅎ 감사합니다.",
+        "nowPersons": [
+            {
+                "id": 1,
+                "icon": "angelmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "BigSun",
+                "userAddress": "포스빌(C5 근처)"
+            },
+            {
+                "id": 2,
+                "icon": "eggmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Antony",
+                "userAddress": "포스빌입니다."
+            },
+            {
+                "id": 3,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Joon",
+                "userAddress": "포스빌 6동!"
+            },
+            {
+                "id": 4,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "K",
+                "userAddress": "포항역 근처자취"
+            },
+            {
+                "id": 5,
+                "icon": "usmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Louie",
+                "userAddress": "여자 생활관~"
+            }
+        ],
+        "persons": 6,
+        "endTime": 60,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com",
+        "roomTimeStr": "11:17:00 PM"
+    },
+    {
+        "id": 9,
+        "isStart": false,
+        "roomTitle": "테스트입니다람쥐9",
+        "roomDetail": "도미노피자 포항점! 배달요금은 5000원이고, 확정한 메뉴는 따로 없어서 대화방 파지면 서로 얘기놔눠봐요! 따로 먹을 사람보단 함께 모여서 친목을 다지고픈 사람들 모이세요 ㅎㅎ 감사합니다.",
+        "nowPersons": [
+            {
+                "id": 1,
+                "icon": "angelmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "BigSun",
+                "userAddress": "포스빌(C5 근처)"
+            },
+            {
+                "id": 2,
+                "icon": "eggmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Antony",
+                "userAddress": "포스빌입니다."
+            },
+            {
+                "id": 3,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Joon",
+                "userAddress": "포스빌 6동!"
+            },
+            {
+                "id": 4,
+                "icon": "bobmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "K",
+                "userAddress": "포항역 근처자취"
+            },
+            {
+                "id": 5,
+                "icon": "usmong",
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Louie",
+                "userAddress": "여자 생활관~"
+            }
+        ],
+        "persons": 6,
+        "endTime": 60,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com",
+        "roomTimeStr": "11:17:00 PM"
+    }
+]
+
