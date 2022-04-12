@@ -87,9 +87,11 @@ struct TestRoomListView: View {
                     
                     ZStack {
                         
+                        let width = UIScreen.main.bounds.width
+                        
                         RoundedRectangle(cornerRadius: 16)
                             .padding(.horizontal)
-                            .frame(width: 390.0, height: 330.0)
+                            .frame(width: width, height: width / 13 * 11) //aspect
                             .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.917))
                             .overlay {
                                 TestRoomMakingView(showModal: $showModal, isMake: $isMake, newRoom: $newRoom)

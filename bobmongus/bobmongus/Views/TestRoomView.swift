@@ -192,18 +192,18 @@ struct TestRoomView: View {
                                 }.count
                                 == room.nowPersons.count ?
                                 //If allReady.
-                                Text("Start").fontWeight(.bold)
+                                Text("Start").font(.custom("DungGeunMo", size: 22))
                                 :
                                     //If not allReady.
-                                Text("UnReady").fontWeight(.bold)
+                                Text("UnReady").font(.custom("DungGeunMo", size: 22))
                             ) //If I'm not ready.
-                            : Text("Ready").fontWeight(.bold)
+                            : Text("Ready").font(.custom("DungGeunMo", size: 22))
                         )
                         :
                         ( //If I didn't make room.
                             modelData.myProfile.isReady ?
-                            Text("UnReady").fontWeight(.bold) :
-                                Text("Ready").fontWeight(.bold)
+                            Text("UnReady").font(.custom("DungGeunMo", size: 22)) :
+                                Text("Ready").font(.custom("DungGeunMo", size: 22))
                         )
                     }
                     .foregroundColor(.white)
