@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0EE83C1827FD5E5900940397 /* bobmongusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C1727FD5E5900940397 /* bobmongusApp.swift */; };
-		0EE83C1A27FD5E5900940397 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C1927FD5E5900940397 /* ContentView.swift */; };
 		0EE83C1C27FD5E5A00940397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE83C1B27FD5E5A00940397 /* Assets.xcassets */; };
 		0EE83C1F27FD5E5A00940397 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE83C1E27FD5E5A00940397 /* Preview Assets.xcassets */; };
 		0EE83C2927FD5E5A00940397 /* bobmongusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C2827FD5E5A00940397 /* bobmongusTests.swift */; };
@@ -35,6 +34,18 @@
 		962787CB2803FA0A00385549 /* bob.gif in Resources */ = {isa = PBXBuildFile; fileRef = 962787C92803FA0A00385549 /* bob.gif */; };
 		962787CC2803FA0A00385549 /* bob.gif in Resources */ = {isa = PBXBuildFile; fileRef = 962787C92803FA0A00385549 /* bob.gif */; };
 		9681F1D527FD7BDF00A00E20 /* TestUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681F1D427FD7BDF00A00E20 /* TestUserCell.swift */; };
+		77AA816A27FEC7CD002FFB48 /* NaviTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AA816927FEC7CD002FFB48 /* NaviTestView.swift */; };
+		77AA816E280025D9002FFB48 /* ModalTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AA816D280025D9002FFB48 /* ModalTestView.swift */; };
+		77AA817428040BB9002FFB48 /* DungGeunMo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77AA817328040BB8002FFB48 /* DungGeunMo.otf */; };
+		77AA817528040BB9002FFB48 /* DungGeunMo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77AA817328040BB8002FFB48 /* DungGeunMo.otf */; };
+		77AA817628040BB9002FFB48 /* DungGeunMo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77AA817328040BB8002FFB48 /* DungGeunMo.otf */; };
+		77AA817928040F8C002FFB48 /* clearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AA817828040F8C002FFB48 /* clearButton.swift */; };
+		77AA817A28040F8C002FFB48 /* clearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AA817828040F8C002FFB48 /* clearButton.swift */; };
+		77AA817B28040F8C002FFB48 /* clearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AA817828040F8C002FFB48 /* clearButton.swift */; };
+		77AA817E28047197002FFB48 /* ImageDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AA817D28047197002FFB48 /* ImageDemoView.swift */; };
+		77B9020D27FD679900CECE9D /* MypageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B9020C27FD679900CECE9D /* MypageView.swift */; };
+		77E565F627FD80E5000D1ADD /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E565F527FD80E5000D1ADD /* EditProfileView.swift */; };
+		77E565F927FD8113000D1ADD /* EditPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E565F827FD8113000D1ADD /* EditPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +67,7 @@
 
 /* Begin PBXFileReference section */
 		0EE83C1427FD5E5900940397 /* bobmongus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bobmongus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EE83C1727FD5E5900940397 /* bobmongusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusApp.swift; sourceTree = "<group>"; };
-		0EE83C1927FD5E5900940397 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0EE83C1727FD5E5900940397 /* bobmongusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = bobmongusApp.swift; path = bobmongus/bobmongusApp.swift; sourceTree = SOURCE_ROOT; };
 		0EE83C1B27FD5E5A00940397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EE83C1E27FD5E5A00940397 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EE83C2427FD5E5A00940397 /* bobmongusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bobmongusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +91,15 @@
 		962787C42803F94600385549 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 		962787C92803FA0A00385549 /* bob.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bob.gif; sourceTree = "<group>"; };
 		9681F1D427FD7BDF00A00E20 /* TestUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUserCell.swift; sourceTree = "<group>"; };
+		77AA816927FEC7CD002FFB48 /* NaviTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviTestView.swift; sourceTree = "<group>"; };
+		77AA816D280025D9002FFB48 /* ModalTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTestView.swift; sourceTree = "<group>"; };
+		77AA817328040BB8002FFB48 /* DungGeunMo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DungGeunMo.otf; sourceTree = "<group>"; };
+		77AA817728040BDC002FFB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		77AA817828040F8C002FFB48 /* clearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clearButton.swift; sourceTree = "<group>"; };
+		77AA817D28047197002FFB48 /* ImageDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDemoView.swift; sourceTree = "<group>"; };
+		77B9020C27FD679900CECE9D /* MypageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MypageView.swift; path = bobmongus/Views/MypageView.swift; sourceTree = SOURCE_ROOT; };
+		77E565F527FD80E5000D1ADD /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		77E565F827FD8113000D1ADD /* EditPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +150,10 @@
 		0EE83C1627FD5E5900940397 /* bobmongus */ = {
 			isa = PBXGroup;
 			children = (
+				77AA817728040BDC002FFB48 /* Info.plist */,
+				77AA817328040BB8002FFB48 /* DungGeunMo.otf */,
+				77E565F727FD80EE000D1ADD /* Views */,
+				77AA817C28040FA8002FFB48 /* ViewModifier */,
 				0EE83C1727FD5E5900940397 /* bobmongusApp.swift */,
 				0EE83C1927FD5E5900940397 /* ContentView.swift */,
 				962787A82803F7CF00385549 /* Views */,
@@ -199,6 +222,14 @@
 				962787AF2803F83900385549 /* ClearButton.swift */,
 				962787B22803F85700385549 /* ConfirmationDialog.swift */,
 			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77AA817C28040FA8002FFB48 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				77AA817828040F8C002FFB48 /* clearButton.swift */,
+			);
 			path = ViewModifier;
 			sourceTree = "<group>";
 		};
@@ -234,6 +265,27 @@
 				962787C42803F94600385549 /* GifImage.swift */,
 			);
 			path = Gif;
+			sourceTree = "<group>";
+		};
+		77AA818128051923002FFB48 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				77AA816D280025D9002FFB48 /* ModalTestView.swift */,
+				77AA817D28047197002FFB48 /* ImageDemoView.swift */,
+				77AA816927FEC7CD002FFB48 /* NaviTestView.swift */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		77E565F727FD80EE000D1ADD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77B9020C27FD679900CECE9D /* MypageView.swift */,
+				77E565F527FD80E5000D1ADD /* EditProfileView.swift */,
+				77E565F827FD8113000D1ADD /* EditPasswordView.swift */,
+				77AA818128051923002FFB48 /* test */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +396,7 @@
 				962787CA2803FA0A00385549 /* bob.gif in Resources */,
 				961C057C2802B021002FEEAE /* dummyrooms.json in Resources */,
 				962787BA2803F8EA00385549 /* DungGeunMo.otf in Resources */,
+				77AA817428040BB9002FFB48 /* DungGeunMo.otf in Resources */,
 				0EE83C1C27FD5E5A00940397 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +407,7 @@
 			files = (
 				962787CB2803FA0A00385549 /* bob.gif in Resources */,
 				962787BB2803F8EA00385549 /* DungGeunMo.otf in Resources */,
+				77AA817528040BB9002FFB48 /* DungGeunMo.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +417,7 @@
 			files = (
 				962787CC2803FA0A00385549 /* bob.gif in Resources */,
 				962787BC2803F8EA00385549 /* DungGeunMo.otf in Resources */,
+				77AA817628040BB9002FFB48 /* DungGeunMo.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +442,14 @@
 				961C05792802AE7F002FEEAE /* Room.swift in Sources */,
 				961C057E2802B0CD002FEEAE /* ModelData.swift in Sources */,
 				962787C52803F94600385549 /* GifImage.swift in Sources */,
+				77AA817E28047197002FFB48 /* ImageDemoView.swift in Sources */,
+				77E565F627FD80E5000D1ADD /* EditProfileView.swift in Sources */,
+				77E565F927FD8113000D1ADD /* EditPasswordView.swift in Sources */,
+				77AA816A27FEC7CD002FFB48 /* NaviTestView.swift in Sources */,
+				77B9020D27FD679900CECE9D /* MypageView.swift in Sources */,
+				77AA817928040F8C002FFB48 /* clearButton.swift in Sources */,
+				0EE83C1827FD5E5900940397 /* bobmongusApp.swift in Sources */,
+				77AA816E280025D9002FFB48 /* ModalTestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +459,7 @@
 			files = (
 				962787C62803F94600385549 /* GifImage.swift in Sources */,
 				0EE83C2927FD5E5A00940397 /* bobmongusTests.swift in Sources */,
+				77AA817A28040F8C002FFB48 /* clearButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +470,7 @@
 				0EE83C3327FD5E5A00940397 /* bobmongusUITests.swift in Sources */,
 				0EE83C3527FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift in Sources */,
 				962787C72803F94600385549 /* GifImage.swift in Sources */,
+				77AA817B28040F8C002FFB48 /* clearButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +612,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"bobmongus/Preview Content\"";
+				DEVELOPMENT_TEAM = G88S43GJPG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = bobmongus/Info.plist;
@@ -576,6 +642,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"bobmongus/Preview Content\"";
+				DEVELOPMENT_TEAM = G88S43GJPG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = bobmongus/Info.plist;
