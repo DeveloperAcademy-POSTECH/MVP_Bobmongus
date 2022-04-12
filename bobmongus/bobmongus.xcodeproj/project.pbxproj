@@ -28,6 +28,7 @@
 		3600D9582805600C008F159B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D9492805600C008F159B /* SignUpView.swift */; };
 		3600D9592805600C008F159B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D94A2805600C008F159B /* ContentView.swift */; };
 		3600D95A2805600C008F159B /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D94B2805600C008F159B /* PrivacyPolicyView.swift */; };
+		3600D95D2805649E008F159B /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600D95C2805649E008F159B /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		3600D94A2805600C008F159B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Views/ContentView.swift; sourceTree = "<group>"; };
 		3600D94B2805600C008F159B /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		3600D95B28056102008F159B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3600D95C2805649E008F159B /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				3600D94B2805600C008F159B /* PrivacyPolicyView.swift */,
 				3600D9492805600C008F159B /* SignUpView.swift */,
 				3600D93E2805600C008F159B /* Test.swift */,
+				3600D95C2805649E008F159B /* TestView.swift */,
 				3600D9402805600C008F159B /* Resources */,
 			);
 			path = Views;
@@ -325,6 +328,7 @@
 				3600D95A2805600C008F159B /* PrivacyPolicyView.swift in Sources */,
 				3600D9542805600C008F159B /* TempPasswordView.swift in Sources */,
 				3600D9502805600C008F159B /* DummyUser.swift in Sources */,
+				3600D95D2805649E008F159B /* TestView.swift in Sources */,
 				3600D94E2805600C008F159B /* Test.swift in Sources */,
 				3600D94F2805600C008F159B /* LoginView.swift in Sources */,
 				3600D9572805600C008F159B /* TempMainView.swift in Sources */,

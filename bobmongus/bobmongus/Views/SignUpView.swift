@@ -42,8 +42,8 @@ struct SignUpView: View {
     @State var nickname = ""
     
     var body: some View {
-        let width = UIScreen.main.bounds.width / 390 * 70
-        let height = UIScreen.main.bounds.height / 844 * 30
+//        let width = UIScreen.main.bounds.width / 390 * 70
+//        let height = UIScreen.main.bounds.height / 844 * 30
         
         VStack(alignment: .leading) {
             VStack {
@@ -187,9 +187,11 @@ struct SignUpView: View {
                 .padding(.bottom, 80)
             }
             
-            Button("회원가입완료") {
+            NavigationLink(destination: LoginView(user: user)) {
+                Text("회원가입완료")
+            }.simultaneousGesture(TapGesture().onEnded{
                 user.userList.append(DummyUser(nickname: nickname, email: email, password: password))
-            }
+            })
             .font(.custom("DungGeunMo", size: 20))
             .foregroundColor(.white)
             .frame(width: 155, height: 50)
@@ -198,10 +200,6 @@ struct SignUpView: View {
             .shadow(color:.black, radius: 0, x:2 ,y: 3)
             .padding()
             .offset(x: 85)
-            
-            NavigationLink(destination: LoginView(user: user)) {
-            }
-
         }
         .padding()
 //        .offset(y: -30)
