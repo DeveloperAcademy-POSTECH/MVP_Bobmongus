@@ -83,6 +83,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E0D5B582805112E00DFA2E7 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		0EC86F9A27FEC7C0009A0009 /* ResetPasswordView */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +125,7 @@
 		0EE83C1627FD5E5900940397 /* bobmongus */ = {
 			isa = PBXGroup;
 			children = (
+				0E0D5B582805112E00DFA2E7 /* fonts */,
 				0EF6572627FEC6D700212DC8 /* Views */,
 				0EE83C1727FD5E5900940397 /* bobmongusApp.swift */,
 				0EE83C1927FD5E5900940397 /* ContentView.swift */,
