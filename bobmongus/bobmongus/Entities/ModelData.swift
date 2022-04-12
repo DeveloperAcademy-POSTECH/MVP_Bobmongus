@@ -11,12 +11,16 @@ import Combine
 final class ModelData: ObservableObject {
 
     
-    @Published var rooms: [Room] = loadJson("dummyrooms.json")
+    @Published var rooms: [Room] = tempRooms.sorted {
+        $0.endTime < $1.endTime
+    }
+
     
     @Published var myProfile: Room.User = Room.User(id: 6, icon: "usmong", isReady: false, isMakingRoom: false, nickName: "Tamna", userAddress: "*포스빌 6동*")
 
 }
 
+var tempRooms: [Room] = loadJson("dummyrooms.json")
 
 func loadJson<T: Decodable>(_ filename: String) -> T {
     
