@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="48px" viewBox="0 0 42 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>New Piskel (7)</title>
+    <g id="New-Piskel-(7)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <image x="0" y="0" width="42" height="42" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAKqADAAQAAAABAAAAKgAAAADUGqULAAABg0lEQVRYCe2WMW7DMAxF7aJHyZylJyjQc2TLXCAHCdC5W89RoCfo0jl3cU1BDFiblD5tOUBbCnCUUKL4+KVQ7rpooUAo8L8U6DdOd1DWXxRzkZMSfGpKgG/H96m9O7w+sc0V2zWZI+TeUmvQACe+DAzHv5suAPwmwGFs9PHjITv5f358pYe+Wy0noyWrusAZZe8EqK4kjH3fd8+7c7I8PO7FyPxrPgpVDo+iECShkNIvl1OiInVbNBQUhmQoCcs2rUePAAqqxYBtLVRFQN1qcgaoqjy/1COgJf+bjQUoKvUW5QmNvck8ZOvH+l2txyqcLPzaBFRN8kVAtRgum3Y7eSA9oG5VS2pmSIr/9+56z+G7Zk+F3GryPLd8MUFBF91Ocvu1cyqTrZ1ZBHQRJEO0gq2BroJsCVsqT00gCXZcaPX7qQXaDJJVlbBs8/QWqGeNm8z9NaDWn6n51pPsssZWtmHGdV9x2GJ4BoEEsZzsqwdZtTzHiln2itFQIBQIBUKBVQp8A/ERkZm+pyCJAAAAAElFTkSuQmCC"></image>
+        <text id="인원수" font-family="DOSGothic" font-size="11" font-weight="400" fill="#000000">
+            <tspan x="5" y="46">인원수</tspan>
+        </text>
+    </g>
+</svg>

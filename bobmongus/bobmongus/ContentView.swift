@@ -1,10 +1,10 @@
-//
-//  ContentView.swift
-//  bobmongus
-//
-//  Created by ryu hyunsun on 2022/04/06.
-//
-//
+////
+////  ContentView.swift
+////  bobmongus
+////
+////  Created by ryu hyunsun on 2022/04/06.
+////
+////
 //import SwiftUI
 //
 //struct ContentView: View {
@@ -63,8 +63,10 @@
 //    @Binding var showModal: Bool
 //    //초기값 2명으로 설정
 //    @State private var sleepAmount = 2
+//    //초기값 0분으로 설정
+//    @State private var time = 0
 //    //초기값 현재시간으로 설정
-//    @State private var currentDate = Date()
+//    //@State private var currentDate = Date()
 //
 //
 //    var body: some View {
@@ -101,11 +103,16 @@
 //            }
 //            .padding(.top, 10.0)
 //
-//            DatePicker(selection: $currentDate, displayedComponents: .hourAndMinute, label: {
+//            Stepper(value: $time, in: 0...60 ,step: 5) {
 //                Image(systemName: "timer")
-//                Text("마감시간설정")
+//                Text("마감시간 \(time)분")
 //                    .font(.custom("DungGeunMo", size: 17))
-//            })
+//            }
+////            DatePicker(selection: $currentDate, displayedComponents: .hourAndMinute, label: {
+////                Image(systemName: "timer")
+////                Text("마감시간설정")
+////                    .font(.custom("DungGeunMo", size: 17))
+////            })
 //            //모달창 내부 끝
 //
 //
@@ -147,16 +154,16 @@
 //            .previewInterfaceOrientation(.portrait)
 //    }
 //}
-import SwiftUI
-
-struct ContentView: View {
-    var body: some View {
-        RoomlistButtonView()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+////import SwiftUI
+////
+////struct ContentView: View {
+////    var body: some View {
+////        RoomlistButtonView()
+////    }
+////}
+////
+////struct ContentView_Previews: PreviewProvider {
+////    static var previews: some View {
+////        ContentView()
+////    }
+////}

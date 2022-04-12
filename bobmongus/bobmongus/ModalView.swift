@@ -11,8 +11,10 @@ struct ModalView: View {
     @Binding var showModal: Bool
     //초기값 2명으로 설정
     @State private var sleepAmount = 2
+    //초기값 0분으로 설정
+    @State private var time = 0
     //초기값 현재시간으로 설정
-    @State private var currentDate = Date()
+    //@State private var currentDate = Date()
     
     
     var body: some View {
@@ -49,11 +51,16 @@ struct ModalView: View {
             }
             .padding(.top, 10.0)
             
-            DatePicker(selection: $currentDate, displayedComponents: .hourAndMinute, label: {
+            Stepper(value: $time, in: 0...60 ,step: 5) {
                 Image(systemName: "timer")
-                Text("마감시간설정")
+                Text("마감시간 \(time)분")
                     .font(.custom("DungGeunMo", size: 17))
-            })
+            }
+//            DatePicker(selection: $currentDate, displayedComponents: .hourAndMinute, label: {
+//                Image(systemName: "timer")
+//                Text("마감시간설정")
+//                    .font(.custom("DungGeunMo", size: 17))
+//            })
             //모달창 내부 끝
             
             
@@ -76,7 +83,7 @@ struct ModalView: View {
                             RoundedRectangle(cornerRadius: 10)
                                 .shadow(color:.black, radius: 0, x:2 ,y: 3)
 
-                                .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
+                                .foregroundColor(Color(red: 0.982, green: 0.71, blue: 0.629))
                         )
                 }
                 .foregroundColor(/*@START_MENU_TOKEN@*/Color.white/*@END_MENU_TOKEN@*/)

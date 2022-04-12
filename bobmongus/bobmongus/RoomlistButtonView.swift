@@ -39,7 +39,7 @@ struct RoomlistButtonView: View {
                         RoundedRectangle(cornerRadius: 16)
                             .frame(width: 350.0, height: 340.0)
                             .foregroundColor(Color.white)
-                            .overlay(ModalContentView(showModal: self.$showModal))
+                           // .overlay(ModalContentView(showModal: self.$showModal))
                     }
                     //.transition(.move(edge: .bottom))
                 }
