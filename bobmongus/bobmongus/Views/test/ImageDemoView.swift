@@ -49,8 +49,9 @@ struct ImageDemoView: View {
                         .padding(.horizontal)
                         .frame(width: 390.0, height: 330.0)
                         .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.917))
-                        .overlay(ModalContentView(showModal: self.$showModal)
-                )}
+//                        .overlay(ModalContentView(showModal: self.$showModal))
+                    
+                }
                 .transition(.move(edge: .bottom))
             }
         }
