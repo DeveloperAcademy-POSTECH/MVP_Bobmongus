@@ -45,6 +45,7 @@ struct ResetPasswordView: View {
             
             HStack {
                 Text("새 비밀번호")
+                    .font(.custom("DungGeunMo", size: 15))
                     .padding(.horizontal)
                     .padding(.trailing, 5.0)
                 SecureField("비밀번호 입력", text: $password)
@@ -57,8 +58,9 @@ struct ResetPasswordView: View {
             
             HStack {
                 Text("재확인")
+                    .font(.custom("DungGeunMo", size: 15))
                     .padding(.horizontal)
-                    .padding(.trailing, 38.0)
+                    .padding(.trailing, 43.0)
                 SecureField("비밀번호 재입력", text: $checkpassword)
                     .padding(.trailing)
 //                .textFieldStyle(.roundedBorder)
@@ -87,7 +89,7 @@ struct ResetPasswordView: View {
                 }){
                     HStack {
                         Text("비밀번호 변경")
-//                            .font(.custom("DungGeunMo", size: 20))
+                            .font(.custom("DungGeunMo", size: 20))
                     }.padding(10.0)
                         .background(RoundedRectangle(cornerRadius: 10)
                             .shadow(color:.black, radius: 0, x:2 ,y: 3)

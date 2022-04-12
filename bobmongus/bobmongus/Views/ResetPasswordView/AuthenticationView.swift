@@ -20,6 +20,7 @@ struct AuthenticationView: View {
     @State private var showFailAuthenticateModal = false
     @StateObject var users = User()
 //    @ObservedObject var users = User()
+    @State private var showButton = false
     
     var body: some View {
         
@@ -65,8 +66,8 @@ struct AuthenticationView: View {
                     }){
                         HStack {
                             Text("인증번호 발송")
-//                            .font(.custom("DungGeunMo", size: 20))
-                        }.padding(10.0)
+                            .font(.custom("DungGeunMo", size: 20))
+                        }.padding(15.0)
                             .background(RoundedRectangle(cornerRadius: 10)
                                 .shadow(color:.black, radius: 0, x:2 ,y: 3)
                                 .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
@@ -117,102 +118,110 @@ struct AuthenticationView: View {
                 Divider()
                     .frame(width: 320,height: 1)
                     .padding(.bottom, 15)
-                if isSendedEmail == true {
-                    
-                    
-                    VStack {
-                        Button(action: {
-                            if certificationNumber == "12345" {
-                                isAuthenticated = true
-                                showSuccessAuthenticateModal = true
+                
+                
+                if showButton == false {
+                    if isSendedEmail == true {
+                        VStack {
+                            Button(action: {
+                                if certificationNumber == "12345" {
+                                    isAuthenticated = true
+                                    showSuccessAuthenticateModal = true
+                                    showButton = true
+                                }
+                                else {
+                                    isAuthenticated = false
+                                    showFailAuthenticateModal = true
+                                }
+                            }){
+                                HStack{
+                                    Text("인증하기")
+                                        .font(.custom("DungGeunMo",size: 20))
+                                }.padding(15.0)
+                                    .background(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .shadow(color:.black, radius: 0, x:2 ,y: 3)
+                                        .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
+                                    )
                             }
-                            else {
-                                isAuthenticated = false
-                                showFailAuthenticateModal = true
-                            }
-                        }){
-                            HStack{
-                                Text("인증하기")
-//                                    .font(.custom("DungGeunMo",size: 20))
-                            }.padding(10.0)
-                                .background(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .shadow(color:.black, radius: 0, x:2 ,y: 3)
-                                    .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
-                                )
+                            .foregroundColor(Color.white)
+                            .alert("인증되었습니다.", isPresented: $showSuccessAuthenticateModal){}
+                            .alert("올바르지 않은 인증번호입니다. 다시 입력해주세요.", isPresented: $showFailAuthenticateModal){}
                         }
-                        .foregroundColor(Color.white)
-                        .alert("인증되었습니다.", isPresented: $showSuccessAuthenticateModal){}
-                        .alert("올바르지 않은 인증번호입니다. 다시 입력해주세요.", isPresented: $showFailAuthenticateModal){}
+                        
+    //                    Button(action: {
+    //                        if certificationNumber == "12345" {
+    //                            isAuthenticated = true
+    //                            showSuccessAuthenticateModal = true
+    //                        }
+    //                        else {
+    //                            isAuthenticated = false
+    //                            showFailAuthenticateModal = true
+    //                        }
+    //                    }, label: {
+    //                        Text("인증하기")
+    //                            .padding()
+    //                            .foregroundColor(Color.white)
+    //                            .background(Color(red: 0.519, green: 0.24, blue: 0.527))
+    //                            .cornerRadius(10)
+    //                    })
+    //                    .alert("인증되었습니다.", isPresented: $showSuccessAuthenticateModal){}
+    //                    .alert("올바르지 않은 인증번호입니다. 다시 입력해주세요.", isPresented: $showFailAuthenticateModal){}
+    //                    .padding(.vertical)
                     }
-                    
-//                    Button(action: {
-//                        if certificationNumber == "12345" {
-//                            isAuthenticated = true
-//                            showSuccessAuthenticateModal = true
-//                        }
-//                        else {
-//                            isAuthenticated = false
-//                            showFailAuthenticateModal = true
-//                        }
-//                    }, label: {
-//                        Text("인증하기")
-//                            .padding()
-//                            .foregroundColor(Color.white)
-//                            .background(Color(red: 0.519, green: 0.24, blue: 0.527))
-//                            .cornerRadius(10)
-//                    })
-//                    .alert("인증되었습니다.", isPresented: $showSuccessAuthenticateModal){}
-//                    .alert("올바르지 않은 인증번호입니다. 다시 입력해주세요.", isPresented: $showFailAuthenticateModal){}
-//                    .padding(.vertical)
-                }
-                else {
-                    HStack{
-                        Text("인증하기")
-//                            .font(.custom("DungGeunMo",size: 20))
-                    }.padding(10.0)
-                        .background(
-                            RoundedRectangle(cornerRadius: 10)
-                                .shadow(color:.black, radius: 0, x:2 ,y: 3)
-                                .foregroundColor(Color(red: 0.771, green: 0.771, blue: 0.779))
-                        )
-                        .foregroundColor(Color.white)
-                    
-//                    Text("인증하기")
-//                        .frame(width: 100, height: 50, alignment: .center)
-//                        .background(Color(red: 0.771, green: 0.771, blue: 0.779))
-//                        .foregroundColor(Color.white)
-//                        .cornerRadius(10)
-                }
-                
-                
-                
-//              인증 되었을때만 누를 수 있음.
-                if isAuthenticated == true && email != "" && certificationNumber != "" {
-                    NavigationLink(destination: ResetPasswordView(users:users, email:email)) {
-                        Text("비밀번호 초기화")
-                            .padding(10.0)
-                                .background(
+                    else {
+                        HStack{
+                            Text("인증하기")
+                                .font(.custom("DungGeunMo",size: 20))
+                        }.padding(15.0)
+                            .background(
                                 RoundedRectangle(cornerRadius: 10)
                                     .shadow(color:.black, radius: 0, x:2 ,y: 3)
-                                    .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
-                                )
-                                .foregroundColor(Color.white)
-                                .padding(.bottom, 300)
-                                
+                                    .foregroundColor(Color(red: 0.771, green: 0.771, blue: 0.779))
+                            )
+                            .foregroundColor(Color.black)
+                        
+    //                    Text("인증하기")
+    //                        .frame(width: 100, height: 50, alignment: .center)
+    //                        .background(Color(red: 0.771, green: 0.771, blue: 0.779))
+    //                        .foregroundColor(Color.white)
+    //                        .cornerRadius(10)
                     }
                 }
+                
+                
+                
                 else {
-                    Text("비밀번호 초기화")
-                        .padding(10.0)
-                        .background(
-                            RoundedRectangle(cornerRadius: 10)
-                                .shadow(color:.black, radius: 0, x:2 ,y: 3)
-                                .foregroundColor(Color(red: 0.771, green: 0.771, blue: 0.779))
-                        )
-                        .foregroundColor(Color.white)
-                        .padding(.bottom, 300)
+                    if isAuthenticated == true && email != "" && certificationNumber != "" {
+                        NavigationLink(destination: ResetPasswordView(users:users, email:email)) {
+                            Text("비밀번호 초기화")
+                                .font(.custom("DungGeunMo", size: 20))
+                                .padding(15.0)
+                                    .background(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .shadow(color:.black, radius: 0, x:2 ,y: 3)
+                                        .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
+                                    )
+                                    .foregroundColor(Color.white)
+                                    .padding(.bottom, 300)
+                                    
+                        }
+                    }
+                    else {
+                        Text("비밀번호 초기화")
+                            .font(.custom("DungGeunMo", size: 20))
+                            .padding(15.0)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .shadow(color:.black, radius: 0, x:2 ,y: 3)
+                                    .foregroundColor(Color(red: 0.771, green: 0.771, blue: 0.779))
+                            )
+                            .foregroundColor(Color.black)
+                            .padding(.bottom, 300)
+                    }
                 }
+//              인증 되었을때만 누를 수 있음.
+
             }
         }
         
