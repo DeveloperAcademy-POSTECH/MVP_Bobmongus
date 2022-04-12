@@ -10,8 +10,11 @@ import Combine
 
 final class ModelData: ObservableObject {
     
-    
-    @Published var users: [Room.User] = loadJson("dummyusers.json")
+    @Published var users: [Room.User] {
+        didSet {
+            UserDefaults.standard.set(encodeToJJson(users), forKey: "users")
+        }
+    }
     
     @Published var rooms: [Room] = loadJson("dummyrooms.json")
     
@@ -23,11 +26,14 @@ final class ModelData: ObservableObject {
     
     init() { //마지막에 저장된 값으로 초기화됨. 앱 시동 후 불러와질 때?!
         self.myProfile = decodeToUser(UserDefaults.standard.data(forKey: "myProfile") ??
-                                      encodeToJson(Room.User(id: UUID(), userName: "name", email: "email", password: "password", icon: "bobmong", isLogin: false, isReady: false, isMakingRoom: false, nickName: "nickName", userAddress: "userAddress"))
+                                      encodeToJson(Room.User(id: UUID(), email: "email", password: "password", icon: "bobmong", isLogin: false, isReady: false, isMakingRoom: false, nickName: "nickName", userAddress: "userAddress"))
         )
+        
+        self.users = decodeToUsers(UserDefaults.standard.data(forKey: "users") ?? encodeToJJson(userArr))
     }
-
 }
+
+var userArr: [Room.User] = loadJson("dummyusers.json")
 
 //var testRooms: [Room] = loadJson("dummyrooms.json")
 
@@ -65,6 +71,22 @@ func encodeToJson(_ user: Room.User) -> Data {
 func decodeToUser(_ data: Data) -> Room.User {
     do {
         return try JSONDecoder().decode(Room.User.self, from: data)
+    } catch {
+        fatalError("Unable to decode")
+    }
+}
+
+func encodeToJJson(_ user: [Room.User]) -> Data {
+    do {
+        return try JSONEncoder().encode(user.self)
+    } catch {
+        fatalError("Unable to encode")
+    }
+}
+
+func decodeToUsers(_ data: Data) -> [Room.User] {
+    do {
+        return try JSONDecoder().decode([Room.User].self, from: data)
     } catch {
         fatalError("Unable to decode")
     }

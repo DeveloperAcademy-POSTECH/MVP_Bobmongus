@@ -12,7 +12,7 @@ struct TestRoomListView: View {
     
     @State var showModal: Bool = false
     @State var isMake: Bool = false
-    @State var newRoom: Room = Room(id: UUID(), isStart: false, roomTitle: "title", roomDetail: "detail", nowPersons: [], persons: 100, endTime: 100, linkURL: "linkURL")
+    @State var newRoom: Room = Room(id: UUID(), isStart: false, roomTitle: "title", roomDetail: "detail", nowPersons: [], persons: 100, endTime: 100, linkURL: "linkURL", roomTimeStr: "11:14:00 PM")
     
     var body: some View {
         
