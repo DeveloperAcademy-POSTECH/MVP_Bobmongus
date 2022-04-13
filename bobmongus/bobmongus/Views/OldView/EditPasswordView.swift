@@ -23,7 +23,11 @@ struct EditPasswordView: View {
     @State private var newPassword1 = ""
     @State private var newPassword2 = ""
     
-    
+    var myIndex: Int {
+        modelData.users.firstIndex {
+            $0.id == modelData.myProfile.id
+        }!
+    }
     
     var body: some View {
         VStack {
@@ -105,8 +109,11 @@ struct EditPasswordView: View {
                     Button("비밀번호 변경") {
                         self.editPassword = true
                         if newPassword1 == newPassword2 {
+                            
                             modelData.myProfile.password = newPassword1
 //                            print(modelData.myProfile.password)
+                            modelData.users[myIndex].password = newPassword1
+                            
                         }
                     }
                     .font(.custom("DungGeunMo", size: 17))

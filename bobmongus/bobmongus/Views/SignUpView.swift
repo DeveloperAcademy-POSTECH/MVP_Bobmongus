@@ -38,6 +38,9 @@ struct SignUpView: View {
     @State private var nicknameAlert = false
     
     @State private var isEmail: Bool = false
+    @State private var isAuth: Bool = false
+    @State private var isNickNamePossible: Bool = false
+    @State private var isClickCompleteButton: Bool = false
     
     @State private var email = ""
     @State private var authNumber = ""
@@ -95,6 +98,7 @@ struct SignUpView: View {
                         .disabled(isEmail ? false : true)
                     Button(action: {
                         self.checkNumberAlert = true
+                        self.isAuth = true
                     }) {
                         Text("인증번호확인")
                             .font(.custom("NEXON", size: 12))
@@ -102,6 +106,7 @@ struct SignUpView: View {
                             .frame(width: 70, height: 30)
                             .foregroundColor(.white)
                     }
+                    .disabled(authNumber.isEmpty ? true : false)
                     .background(RoundedRectangle(cornerRadius: 10))
                     .foregroundColor(authNumber.isEmpty ? Color(hex: "#BBBBBB") : Color(red: 0.534, green: 0.189, blue: 0.488))
                     .alert(isPresented: $checkNumberAlert) {
@@ -142,6 +147,9 @@ struct SignUpView: View {
                         .font(.custom("DungGeunMo", size: 15))
                         .padding(.trailing, 30)
                     TextField("", text: $nickname)
+                        .onChange(of: nickname) { _ in
+                            self.isNickNamePossible = false
+                        }
                     
                     Button(action: {
                         self.nicknameAlert = true
@@ -155,7 +163,16 @@ struct SignUpView: View {
                     .background(RoundedRectangle(cornerRadius: 10))
                     .foregroundColor(Color(red: 0.534, green: 0.189, blue: 0.488))
                     .alert(isPresented: $nicknameAlert) {
-                        Alert(title: Text("확인"), message: Text("해당 닉네임은 사용 가능합니다."), dismissButton: .default(Text("닫기")))
+                        
+                        let usersNickname = modelData.users.map { $0.nickName.lowercased() }
+                        
+                        if usersNickname.contains(nickname.lowercased()) {
+                            return Alert(title: Text("알림"), message: Text("중복된 닉네임입니다."), dismissButton: .default(Text("닫기")))
+                        } else {
+                            return Alert(title: Text("알림"), message: Text("해당 닉네임은 사용가능합니다."), dismissButton: .default(Text("확인"), action: {
+                                self.isNickNamePossible = true
+                            }))
+                        }
                     }
                 }
                 Divider()
@@ -213,11 +230,9 @@ struct SignUpView: View {
                 
                 Button {
                     
-                    modelData.users.append(Room.User(id: UUID(), email: email, password: password, icon: "bobmong", isLogin: false, isReady: false, isMakingRoom: false, nickName: nickname, userAddress: "포스빌 6동"))
-                    
-                    self.rootPresentationMode.wrappedValue.dismiss()
-                    
-                    print(modelData.myProfile)
+                    self.isClickCompleteButton = true
+                    //email check
+
                 } label: {
                     Text("회원가입완료")
                 }
@@ -229,6 +244,25 @@ struct SignUpView: View {
                 .shadow(color:.black, radius: 0, x:2 ,y: 3)
                 .padding()
                 .offset(x: 85)
+                .alert(isPresented: $isClickCompleteButton) {
+                    if !isAuth {
+                        return Alert(title: Text("알림"), message: Text("이메일 인증을 진행해주세요."), dismissButton: .default(Text("닫기")))
+                    } else if password != passwordCheck {
+                        return Alert(title: Text("알림"), message: Text("비밀번호가 일치하지않습니다."), dismissButton: .default(Text("닫기")))
+                    } else if !isNickNamePossible {
+                        return Alert(title: Text("알림"), message: Text("닉네임 중복확인을 진행해주세요."), dismissButton: .default(Text("닫기")))
+                    } else {
+                        return Alert(title: Text("알림"), message: Text("회원가입이 완료되었습니다."), dismissButton: .default(Text("닫기"), action: {
+                            
+                            modelData.users.append(Room.User(id: UUID(), email: email, password: password, icon: "bobmong", isLogin: false, isReady: false, isMakingRoom: false, nickName: nickname, userAddress: "포스빌 6동"))
+                            
+                            self.rootPresentationMode.wrappedValue.dismiss()
+                            
+                            print(modelData.myProfile)
+                            
+                        }))
+                    }
+                }
             }
             
         }
