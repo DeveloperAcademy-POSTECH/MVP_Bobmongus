@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "rect.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "rect.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },

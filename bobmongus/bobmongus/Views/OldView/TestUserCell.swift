@@ -31,7 +31,7 @@ struct TestUserCell: View {
                     
                 } else {
                     
-                    Text("익명\(user.id)")
+                    Text("익명")
                         .font(.custom("DungGeunMo", size: 17))
                     
                 }

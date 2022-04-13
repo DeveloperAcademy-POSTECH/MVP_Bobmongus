@@ -16,13 +16,17 @@ final class ModelData: ObservableObject {
         }
     }
     
-    @Published var rooms: [Room] = loadJson("dummyrooms.json")
+    @Published var rooms: [Room] = testRooms.sorted {
+        timeCal(room: $0) > timeCal(room: $1)
+    }
     
     @Published var myProfile: Room.User {
         didSet {
             UserDefaults.standard.set(encodeToJson(myProfile), forKey: "myProfile")
         }
     }
+    
+    
     
     init() { //마지막에 저장된 값으로 초기화됨. 앱 시동 후 불러와질 때?!
         self.myProfile = decodeToUser(UserDefaults.standard.data(forKey: "myProfile") ??
@@ -31,11 +35,12 @@ final class ModelData: ObservableObject {
         
         self.users = decodeToUsers(UserDefaults.standard.data(forKey: "users") ?? encodeToJJson(userArr))
     }
+    
 }
 
 var userArr: [Room.User] = loadJson("dummyusers.json")
 
-//var testRooms: [Room] = loadJson("dummyrooms.json")
+var testRooms: [Room] = loadJson("dummyrooms.json")
 
 func loadJson<T: Decodable>(_ filename: String) -> T {
     
