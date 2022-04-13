@@ -14,13 +14,16 @@ struct EntranceView: View {
     var body: some View {
         
         NavigationView {
-            VStack {
-                // 이미지
+            VStack {                // 이미지
                 Image("bobmong")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 180, height: 180)
                     .padding()
+                    .padding(.bottom, 10)
+
+                GifImage2("logo-login-shadow")
+                    .frame(width: 360, height: 80)
                 
                 // 로그인 버튼
                 NavigationLink(isActive: $isActive) {
@@ -59,7 +62,7 @@ struct EntranceView: View {
                 .font(.custom("DungGeunMo", size: 20))
                 .foregroundColor(.white)
                 .frame(width: 135, height: 50)
-                .background(Color(red: 0.534, green: 0.189, blue: 0.488))
+                .background(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
                 .cornerRadius(8)
                 .shadow(color:.black, radius: 0, x:2 ,y: 3)
                 

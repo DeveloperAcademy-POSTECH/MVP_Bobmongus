@@ -27,17 +27,28 @@ struct EditProfileView: View {
         NavigationView{
             ZStack{
                 VStack {
-                    VStack{
-                        Text("프로필 변경")
-                            .font(.custom("DungGeunMo", size: 40))
-                    }
+//                    VStack{
+//                        Text("프로필 변경")
+//                            .font(.custom("DungGeunMo", size: 40))
+//                    }
                     VStack{
                         Image(modelData.myProfile.icon)
                             .padding(.bottom)
+//                        Text(modelData.myProfile.nickName)
+//                            .font(.custom("DungGeunMo", size: 30))
                         Text(modelData.myProfile.nickName)
-                            .font(.custom("DungGeunMo", size: 30))
+                            .fontWeight(.heavy)
+    //                        .padding(.vertical)
+                            .font(.custom("NEXON Lv2 Gothic OTF", size: 30))
+                            .padding(.bottom)
+                        Text(modelData.myProfile.email)
+                            .fontWeight(.medium)
+                            .padding(.bottom)
+                            .font(.custom("NEXON Lv2 Gothic OTF", size: 15))
+                            .foregroundColor(.gray)
+                        
                     }
-                    .padding(.vertical)
+                    .padding(.bottom)
                     
                     VStack{
                         Button("프로필 사진 변경") {
@@ -45,21 +56,23 @@ struct EditProfileView: View {
 //                                self.showModal.toggle()
                             showModal = true
                         }.font(.custom("DungGeunMo", size: 15))
+                            .foregroundColor(.white)
                         
                     }
                     .frame(width: 135.0, height: 50.0)
-                    .background(Color(red: 0.471, green: 0.222, blue: 0.542))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+                    .background(RoundedRectangle(cornerRadius: 10)
+                    .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
+                    .shadow(color:.black, radius: 0, x:2 ,y: 3))
                     .padding(.vertical)
                     
                     Button("닉네임 변경") {
                         editNicknameModal = true
                     }
-                    .frame(width: 135.0, height: 50.0)
-                    .background(Color(red: 0.471, green: 0.222, blue: 0.542))
                     .foregroundColor(.white)
-                    .cornerRadius(10)
+                    .frame(width: 135.0, height: 50.0)
+                    .background(RoundedRectangle(cornerRadius: 10)
+                    .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
+                    .shadow(color:.black, radius: 0, x:2 ,y: 3))
                     .font(.custom("DungGeunMo", size: 15))
                 }
                 .padding(.vertical)
@@ -100,9 +113,12 @@ struct EditProfileView: View {
                     }
                 }
                 
+                
             }
             
+            
         }
+        Spacer()
         
     }
     
@@ -238,6 +254,7 @@ struct EditNicknameView: View {
                 .padding(.top)
 
             TextField("변경할 닉네임", text: $editedNickname)
+                .modifier(ClearButton(text: $editedNickname))
                 .textFieldStyle(.roundedBorder)
                 .font(.custom("DungGeunMo", size: 16))
                 .padding(.bottom)

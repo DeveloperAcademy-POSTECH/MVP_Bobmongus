@@ -58,7 +58,7 @@ struct SignUpView: View {
                         self.sendNumberAlert = true
                     }) {
                         Text("인증번호전송")
-                            .font(.custom("DungGeunMo", size: 10))
+                            .font(.custom("NEXON", size: 12))
                             .fontWeight(.bold)
                             .frame(width: 70, height: 30)
                             .foregroundColor(.white)
@@ -81,7 +81,7 @@ struct SignUpView: View {
                         self.checkNumberAlert = true
                     }) {
                         Text("인증번호확인")
-                            .font(.custom("DungGeunMo", size: 10))
+                            .font(.custom("NEXON", size: 12))
                             .fontWeight(.bold)
                             .frame(width: 70, height: 30)
                             .foregroundColor(.white)
@@ -129,8 +129,8 @@ struct SignUpView: View {
                         self.nicknameAlert = true
                     }) {
                         Text("중복확인")
-                            .font(.custom("DungGeunMo", size: 12))
-                            .fontWeight(.bold)
+                            .font(.custom("NEXON", size: 13))
+//                            .fontWeight(.bold)
                             .frame(width: 70, height: 30)
                             .foregroundColor(.white)
                     }

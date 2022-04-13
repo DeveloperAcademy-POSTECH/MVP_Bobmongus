@@ -50,11 +50,14 @@ struct LoginView: View {
         let height = UIScreen.main.bounds.height / 844 * 40
         
         VStack {
-            Image("bobmong")
-                .resizable()
-                .scaledToFit()
+            GifImage("bob")
                 .frame(width: 128, height: 128)
-                .padding(.bottom, 30)
+//                .scaledToFill()
+//            Image("bobmong")
+//                .resizable()
+//                .scaledToFit()
+//                .frame(width: 128, height: 128)
+//                .padding(.bottom, 30)
             
             VStack(alignment: .leading) {
                 TextField("email", text: $email)
@@ -87,7 +90,7 @@ struct LoginView: View {
                 .font(.custom("DungGeunMo", size: 20))
                 .foregroundColor(.white)
                 .frame(width: 155, height: 50)
-                .background(Color(red: 0.534, green: 0.189, blue: 0.488))
+                .background(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
                 .cornerRadius(8)
                 .shadow(color:.black, radius: 0, x:2 ,y: 3)
                 .padding()
