@@ -33,16 +33,14 @@
 //                ZStack(alignment: .trailing) {
 //
 //                    if showPassword {
-//
 //                        TextField("Enter Password", text: $password)
 //                            .textFieldStyle(.roundedBorder)
-//
 //                    } else {
-//
 //                        SecureField("Enter Password", text: $password)
 //                            .textFieldStyle(.roundedBorder)
-//
 //                    }
+//
+////                    SeeButton(showPassword: $showPassword, password: $password)
 //
 //                    if !password.isEmpty {
 //

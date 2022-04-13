@@ -14,16 +14,16 @@
 		0EE83C2927FD5E5A00940397 /* bobmongusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C2827FD5E5A00940397 /* bobmongusTests.swift */; };
 		0EE83C3327FD5E5A00940397 /* bobmongusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C3227FD5E5A00940397 /* bobmongusUITests.swift */; };
 		0EE83C3527FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */; };
-		77DD08462806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77DD08452806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf */; };
-		77DD08472806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77DD08452806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf */; };
-		77DD08482806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77DD08452806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf */; };
 		364600A12806C73E00A75E16 /* login-logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 364600A02806C73E00A75E16 /* login-logo.gif */; };
 		364600A32806C80700A75E16 /* logo-login-shadow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 364600A22806C80700A75E16 /* logo-login-shadow.gif */; };
 		364600A52806C9DC00A75E16 /* GifImage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364600A42806C9DC00A75E16 /* GifImage2.swift */; };
 		364600A72806E83500A75E16 /* bob.gif in Resources */ = {isa = PBXBuildFile; fileRef = 364600A62806E83500A75E16 /* bob.gif */; };
+		77DD08462806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77DD08452806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf */; };
+		77DD08472806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77DD08452806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf */; };
 		961C05792802AE7F002FEEAE /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C05782802AE7F002FEEAE /* Room.swift */; };
 		961C057C2802B021002FEEAE /* dummyrooms.json in Resources */ = {isa = PBXBuildFile; fileRef = 961C057B2802B021002FEEAE /* dummyrooms.json */; };
 		961C057E2802B0CD002FEEAE /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C057D2802B0CD002FEEAE /* ModelData.swift */; };
+		9625E00F28072E7D009035E8 /* SeeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9625E00E28072E7D009035E8 /* SeeButton.swift */; };
 		962787AA2803F7DF00385549 /* TestRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962787A92803F7DE00385549 /* TestRoomView.swift */; };
 		962787AC2803F7FA00385549 /* TestRoomMakingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962787AB2803F7FA00385549 /* TestRoomMakingView.swift */; };
 		962787AE2803F81400385549 /* TestRoomListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962787AD2803F81400385549 /* TestRoomListView.swift */; };
@@ -89,14 +89,15 @@
 		0EE83C2E27FD5E5A00940397 /* bobmongusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bobmongusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE83C3227FD5E5A00940397 /* bobmongusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusUITests.swift; sourceTree = "<group>"; };
 		0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		77DD08452806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NEXON Lv2 Gothic OTF.otf"; sourceTree = "<group>"; };
 		364600A02806C73E00A75E16 /* login-logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "login-logo.gif"; sourceTree = "<group>"; };
 		364600A22806C80700A75E16 /* logo-login-shadow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "logo-login-shadow.gif"; sourceTree = "<group>"; };
 		364600A42806C9DC00A75E16 /* GifImage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage2.swift; sourceTree = "<group>"; };
 		364600A62806E83500A75E16 /* bob.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bob.gif; sourceTree = "<group>"; };
+		77DD08452806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NEXON Lv2 Gothic OTF.otf"; sourceTree = "<group>"; };
 		961C05782802AE7F002FEEAE /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		961C057B2802B021002FEEAE /* dummyrooms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dummyrooms.json; sourceTree = "<group>"; };
 		961C057D2802B0CD002FEEAE /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		9625E00E28072E7D009035E8 /* SeeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeButton.swift; sourceTree = "<group>"; };
 		962787A92803F7DE00385549 /* TestRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRoomView.swift; sourceTree = "<group>"; };
 		962787AB2803F7FA00385549 /* TestRoomMakingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRoomMakingView.swift; sourceTree = "<group>"; };
 		962787AD2803F81400385549 /* TestRoomListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRoomListView.swift; sourceTree = "<group>"; };
@@ -252,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				962787AF2803F83900385549 /* ClearButton.swift */,
+				9625E00E28072E7D009035E8 /* SeeButton.swift */,
 				962787B22803F85700385549 /* ConfirmationDialog.swift */,
 			);
 			path = ViewModifier;
@@ -433,7 +435,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962787CB2803FA0A00385549 /* bob.gif in Resources */,
 				77DD08472806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf in Resources */,
 				96C081762805DC46003532C3 /* NEXON.otf in Resources */,
 				962787BB2803F8EA00385549 /* DungGeunMo.otf in Resources */,
@@ -459,6 +460,7 @@
 				96C0815E2805ABC0003532C3 /* EntranceView.swift in Sources */,
 				96C0816D2805AD55003532C3 /* TextInRectangleView.swift in Sources */,
 				9681F1D527FD7BDF00A00E20 /* TestUserCell.swift in Sources */,
+				9625E00F28072E7D009035E8 /* SeeButton.swift in Sources */,
 				962787AE2803F81400385549 /* TestRoomListView.swift in Sources */,
 				364600A52806C9DC00A75E16 /* GifImage2.swift in Sources */,
 				96D69786280569BD00400EB1 /* RootPresentationMode.swift in Sources */,

@@ -61,6 +61,7 @@ struct LoginView: View {
             
             VStack(alignment: .leading) {
                 TextField("email", text: $email)
+                    .modifier(ClearButton(text: $email))
                     .padding()
                     .frame(width: width, height: height)
                     .background(RoundedRectangle(cornerRadius: 6)

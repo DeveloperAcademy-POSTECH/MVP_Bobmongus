@@ -45,7 +45,6 @@ struct EditPasswordView: View {
                         .padding(.horizontal)
                     
                     SecureField("기존 비밀번호를 입력해주세요", text: $typedPassword)
-                        .modifier(ClearButton(text: $typedPassword))
                         .textFieldStyle(.roundedBorder)
 //                      .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding(.horizontal)
@@ -102,7 +101,6 @@ struct EditPasswordView: View {
                             .padding(.horizontal)
                     }
                     .padding()
-                    
                     .textFieldStyle(.roundedBorder)
                     
                     

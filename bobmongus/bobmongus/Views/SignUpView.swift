@@ -61,7 +61,8 @@ struct SignUpView: View {
                         .padding(.trailing, 30)
                     
                     TextField("@pos.idserve.net", text: $email)
-                    
+                        .modifier(ClearButton(text: $email))
+                        
                     Button(action: {
                         
                         self.sendNumberAlert = true
@@ -95,6 +96,7 @@ struct SignUpView: View {
                         .font(.custom("DungGeunMo", size: 15))
                         .padding(.trailing, 16)
                     TextField("", text: $authNumber)
+                        .modifier(ClearButton(text: $authNumber))
                         .disabled(isEmail ? false : true)
                     Button(action: {
                         self.checkNumberAlert = true
@@ -147,6 +149,7 @@ struct SignUpView: View {
                         .font(.custom("DungGeunMo", size: 15))
                         .padding(.trailing, 30)
                     TextField("", text: $nickname)
+                        .modifier(ClearButton(text: $nickname))
                         .onChange(of: nickname) { _ in
                             self.isNickNamePossible = false
                         }

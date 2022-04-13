@@ -51,7 +51,7 @@ struct TestRoomMakingView: View {
                 }
             }
             .foregroundColor(Color(hex: lightPurple))
-            
+    
             TextField("방제목", text: $roomTitle)
                 .modifier(ClearButton(text: $roomTitle))
                 .textFieldStyle(.roundedBorder)

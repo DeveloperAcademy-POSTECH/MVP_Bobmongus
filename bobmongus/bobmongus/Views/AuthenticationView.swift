@@ -37,6 +37,7 @@ struct AuthenticationView: View {
                 .padding(.bottom, 60.0)
             
             TextField("가입한 이메일", text: $email)
+                .modifier(ClearButton(text: $email))
                 .autocapitalization(.none)
                 .padding(.horizontal, 60.0)
             Divider()
