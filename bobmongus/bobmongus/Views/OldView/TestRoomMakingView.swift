@@ -22,7 +22,7 @@ struct TestRoomMakingView: View {
     @State var roomDetail: String = ""
     @State var linkURL: String = ""
     
-    @State var endTime = 5
+    @State var endTime = -20
     
     var body: some View {
         
@@ -99,6 +99,9 @@ struct TestRoomMakingView: View {
                     let room: Room = Room(id: uuid, isStart: false, roomTitle: roomTitle, roomDetail: roomDetail, nowPersons: [], persons: persons, endTime: endTime, linkURL: linkURL, roomTimeStr: roomTime.formatted(date: .omitted, time: .standard))
                     
                     modelData.rooms.append(room)
+                    modelData.rooms = modelData.rooms.sorted(by: { //MARK: append할 때, sorted. Nice.
+                        timeCal(room: $0) < timeCal(room: $1)
+                    })
                     
                     self.showModal.toggle()
                     

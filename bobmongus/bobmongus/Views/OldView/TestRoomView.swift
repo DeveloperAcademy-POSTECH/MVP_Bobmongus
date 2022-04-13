@@ -80,7 +80,7 @@ struct TestRoomView: View {
         
         ZStack {
             
-            Image("mainBackground")
+            Image("roomBackground")
                 .resizable()
                 .clipped()
                 .edgesIgnoringSafeArea([.top, .bottom])
@@ -173,6 +173,14 @@ struct TestRoomView: View {
                         if (modelData.myProfile.isMakingRoom && (room.nowPersons.filter { $0.isReady == true }.count == room.nowPersons.count)) {
                             
                             room.isStart = true
+                            
+                            modelData.rooms = modelData.rooms.sorted(by: {
+                                if $0.isStart == false && $1.isStart == false {
+                                    return timeCal(room: $0) < timeCal(room: $1)
+                                } else {
+                                    return $0.isStart
+                                }
+                            })
                             
                         } else { //If didn't StartButton Tapped.
                         

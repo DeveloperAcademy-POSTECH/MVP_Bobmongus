@@ -13,6 +13,7 @@ struct TestRoomListView: View {
     @State var isMake: Bool = false
     @State var newRoom: Room = Room(id: UUID(), isStart: false, roomTitle: "title", roomDetail: "detail", nowPersons: [], persons: 100, endTime: 100, linkURL: "linkURL", roomTimeStr: "4/12/2022, 5:51:00 AM")
     
+    @State var isEnable: Bool = false
     
     var body: some View {
        
@@ -46,8 +47,6 @@ struct TestRoomListView: View {
                             .foregroundColor(.white)
                             .font(.custom("NEXON", size: 15))
                             
-                            
-                    
                     }
                     
                     ScrollView {
@@ -62,10 +61,30 @@ struct TestRoomListView: View {
                                         .navigationBarTitleDisplayMode(.inline)
                                     
                                 } label: {
-                                    TestRoomCell(room: modelData.rooms[index])
+                                    TestRoomCell(room: $modelData.rooms[index])
                                         .frame(height: height)  // 각 방의 세로 길이
                                     
                                 }
+                                .disabled(
+                                    modelData.rooms[index].isStart ?
+                                    //If room started
+                                    true :
+                                        //If room did not start
+                                    (
+                                        timeCal(room: modelData.rooms[index]) < -10 ? //이거 이용해서 같은 조건에 셀 거래완료로.
+                                        //If time limit
+                                        true :
+                                            //If time not limit
+                                        (
+                                            modelData.rooms[index].nowPersons.count == modelData.rooms[index].persons ?
+                                            true : false
+                                        )
+                                    )
+                                )
+                                .gesture(TapGesture()
+                                    .onEnded({ _ in
+                                        self.isEnable = true
+                                    }))
                             }
                             
                             NavigationLink(isActive: $isMake) {
@@ -77,6 +96,7 @@ struct TestRoomListView: View {
                                 
                                 EmptyView()
                             }
+//                            .disabled(true)
                         }   // VStack(Rooms) end
                     }   // ScrollView end
                     // 하단부에 사라지는 효과를 위해 mask 사용
@@ -122,7 +142,6 @@ struct TestRoomListView: View {
                                         .cornerRadius(6)
                                         .shadow(color: .primary, radius: 1, x: 2, y: 2)
                                         .padding(.top, 5)
-                                    
                                 }
                             }
                             
@@ -174,18 +193,27 @@ struct TestRoomListView: View {
                 modelData.myProfile.isMakingRoom = false
             }
         }
+        .alert("입장 불가능한 방입니다.", isPresented: $isEnable){
+            Button("OK", role: .cancel) {
+                //action nil. just cancel.
+            }
+        }
     }
 }
 
 struct TestRoomCell: View {
     
-    @State var room: Room
+    @Binding var room: Room
     
     var body: some View {
         
         ZStack {
             
-            Image("rect")
+            if room.isStart {
+                Image("rectgray")
+            } else {
+                Image("rect")
+            }
             
             HStack {
                 
@@ -201,9 +229,19 @@ struct TestRoomCell: View {
                 
                 Spacer()
                 
-                Text("\(timeCal(room:room))분 남음") // 방 남은시간
-                    .font(.custom("NEXON", size: 12))
-                    .frame(width: 50)
+                if room.isStart {
+                    
+                    Text("매칭완료") // 방 남은시간
+                        .font(.custom("NEXON", size: 12))
+                        .frame(width: 50)
+                    
+                } else {
+                    
+                    Text("\(timeCal(room:room))분 남음") // 방 남은시간
+                        .font(.custom("NEXON", size: 12))
+                        .frame(width: 50)
+                    
+                }
             }
             .foregroundColor(.black)    // 방 내부 글자색
             .padding()
@@ -303,23 +341,4 @@ func timeCal(room: Room) -> Int {
 //    // endtime - 현재시간 + 생성시간 - 24시간
 //    var answer = room.endTime - nowMinute + roomMinute
 //    if answer < 0 {
-//        answer += 1440
-//    }
-//
-//    return answer
-//}
-
-
-/*
- 
- Date() -> Antony가 현재 시간을 호출한 시점은 그대로이용함.
-
- Date() -> Picker로 받아서 Date() 저장.
- 
- * Picker에서 현재 이전의 시간을 선택하지 못하게 하는 것.
- 
- endTime.timeInterval....현재시간 -> Double -> Int.
- 
- timer를 @Published 하게 이용을 해서 -> 60초에 한번씩 호출되는 메서드를 연결. -> 1분씩 UI. -> @StateObject로 가지고오면.
- 
- */
+//  
