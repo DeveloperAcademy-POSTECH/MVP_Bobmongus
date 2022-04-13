@@ -22,7 +22,7 @@ struct TestRoomMakingView: View {
     @State var roomDetail: String = ""
     @State var linkURL: String = ""
     
-    @State var endTime = -20
+    @State var endTime = 5
     
     var body: some View {
         

@@ -27,17 +27,17 @@ struct TestUserCell: View {
                 if room.isStart {
                     
                     Text(user.nickName)
-                        .font(.custom("DungGeunMo", size: 17))
+                        .font(.custom("NEXON", size: 17))
                     
                 } else {
                     
                     Text("익명")
-                        .font(.custom("DungGeunMo", size: 17))
+                        .font(.custom("NEXON", size: 17))
                     
                 }
                 
                 Text(user.userAddress)
-                    .font(.custom("DungGeunMo", size: 12))
+                    .font(.custom("NEXON", size: 12))
                 
                 Image(user.icon)
                     .resizable()

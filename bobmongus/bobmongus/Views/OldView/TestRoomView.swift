@@ -45,7 +45,7 @@ struct TestRoomView: View {
             if room.isStart {
                 
                 Text("완료")
-                    .font(.custom("DungGeunMo", size: 15))
+                    .font(.custom("NEXON", size: 15))
                     .foregroundColor(.white)
                     .padding(.horizontal)
                     .padding([.top, .bottom], 5)
@@ -55,14 +55,14 @@ struct TestRoomView: View {
             } else if modelData.myProfile.isReady {
                 
                 Text("나가기")
-                    .font(.custom("DungGeunMo", size: 15))
+                    .font(.custom("NEXON", size: 15))
                     .foregroundColor(.white)
                     .hidden()
                 
             } else {
                 
                 Text("나가기")
-                    .font(.custom("DungGeunMo", size: 15))
+                    .font(.custom("NEXON", size: 15))
                     .foregroundColor(.white)
                     .padding(.horizontal)
                     .padding([.top, .bottom], 5)
@@ -100,11 +100,11 @@ struct TestRoomView: View {
                         isClick ?
                         Text(room.roomDetail)
                             .foregroundColor(.secondary)
-                            .font(.custom("DungGeunMo", size: 12))
+                            .font(.custom("NEXON", size: 12))
                         :
                             Text("상세설명")
                             .foregroundColor(Color(hex: lightPurple))
-                            .font(.custom("DungGeunMo", size: 17))
+                            .font(.custom("NEXON", size: 17))
                         
                     )
                     .padding()
@@ -154,14 +154,16 @@ struct TestRoomView: View {
                         HStack {
                             
                             Text("링크 Click ! : ")
-                                .font(.custom("DungGeunMo", size: 17))
+                                .font(.custom("NEXON", size: 17))
                                 .fontWeight(.bold)
+                                .shadow(color: .black, radius: 5, x: 2, y: 2)
                             
                             Link(destination: (URL(string: room.linkURL) ?? URL(string: "https://www.naver.com"))!) {
                                 
                                 Text("Let's go openkakao")
-                                    .font(.custom("DungGeunMo", size: 17))
+                                    .font(.custom("NEXON", size: 17))
                                     .foregroundColor(Color(hex: lightPurple))
+                                    .shadow(color: .white, radius: 3, x: 5, y: 5)
                             }
                         }
                     }
@@ -278,9 +280,9 @@ struct TestRoomView: View {
 //                })
                 
 //MARK: Method2 - Index로 이 방만을 판단하기. (성공 시 가장 바람직) - Success !
-//                if room.nowPersons.isEmpty {
-//                    modelData.rooms.remove(at: roomIndex)
-//                }
+                if room.nowPersons.isEmpty {
+                    modelData.rooms.remove(at: roomIndex)
+                }
             }
         }
     }

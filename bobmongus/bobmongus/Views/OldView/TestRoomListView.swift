@@ -71,7 +71,7 @@ struct TestRoomListView: View {
                                     true :
                                         //If room did not start
                                     (
-                                        timeCal(room: modelData.rooms[index]) < -10 ? //이거 이용해서 같은 조건에 셀 거래완료로.
+                                        timeCal(room: modelData.rooms[index]) < 0 ? //이거 이용해서 같은 조건에 셀 거래완료로.
                                         //If time limit
                                         true :
                                             //If time not limit
@@ -303,12 +303,12 @@ func timeCal(room: Room) -> Int {
     let roomMinute = timeArr[0]*60 + timeArr[1]
     
     // endtime - 현재시간 + 생성시간 - 24시간
-    var answer = room.endTime - nowMinute + roomMinute
-    if answer < 0 {
-        answer += 1440
-    }
-    
-    return answer
+    var timeGap = nowMinute - roomMinute
+        if timeGap < 0 {
+            timeGap += 1440
+        }
+        
+        return room.endTime - timeGap
 }
 
 //func timeCal(room: Room) -> Int {

@@ -40,9 +40,9 @@
             }
         ],
         "persons": 4,
-        "endTime": 40,
+        "endTime": 90,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:14:00 PM"
+        "roomTimeStr": "03:30:00 PM"
     },
     {
         "id": "95da5236-b5e6-450d-870b-87b30625873d",
@@ -109,7 +109,7 @@
         "persons": 6,
         "endTime": 50,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:14:00 PM"
+        "roomTimeStr": "03:30:00 PM"
     },
     {
         "id": "7007d3b0-d530-48de-9f41-393c0526ebd5",
@@ -132,7 +132,7 @@
         "persons": 4,
         "endTime": 60,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:14:00 PM"
+        "roomTimeStr": "03:30:00 PM"
     },
     {
         "id": "54891658-e2cc-4fac-82ae-56ab39f018c5",
@@ -153,9 +153,9 @@
             }
         ],
         "persons": 3,
-        "endTime": 60,
+        "endTime": 70,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:14:00 PM"
+        "roomTimeStr": "03:30:00 PM"
     },
     {
         "id": "83b2db78-7946-40c5-ac3b-de1edf514eba",
@@ -187,9 +187,9 @@
             }
         ],
         "persons": 4,
-        "endTime": 60,
+        "endTime": 30,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:14:00 PM"
+        "roomTimeStr": "03:30:00 PM"
     },
     {
         "id": "ffd84348-18cc-428a-83b9-6c8eb3afc72b",
@@ -212,7 +212,7 @@
         "persons": 4,
         "endTime": 60,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:14:00 PM"
+        "roomTimeStr": "03:30:00 PM"
     },
     {
         "id": "84971370-7b85-40fd-8f89-96faf482b79d",
@@ -235,7 +235,7 @@
         "persons": 6,
         "endTime": 60,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:14:00 PM"
+        "roomTimeStr": "03:30:00 PM"
     },
     {
         "id": "da51c5a4-2e16-4e0e-947b-1e5469f285fe",
@@ -267,9 +267,9 @@
             }
         ],
         "persons": 3,
-        "endTime": 60,
+        "endTime": 40,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:14:00 PM"
+        "roomTimeStr": "03:30:00 PM"
     },
     {
         "id": "2795c6f5-69d6-40ad-a4a5-2998683822ab",
@@ -290,9 +290,9 @@
             }
         ],
         "persons": 4,
-        "endTime": 60,
+        "endTime": 55,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:14:00 PM"
+        "roomTimeStr": "03:30:00 PM"
     },
     {
         "id": "362c5dc0-e9df-44a4-870c-8706e4c2030f",
@@ -313,8 +313,8 @@
             }
         ],
         "persons": 6,
-        "endTime": 60,
+        "endTime": 75,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:14:00 PM"
+        "roomTimeStr": "03:30:00 PM"
     }
 ]
