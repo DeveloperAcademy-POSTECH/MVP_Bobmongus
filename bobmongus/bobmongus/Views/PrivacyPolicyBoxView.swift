@@ -22,7 +22,7 @@ struct PrivacyPolicyBoxView: View {
             HStack {
                 Toggle(isOn: $isAgree) {
                     Text("예, 동의합니다")
-                        .font(.custom("DungGeunMo", size: 15))
+                        .font(.system(size: 14))
                         .foregroundColor(.black)
                 }
                 .toggleStyle(CheckboxStyle())
@@ -36,7 +36,7 @@ struct PrivacyPolicyBoxView: View {
                 }
             Toggle(isOn: $isDisagree) {
                     Text("아니오, 동의하지 않습니다")
-                        .font(.custom("DungGeunMo", size: 15))
+                        .font(.system(size: 14))
                         .foregroundColor(.black)
                 }
                 .toggleStyle(CheckboxStyle())

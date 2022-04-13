@@ -14,6 +14,10 @@
 		0EE83C2927FD5E5A00940397 /* bobmongusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C2827FD5E5A00940397 /* bobmongusTests.swift */; };
 		0EE83C3327FD5E5A00940397 /* bobmongusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C3227FD5E5A00940397 /* bobmongusUITests.swift */; };
 		0EE83C3527FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */; };
+		364600A12806C73E00A75E16 /* login-logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 364600A02806C73E00A75E16 /* login-logo.gif */; };
+		364600A32806C80700A75E16 /* logo-login-shadow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 364600A22806C80700A75E16 /* logo-login-shadow.gif */; };
+		364600A52806C9DC00A75E16 /* GifImage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364600A42806C9DC00A75E16 /* GifImage2.swift */; };
+		364600A72806E83500A75E16 /* bob.gif in Resources */ = {isa = PBXBuildFile; fileRef = 364600A62806E83500A75E16 /* bob.gif */; };
 		961C05792802AE7F002FEEAE /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C05782802AE7F002FEEAE /* Room.swift */; };
 		961C057C2802B021002FEEAE /* dummyrooms.json in Resources */ = {isa = PBXBuildFile; fileRef = 961C057B2802B021002FEEAE /* dummyrooms.json */; };
 		961C057E2802B0CD002FEEAE /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C057D2802B0CD002FEEAE /* ModelData.swift */; };
@@ -31,9 +35,6 @@
 		962787C52803F94600385549 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962787C42803F94600385549 /* GifImage.swift */; };
 		962787C62803F94600385549 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962787C42803F94600385549 /* GifImage.swift */; };
 		962787C72803F94600385549 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962787C42803F94600385549 /* GifImage.swift */; };
-		962787CA2803FA0A00385549 /* bob.gif in Resources */ = {isa = PBXBuildFile; fileRef = 962787C92803FA0A00385549 /* bob.gif */; };
-		962787CB2803FA0A00385549 /* bob.gif in Resources */ = {isa = PBXBuildFile; fileRef = 962787C92803FA0A00385549 /* bob.gif */; };
-		962787CC2803FA0A00385549 /* bob.gif in Resources */ = {isa = PBXBuildFile; fileRef = 962787C92803FA0A00385549 /* bob.gif */; };
 		9681F1D527FD7BDF00A00E20 /* TestUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681F1D427FD7BDF00A00E20 /* TestUserCell.swift */; };
 		96C0815E2805ABC0003532C3 /* EntranceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0815D2805ABBF003532C3 /* EntranceView.swift */; };
 		96C081612805AC2C003532C3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C081602805AC2C003532C3 /* LoginView.swift */; };
@@ -85,6 +86,10 @@
 		0EE83C2E27FD5E5A00940397 /* bobmongusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bobmongusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE83C3227FD5E5A00940397 /* bobmongusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusUITests.swift; sourceTree = "<group>"; };
 		0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		364600A02806C73E00A75E16 /* login-logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "login-logo.gif"; sourceTree = "<group>"; };
+		364600A22806C80700A75E16 /* logo-login-shadow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "logo-login-shadow.gif"; sourceTree = "<group>"; };
+		364600A42806C9DC00A75E16 /* GifImage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage2.swift; sourceTree = "<group>"; };
+		364600A62806E83500A75E16 /* bob.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bob.gif; sourceTree = "<group>"; };
 		961C05782802AE7F002FEEAE /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		961C057B2802B021002FEEAE /* dummyrooms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dummyrooms.json; sourceTree = "<group>"; };
 		961C057D2802B0CD002FEEAE /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -99,7 +104,6 @@
 		962787BE2803F90600385549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		962787BF2803F92800385549 /* RoomCellShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCellShape.swift; sourceTree = "<group>"; };
 		962787C42803F94600385549 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
-		962787C92803FA0A00385549 /* bob.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bob.gif; sourceTree = "<group>"; };
 		9681F1D427FD7BDF00A00E20 /* TestUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUserCell.swift; sourceTree = "<group>"; };
 		96C0815D2805ABBF003532C3 /* EntranceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceView.swift; sourceTree = "<group>"; };
 		96C081602805AC2C003532C3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -230,11 +234,11 @@
 				96C081622805AC4E003532C3 /* PrivacyPolicyView.swift */,
 				96C081682805ACFD003532C3 /* PrivacyPolicyBoxView.swift */,
 				96C081642805AC82003532C3 /* SignUpView.swift */,
-				96C0816A2805AD12003532C3 /* TempMainView.swift */,
-				96C0816E2805AD6F003532C3 /* TempPasswordView.swift */,
 				96C0816C2805AD55003532C3 /* TextInRectangleView.swift */,
 				96C081702805CD96003532C3 /* AuthenticationView.swift */,
 				96C081722805CDDF003532C3 /* ResetPasswordView.swift */,
+				96C0816A2805AD12003532C3 /* TempMainView.swift */,
+				96C0816E2805AD6F003532C3 /* TempPasswordView.swift */,
 				96C0815F2805ABF6003532C3 /* OldView */,
 			);
 			path = Views;
@@ -279,8 +283,11 @@
 		962787C82803F94A00385549 /* Gif */ = {
 			isa = PBXGroup;
 			children = (
-				962787C92803FA0A00385549 /* bob.gif */,
+				364600A62806E83500A75E16 /* bob.gif */,
+				364600A22806C80700A75E16 /* logo-login-shadow.gif */,
+				364600A02806C73E00A75E16 /* login-logo.gif */,
 				962787C42803F94600385549 /* GifImage.swift */,
+				364600A42806C9DC00A75E16 /* GifImage2.swift */,
 			);
 			path = Gif;
 			sourceTree = "<group>";
@@ -405,9 +412,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				96C081752805DC46003532C3 /* NEXON.otf in Resources */,
+				364600A12806C73E00A75E16 /* login-logo.gif in Resources */,
 				0EE83C1F27FD5E5A00940397 /* Preview Assets.xcassets in Resources */,
+				364600A72806E83500A75E16 /* bob.gif in Resources */,
 				96D697822805675300400EB1 /* dummyusers.json in Resources */,
-				962787CA2803FA0A00385549 /* bob.gif in Resources */,
+				364600A32806C80700A75E16 /* logo-login-shadow.gif in Resources */,
 				961C057C2802B021002FEEAE /* dummyrooms.json in Resources */,
 				962787BA2803F8EA00385549 /* DungGeunMo.otf in Resources */,
 				0EE83C1C27FD5E5A00940397 /* Assets.xcassets in Resources */,
@@ -418,7 +427,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962787CB2803FA0A00385549 /* bob.gif in Resources */,
 				96C081762805DC46003532C3 /* NEXON.otf in Resources */,
 				962787BB2803F8EA00385549 /* DungGeunMo.otf in Resources */,
 			);
@@ -428,7 +436,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962787CC2803FA0A00385549 /* bob.gif in Resources */,
 				96C081772805DC46003532C3 /* NEXON.otf in Resources */,
 				962787BC2803F8EA00385549 /* DungGeunMo.otf in Resources */,
 			);
@@ -445,6 +452,7 @@
 				96C0816D2805AD55003532C3 /* TextInRectangleView.swift in Sources */,
 				9681F1D527FD7BDF00A00E20 /* TestUserCell.swift in Sources */,
 				962787AE2803F81400385549 /* TestRoomListView.swift in Sources */,
+				364600A52806C9DC00A75E16 /* GifImage2.swift in Sources */,
 				96D69786280569BD00400EB1 /* RootPresentationMode.swift in Sources */,
 				96D6977E280565EC00400EB1 /* EditPasswordView.swift in Sources */,
 				96C081652805AC82003532C3 /* SignUpView.swift in Sources */,
