@@ -1,7 +1,6 @@
 [
     {
         "id": "4a7e4f65-1e0c-4f9f-baaa-ee15e9d0ef0a",
-        "userName": "곰민",
         "email": "gommin1@gmail.com",
         "password": "imgommin1!",
         "icon": "bobmong",
@@ -13,7 +12,6 @@
     },
     {
         "id": "a0c2557a-64e5-44ce-982b-bd01dce2b232",
-        "userName": "제이슨",
         "email": "jason1@gmail.com",
         "password": "jason1!",
         "icon": "jjamong",
@@ -25,7 +23,6 @@
     },
     {
         "id": "388e1e72-07c7-4d51-a4cf-37877a5df815",
-        "userName": "주디",
         "email": "judy1@gmail.com",
         "password": "judy1!",
         "icon": "thugmong",
@@ -37,7 +34,6 @@
     },
     {
         "id": "58a1a949-32cb-4652-a94c-6a9ea49f4ce3",
-        "userName": "빅썬",
         "email": "bigsun1@gmail.com",
         "password": "bigsun1!",
         "icon": "angelmong",
@@ -49,7 +45,6 @@
     },
     {
         "id": "deee8907-296e-4404-801b-b06289c63a76",
-        "userName": "안토니",
         "email": "antony1@gmail.com",
         "password": "antony1!",
         "icon": "eggmong",
@@ -61,7 +56,6 @@
     },
     {
         "id": "287ffb39-95f9-40a3-88f8-4bad04e38dec",
-        "userName": "준",
         "email": "joon1@gmail.com",
         "password": "joon1!",
         "icon": "bobmong",
@@ -73,7 +67,6 @@
     },
     {
         "id": "9e80cfda-0d9b-4420-9f74-31e77710eb7f",
-        "userName": "케이",
         "email": "k1@gmail.com",
         "password": "k1!",
         "icon": "bobmong",
@@ -85,7 +78,6 @@
     },
     {
         "id": "0e0e65a7-f198-4003-aaad-8448b3b78ad0",
-        "userName": "루이",
         "email": "louie1@gmail.com",
         "password": "louie1!",
         "icon": "usmong",
@@ -97,7 +89,6 @@
     },
     {
         "id": "f7aba304-860f-44a9-bc00-0bf2922e7f50",
-        "userName": "스위프티스트",
         "email": "swiftist1@gmail.com",
         "password": "swiftist1!",
         "icon": "jjamong",
@@ -109,7 +100,6 @@
     },
     {
         "id": "83fea9eb-efea-4c4b-a1ed-9edbf171c9ad",
-        "userName": "김현수",
         "email": "tamna9891@naver.com",
         "password": "tamna9891!",
         "icon": "usmong",

@@ -270,9 +270,9 @@ struct TestRoomView: View {
 //                })
                 
 //MARK: Method2 - Index로 이 방만을 판단하기. (성공 시 가장 바람직) - Success !
-                if room.nowPersons.isEmpty {
-                    modelData.rooms.remove(at: roomIndex)
-                }
+//                if room.nowPersons.isEmpty {
+//                    modelData.rooms.remove(at: roomIndex)
+//                }
             }
         }
     }

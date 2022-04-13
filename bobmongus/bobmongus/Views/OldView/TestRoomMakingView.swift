@@ -15,11 +15,14 @@ struct TestRoomMakingView: View {
     @Binding var newRoom: Room
     
     @State var persons = 2
-    @State var endTime = Date()
+    @State var roomTime = Date()
+    @State var roomTimeString = ""
     
     @State var roomTitle: String = ""
     @State var roomDetail: String = ""
     @State var linkURL: String = ""
+    
+    @State var endTime = 5
     
     var body: some View {
         
@@ -62,22 +65,28 @@ struct TestRoomMakingView: View {
                 .textFieldStyle(.roundedBorder)
             
             Stepper(value: $persons, in: 2...6) {
-                
-                Image(systemName: "person.fill")
-                
-                Text("\(persons)명 (본인포함)")
+                            
+                            Image(systemName: "person.fill")
+                            
+                            Text("\(persons)명 (본인포함)")
+                                .font(.custom("DungGeunMo", size: 17))
+                            
+                        }
+            
+            Stepper(value: $endTime, in: 5...90, step: 5) {
+                Image(systemName: "timer")
+                Text("마감시간 \(endTime)분")
                     .font(.custom("DungGeunMo", size: 17))
-                
             }
             
-            DatePicker(selection: $endTime, displayedComponents: .hourAndMinute, label: {
-                
-                Image(systemName: "timer")
-                
-                Text("마감시간설정")
-                    .font(.custom("DungGeunMo", size: 17))
-                
-            })
+//            DatePicker(selection: $endTime, displayedComponents: .hourAndMinute, label: {
+//
+//                Image(systemName: "timer")
+//
+//                Text("마감시간설정")
+//                    .font(.custom("DungGeunMo", size: 17))
+//
+//            })
             
             VStack(alignment: .center) {
                 
@@ -87,7 +96,7 @@ struct TestRoomMakingView: View {
                     
                     let uuid = UUID()
                     
-                    let room: Room = Room(id: uuid, isStart: false, roomTitle: roomTitle, roomDetail: roomDetail, nowPersons: [], persons: persons, endTime: 45, linkURL: linkURL)
+                    let room: Room = Room(id: uuid, isStart: false, roomTitle: roomTitle, roomDetail: roomDetail, nowPersons: [], persons: persons, endTime: endTime, linkURL: linkURL, roomTimeStr: roomTime.formatted(date: .omitted, time: .standard))
                     
                     modelData.rooms.append(room)
                     

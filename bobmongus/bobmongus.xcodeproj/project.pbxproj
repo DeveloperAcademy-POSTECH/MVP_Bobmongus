@@ -38,6 +38,20 @@
 		962787CB2803FA0A00385549 /* bob.gif in Resources */ = {isa = PBXBuildFile; fileRef = 962787C92803FA0A00385549 /* bob.gif */; };
 		962787CC2803FA0A00385549 /* bob.gif in Resources */ = {isa = PBXBuildFile; fileRef = 962787C92803FA0A00385549 /* bob.gif */; };
 		9681F1D527FD7BDF00A00E20 /* TestUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681F1D427FD7BDF00A00E20 /* TestUserCell.swift */; };
+		96C0815E2805ABC0003532C3 /* EntranceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0815D2805ABBF003532C3 /* EntranceView.swift */; };
+		96C081612805AC2C003532C3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C081602805AC2C003532C3 /* LoginView.swift */; };
+		96C081632805AC4E003532C3 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C081622805AC4E003532C3 /* PrivacyPolicyView.swift */; };
+		96C081652805AC82003532C3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C081642805AC82003532C3 /* SignUpView.swift */; };
+		96C081672805ACC8003532C3 /* CheckBoxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C081662805ACC8003532C3 /* CheckBoxStyle.swift */; };
+		96C081692805ACFD003532C3 /* PrivacyPolicyBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C081682805ACFD003532C3 /* PrivacyPolicyBoxView.swift */; };
+		96C0816B2805AD12003532C3 /* TempMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0816A2805AD12003532C3 /* TempMainView.swift */; };
+		96C0816D2805AD55003532C3 /* TextInRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0816C2805AD55003532C3 /* TextInRectangleView.swift */; };
+		96C0816F2805AD6F003532C3 /* TempPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0816E2805AD6F003532C3 /* TempPasswordView.swift */; };
+		96C081712805CD96003532C3 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C081702805CD96003532C3 /* AuthenticationView.swift */; };
+		96C081732805CDDF003532C3 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C081722805CDDF003532C3 /* ResetPasswordView.swift */; };
+		96C081752805DC46003532C3 /* NEXON.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96C081742805DC46003532C3 /* NEXON.otf */; };
+		96C081762805DC46003532C3 /* NEXON.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96C081742805DC46003532C3 /* NEXON.otf */; };
+		96C081772805DC46003532C3 /* NEXON.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96C081742805DC46003532C3 /* NEXON.otf */; };
 		96D6977C2805659900400EB1 /* MypageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D6977B2805659900400EB1 /* MypageView.swift */; };
 		96D6977E280565EC00400EB1 /* EditPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D6977D280565EC00400EB1 /* EditPasswordView.swift */; };
 		96D697802805663700400EB1 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D6977F2805663700400EB1 /* EditProfileView.swift */; };
@@ -91,6 +105,18 @@
 		962787C42803F94600385549 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 		962787C92803FA0A00385549 /* bob.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bob.gif; sourceTree = "<group>"; };
 		9681F1D427FD7BDF00A00E20 /* TestUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUserCell.swift; sourceTree = "<group>"; };
+		96C0815D2805ABBF003532C3 /* EntranceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceView.swift; sourceTree = "<group>"; };
+		96C081602805AC2C003532C3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		96C081622805AC4E003532C3 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		96C081642805AC82003532C3 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		96C081662805ACC8003532C3 /* CheckBoxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxStyle.swift; sourceTree = "<group>"; };
+		96C081682805ACFD003532C3 /* PrivacyPolicyBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyBoxView.swift; sourceTree = "<group>"; };
+		96C0816A2805AD12003532C3 /* TempMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempMainView.swift; sourceTree = "<group>"; };
+		96C0816C2805AD55003532C3 /* TextInRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInRectangleView.swift; sourceTree = "<group>"; };
+		96C0816E2805AD6F003532C3 /* TempPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempPasswordView.swift; sourceTree = "<group>"; };
+		96C081702805CD96003532C3 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		96C081722805CDDF003532C3 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		96C081742805DC46003532C3 /* NEXON.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NEXON.otf; sourceTree = "<group>"; };
 		96D6977B2805659900400EB1 /* MypageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageView.swift; sourceTree = "<group>"; };
 		96D6977D280565EC00400EB1 /* EditPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordView.swift; sourceTree = "<group>"; };
 		96D6977F2805663700400EB1 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
@@ -195,6 +221,7 @@
 				961C05782802AE7F002FEEAE /* Room.swift */,
 				961C057B2802B021002FEEAE /* dummyrooms.json */,
 				96D697812805675300400EB1 /* dummyusers.json */,
+				96C081662805ACC8003532C3 /* CheckBoxStyle.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -202,14 +229,17 @@
 		962787A82803F7CF00385549 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				96D697832805698500400EB1 /* TestLoginView.swift */,
-				962787AD2803F81400385549 /* TestRoomListView.swift */,
-				962787AB2803F7FA00385549 /* TestRoomMakingView.swift */,
-				962787A92803F7DE00385549 /* TestRoomView.swift */,
-				9681F1D427FD7BDF00A00E20 /* TestUserCell.swift */,
-				96D6977B2805659900400EB1 /* MypageView.swift */,
-				96D6977D280565EC00400EB1 /* EditPasswordView.swift */,
-				96D6977F2805663700400EB1 /* EditProfileView.swift */,
+				96C0815D2805ABBF003532C3 /* EntranceView.swift */,
+				96C081602805AC2C003532C3 /* LoginView.swift */,
+				96C081622805AC4E003532C3 /* PrivacyPolicyView.swift */,
+				96C081682805ACFD003532C3 /* PrivacyPolicyBoxView.swift */,
+				96C081642805AC82003532C3 /* SignUpView.swift */,
+				96C0816A2805AD12003532C3 /* TempMainView.swift */,
+				96C0816E2805AD6F003532C3 /* TempPasswordView.swift */,
+				96C0816C2805AD55003532C3 /* TextInRectangleView.swift */,
+				96C081702805CD96003532C3 /* AuthenticationView.swift */,
+				96C081722805CDDF003532C3 /* ResetPasswordView.swift */,
+				96C0815F2805ABF6003532C3 /* OldView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -238,6 +268,7 @@
 			children = (
 				77DD08452806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf */,
 				962787B92803F8EA00385549 /* DungGeunMo.otf */,
+				96C081742805DC46003532C3 /* NEXON.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -257,6 +288,21 @@
 				962787C42803F94600385549 /* GifImage.swift */,
 			);
 			path = Gif;
+			sourceTree = "<group>";
+		};
+		96C0815F2805ABF6003532C3 /* OldView */ = {
+			isa = PBXGroup;
+			children = (
+				96D697832805698500400EB1 /* TestLoginView.swift */,
+				962787AD2803F81400385549 /* TestRoomListView.swift */,
+				962787AB2803F7FA00385549 /* TestRoomMakingView.swift */,
+				962787A92803F7DE00385549 /* TestRoomView.swift */,
+				9681F1D427FD7BDF00A00E20 /* TestUserCell.swift */,
+				96D6977B2805659900400EB1 /* MypageView.swift */,
+				96D6977D280565EC00400EB1 /* EditPasswordView.swift */,
+				96D6977F2805663700400EB1 /* EditProfileView.swift */,
+			);
+			path = OldView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +409,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C081752805DC46003532C3 /* NEXON.otf in Resources */,
 				0EE83C1F27FD5E5A00940397 /* Preview Assets.xcassets in Resources */,
 				96D697822805675300400EB1 /* dummyusers.json in Resources */,
 				962787CA2803FA0A00385549 /* bob.gif in Resources */,
@@ -379,6 +426,7 @@
 			files = (
 				962787CB2803FA0A00385549 /* bob.gif in Resources */,
 				77DD08472806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf in Resources */,
+				96C081762805DC46003532C3 /* NEXON.otf in Resources */,
 				962787BB2803F8EA00385549 /* DungGeunMo.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,7 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				962787CC2803FA0A00385549 /* bob.gif in Resources */,
-				77DD08482806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf in Resources */,
+				96C081772805DC46003532C3 /* NEXON.otf in Resources */,
 				962787BC2803F8EA00385549 /* DungGeunMo.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,23 +448,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C0815E2805ABC0003532C3 /* EntranceView.swift in Sources */,
+				96C0816D2805AD55003532C3 /* TextInRectangleView.swift in Sources */,
 				9681F1D527FD7BDF00A00E20 /* TestUserCell.swift in Sources */,
 				962787AE2803F81400385549 /* TestRoomListView.swift in Sources */,
 				96D69786280569BD00400EB1 /* RootPresentationMode.swift in Sources */,
 				96D6977E280565EC00400EB1 /* EditPasswordView.swift in Sources */,
+				96C081652805AC82003532C3 /* SignUpView.swift in Sources */,
+				96C081672805ACC8003532C3 /* CheckBoxStyle.swift in Sources */,
 				962787AC2803F7FA00385549 /* TestRoomMakingView.swift in Sources */,
+				96C0816F2805AD6F003532C3 /* TempPasswordView.swift in Sources */,
 				962787C02803F92800385549 /* RoomCellShape.swift in Sources */,
 				962787AA2803F7DF00385549 /* TestRoomView.swift in Sources */,
 				962787B82803F89A00385549 /* AnyTransition.swift in Sources */,
+				96C081692805ACFD003532C3 /* PrivacyPolicyBoxView.swift in Sources */,
 				96D697802805663700400EB1 /* EditProfileView.swift in Sources */,
 				962787B52803F88400385549 /* Color.swift in Sources */,
 				0EE83C1A27FD5E5900940397 /* ContentView.swift in Sources */,
 				0EE83C1827FD5E5900940397 /* bobmongusApp.swift in Sources */,
 				96D6977C2805659900400EB1 /* MypageView.swift in Sources */,
 				962787B02803F83900385549 /* ClearButton.swift in Sources */,
+				96C081632805AC4E003532C3 /* PrivacyPolicyView.swift in Sources */,
+				96C081612805AC2C003532C3 /* LoginView.swift in Sources */,
+				96C081712805CD96003532C3 /* AuthenticationView.swift in Sources */,
 				962787B32803F85700385549 /* ConfirmationDialog.swift in Sources */,
 				961C05792802AE7F002FEEAE /* Room.swift in Sources */,
 				961C057E2802B0CD002FEEAE /* ModelData.swift in Sources */,
+				96C0816B2805AD12003532C3 /* TempMainView.swift in Sources */,
+				96C081732805CDDF003532C3 /* ResetPasswordView.swift in Sources */,
 				96D697842805698500400EB1 /* TestLoginView.swift in Sources */,
 				962787C52803F94600385549 /* GifImage.swift in Sources */,
 			);
