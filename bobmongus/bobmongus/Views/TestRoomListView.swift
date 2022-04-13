@@ -77,7 +77,7 @@ struct TestRoomListView: View {
                     
                     HStack {    // 하단부 버튼 영역
                         NavigationLink { // 마이페이지
-                            MypageView()
+                            MypageView().navigationTitle("마이페이지").navigationBarTitleDisplayMode(.inline)
                         } label: {
                                 Image(systemName: "person.fill")
                                     .frame(width:46, height:46)

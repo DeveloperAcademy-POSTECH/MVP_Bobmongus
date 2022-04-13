@@ -14,6 +14,9 @@
 		0EE83C2927FD5E5A00940397 /* bobmongusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C2827FD5E5A00940397 /* bobmongusTests.swift */; };
 		0EE83C3327FD5E5A00940397 /* bobmongusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C3227FD5E5A00940397 /* bobmongusUITests.swift */; };
 		0EE83C3527FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */; };
+		77DD08462806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77DD08452806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf */; };
+		77DD08472806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77DD08452806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf */; };
+		77DD08482806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77DD08452806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf */; };
 		961C05792802AE7F002FEEAE /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C05782802AE7F002FEEAE /* Room.swift */; };
 		961C057C2802B021002FEEAE /* dummyrooms.json in Resources */ = {isa = PBXBuildFile; fileRef = 961C057B2802B021002FEEAE /* dummyrooms.json */; };
 		961C057E2802B0CD002FEEAE /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C057D2802B0CD002FEEAE /* ModelData.swift */; };
@@ -71,6 +74,7 @@
 		0EE83C2E27FD5E5A00940397 /* bobmongusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bobmongusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE83C3227FD5E5A00940397 /* bobmongusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusUITests.swift; sourceTree = "<group>"; };
 		0EE83C3427FD5E5A00940397 /* bobmongusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobmongusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		77DD08452806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NEXON Lv2 Gothic OTF.otf"; sourceTree = "<group>"; };
 		961C05782802AE7F002FEEAE /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		961C057B2802B021002FEEAE /* dummyrooms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dummyrooms.json; sourceTree = "<group>"; };
 		961C057D2802B0CD002FEEAE /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 		962787BD2803F8F300385549 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				77DD08452806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf */,
 				962787B92803F8EA00385549 /* DungGeunMo.otf */,
 			);
 			path = Fonts;
@@ -364,6 +369,7 @@
 				961C057C2802B021002FEEAE /* dummyrooms.json in Resources */,
 				962787BA2803F8EA00385549 /* DungGeunMo.otf in Resources */,
 				0EE83C1C27FD5E5A00940397 /* Assets.xcassets in Resources */,
+				77DD08462806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				962787CB2803FA0A00385549 /* bob.gif in Resources */,
+				77DD08472806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf in Resources */,
 				962787BB2803F8EA00385549 /* DungGeunMo.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				962787CC2803FA0A00385549 /* bob.gif in Resources */,
+				77DD08482806B7BE00608C5D /* NEXON Lv2 Gothic OTF.otf in Resources */,
 				962787BC2803F8EA00385549 /* DungGeunMo.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

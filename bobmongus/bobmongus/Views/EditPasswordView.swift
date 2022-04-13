@@ -27,23 +27,25 @@ struct EditPasswordView: View {
     
     var body: some View {
         VStack {
-            VStack {
-                Text("비밀번호 변경")
-                    .font(.custom("DungGeunMo", size: 40))
-            }
-            Spacer().frame(height: 100)
+//            VStack {
+//                Text("비밀번호 변경")
+//                    .font(.custom("DungGeunMo", size: 40))
+//            }
+            Spacer()
+                .frame(height: 100)
             VStack {
                 VStack(alignment: .leading) {
                     
                     Text("기존 비밀번호 확인")
-                        .font(.custom("DungGeunMo", size: 20))
+                        .font(.custom("NEXON Lv2 Gothic OTF", size: 20))
                         .padding(.horizontal)
                     
-                    TextField("기존 비밀번호를 입력해주세요", text: $typedPassword)
+                    SecureField("기존 비밀번호를 입력해주세요", text: $typedPassword)
                         .modifier(ClearButton(text: $typedPassword))
                         .textFieldStyle(.roundedBorder)
+//                      .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding(.horizontal)
-                        .font(.custom("DungGeunMo", size: 16))
+                        .font(.custom("NEXON Lv2 Gothic OTF", size: 16))
                 }.padding()
                 
                 Button("비밀번호 확인") {
@@ -54,6 +56,13 @@ struct EditPasswordView: View {
                     }
                 }
                 .font(.custom("DungGeunMo", size: 17))
+                .background(RoundedRectangle(cornerRadius: 10)
+                .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
+                .frame(width: 135.0, height: 50.0)
+                .shadow(color:.black, radius: 0, x:2 ,y: 3))
+//                .frame(width: 135.0, height: 50.0)
+                .foregroundColor(.white)
+                
                 .alert(isPresented: $checkPassword) {
                     if typedPassword == modelData.myProfile.password {
                         
@@ -64,26 +73,29 @@ struct EditPasswordView: View {
                     }
                 }
                 .padding(.vertical)
-                .frame(width: 135.0, height: 50.0)
-                .background(Color(red: 0.471, green: 0.222, blue: 0.542))
-                .foregroundColor(.white)
-                .cornerRadius(10)
+//                .frame(width: 135.0, height: 50.0)
+//                .background(RoundedRectangle(cornerRadius: 10)
+//                .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
+//                .shadow(color:.black, radius: 0, x:2 ,y: 3))
+//                .foregroundColor(.white)
+//                .cornerRadius(10)
             }
-            .padding(.bottom, 20.0)
+            .padding(.bottom
+                     , 20.0
+            )
             
             if canEditPassword {
                 VStack {
                     VStack(alignment: .leading) {
-                        Text(/*@START_MENU_TOKEN@*/"새 비밀번호"/*@END_MENU_TOKEN@*/).font(.custom("DungGeunMo", size: 20))
+                        Text(/*@START_MENU_TOKEN@*/"새 비밀번호"/*@END_MENU_TOKEN@*/).font(.custom("NEXON Lv2 Gothic OTF", size: 20))
                             .padding(.horizontal)
-                        TextField("새 비밀번호를 입력해주세요", text: $newPassword1).font(.custom("DungGeunMo", size: 17))
-                            .padding(.horizontal)
+                        SecureField("새 비밀번호를 입력해주세요", text: $newPassword1).font(.custom("NEXON Lv2 Gothic OTF", size: 17))
                             .modifier(ClearButton(text: $newPassword1))
-                        //binding으로 받아야 함
-                        TextField("다시 입력해주세요", text: $newPassword2).font(.custom("DungGeunMo", size: 17))
                             .padding(.horizontal)
+                        //binding으로 받아야 함
+                        SecureField("다시 입력해주세요", text: $newPassword2).font(.custom("NEXON Lv2 Gothic OTF", size: 17))
                             .modifier(ClearButton(text: $newPassword2))
-                        
+                            .padding(.horizontal)
                     }
                     .padding()
                     
@@ -94,9 +106,16 @@ struct EditPasswordView: View {
                         self.editPassword = true
                         if newPassword1 == newPassword2 {
                             modelData.myProfile.password = newPassword1
-                            print(modelData.myProfile.password)
+//                            print(modelData.myProfile.password)
                         }
-                    }.font(.custom("DungGeunMo", size: 17))
+                    }
+                    .font(.custom("DungGeunMo", size: 17))
+                    .background(RoundedRectangle(cornerRadius: 10)
+                        .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
+                        .frame(width: 135.0, height: 50.0)
+                        .shadow(color:.black, radius: 0, x:2 ,y: 3))
+        //                .frame(width: 135.0, height: 50.0)
+                        .foregroundColor(.white)
                     
                         .alert(isPresented: $editPassword) {
                             if newPassword1 == newPassword2 {
@@ -114,10 +133,12 @@ struct EditPasswordView: View {
                     
                     //
                         .padding(.vertical)
-                        .frame(width: 135.0, height: 50.0)
-                        .background(Color(red: 0.471, green: 0.222, blue: 0.542))
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
+//                        .frame(width: 135.0, height: 50.0)
+//                        .background(RoundedRectangle(cornerRadius: 10)
+//                        .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
+//                        .shadow(color:.black, radius: 0, x:2 ,y: 3))
+//                        .foregroundColor(.white)
+//                        .cornerRadius(10)
                 }
             } else {}
         }
