@@ -187,25 +187,32 @@ struct SignUpView: View {
                     }
                 }
                 .padding(.bottom, 80)
+            
+            
+//            NavigationLink(destination: LoginView()) {
+//                Text("회원가입완료")
+//            }.simultaneousGesture(TapGesture().onEnded{
+                
+                Button {
+                    
+                    modelData.users.append(Room.User(id: UUID(), email: email, password: password, icon: "bobmong", isLogin: false, isReady: false, isMakingRoom: false, nickName: nickname, userAddress: "포스빌 6동"))
+                    
+                    self.rootPresentationMode.wrappedValue.dismiss()
+                    
+                    print(modelData.myProfile)
+                } label: {
+                    Text("회원가입완료")
+                }
+                .font(.custom("DungGeunMo", size: 20))
+                .foregroundColor(.white)
+                .frame(width: 155, height: 50)
+                .background(Color(red: 136/255, green: 0.189, blue: 0.488))
+                .cornerRadius(8)
+                .shadow(color:.black, radius: 0, x:2 ,y: 3)
+                .padding()
+                .offset(x: 85)
             }
             
-            NavigationLink(destination: LoginView()) {
-                Text("회원가입완료")
-            }.simultaneousGesture(TapGesture().onEnded{
-                
-                modelData.users.append(Room.User(id: UUID(), email: email, password: password, icon: "bobmong", isLogin: false, isReady: false, isMakingRoom: false, nickName: nickname, userAddress: "포스빌 6동"))
-                
-                self.rootPresentationMode.wrappedValue.dismiss()
-                
-            })
-            .font(.custom("DungGeunMo", size: 20))
-            .foregroundColor(.white)
-            .frame(width: 155, height: 50)
-            .background(Color(red: 136/255, green: 0.189, blue: 0.488))
-            .cornerRadius(8)
-            .shadow(color:.black, radius: 0, x:2 ,y: 3)
-            .padding()
-            .offset(x: 85)
         }
         .padding()
 //        .offset(y: -30)

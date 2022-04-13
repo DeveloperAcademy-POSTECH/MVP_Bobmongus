@@ -33,13 +33,6 @@ struct EntranceView: View {
                     EmptyView()
                 }
                 .isDetailLink(false)
-//                .font(.custom("DungGeunMo", size: 20))
-//                .foregroundColor(.black)
-//                .frame(width: 135, height: 50)
-//                .background(Color(red: 0.937, green: 0.937, blue: 0.942))
-//                .cornerRadius(8)
-//                .shadow(color:.black, radius: 0, x:2 ,y: 3)
-//                .padding(.bottom, 5)
                 
                 Button {
                     isActive.toggle()
@@ -59,6 +52,7 @@ struct EntranceView: View {
                 NavigationLink(destination: PrivacyPolicyView().navigationTitle("개인정보이용동의").navigationBarTitleDisplayMode(.inline)) {
                         Text("회원가입")
                 }
+                .isDetailLink(false)
                 .font(.custom("DungGeunMo", size: 20))
                 .foregroundColor(.white)
                 .frame(width: 135, height: 50)

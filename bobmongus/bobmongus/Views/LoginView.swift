@@ -126,6 +126,7 @@ struct LoginView: View {
                         .frame(width: 242, height: 22)
                         .padding(5)
                 }
+                .isDetailLink(false)
             }
         }
         .navigationBarHidden(true)

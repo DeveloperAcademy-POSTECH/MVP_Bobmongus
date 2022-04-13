@@ -49,6 +49,7 @@ struct PrivacyPolicyView: View {
             NavigationLink(destination: SignUpView().navigationTitle("회원가입").navigationBarTitleDisplayMode(.inline), isActive: $showingSignUpView) {
                 EmptyView()
             }
+            .isDetailLink(false)
             .alert(isPresented: $showingAlert) {
                 Alert(title: Text("알림"), message: Text("약관에 모두 동의해주세요."), dismissButton: .default(Text("닫기")))
             
