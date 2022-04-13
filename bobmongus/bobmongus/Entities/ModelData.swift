@@ -32,7 +32,7 @@ final class ModelData: ObservableObject {
     
     init() { //마지막에 저장된 값으로 초기화됨. 앱 시동 후 불러와질 때?!
         self.myProfile = decodeToUser(UserDefaults.standard.data(forKey: "myProfile") ??
-                                      encodeToJson(Room.User(id: UUID(), email: "email", password: "password", icon: "bobmong", isLogin: false, isReady: false, isMakingRoom: false, nickName: "nickName", userAddress: "userAddress"))
+                                      encodeToJson(Room.User(id: UUID(), email: "email@pos.idserve.net", password: "password", icon: "bobmong", isLogin: false, isReady: false, isMakingRoom: false, nickName: "nickName", userAddress: "userAddress"))
         )
         
         self.users = decodeToUsers(UserDefaults.standard.data(forKey: "users") ?? encodeToJJson(userArr))

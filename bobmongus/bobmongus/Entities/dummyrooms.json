@@ -7,7 +7,7 @@
         "nowPersons": [
             {
                 "id": "4a7e4f65-1e0c-4f9f-baaa-ee15e9d0ef0a",
-                "email": "gommin1@gmail.com",
+                "email": "gommin1@pos.idserve.net",
                 "password": "imgommin1!",
                 "icon": "bobmong",
                 "isLogin": true,
@@ -18,7 +18,7 @@
             },
             {
                 "id": "a0c2557a-64e5-44ce-982b-bd01dce2b232",
-                "email": "jason1@gmail.com",
+                "email": "jason1@pos.idserve.net",
                 "password": "jason1!",
                 "icon": "jjamong",
                 "isLogin": true,
@@ -29,7 +29,7 @@
             },
             {
                 "id": "388e1e72-07c7-4d51-a4cf-37877a5df815",
-                "email": "judy1@gmail.com",
+                "email": "judy1@pos.idserve.net",
                 "password": "judy1!",
                 "icon": "thugmong",
                 "isLogin": true,
@@ -52,7 +52,7 @@
         "nowPersons": [
             {
                 "id": "58a1a949-32cb-4652-a94c-6a9ea49f4ce3",
-                "email": "bigsun1@gmail.com",
+                "email": "bigsun1@pos.idserve.net",
                 "password": "bigsun1!",
                 "icon": "angelmong",
                 "isLogin": true,
@@ -63,7 +63,7 @@
             },
             {
                 "id": "deee8907-296e-4404-801b-b06289c63a76",
-                "email": "antony1@gmail.com",
+                "email": "antony1@pos.idserve.net",
                 "password": "antony1!",
                 "icon": "eggmong",
                 "isLogin": true,
@@ -74,7 +74,7 @@
             },
             {
                 "id": "287ffb39-95f9-40a3-88f8-4bad04e38dec",
-                "email": "joon1@gmail.com",
+                "email": "joon1@pos.idserve.net",
                 "password": "joon1!",
                 "icon": "bobmong",
                 "isLogin": true,
@@ -85,7 +85,7 @@
             },
             {
                 "id": "9e80cfda-0d9b-4420-9f74-31e77710eb7f",
-                "email": "k1@gmail.com",
+                "email": "k1@pos.idserve.net",
                 "password": "k1!",
                 "icon": "bobmong",
                 "isLogin": true,
@@ -96,7 +96,7 @@
             },
             {
                 "id": "0e0e65a7-f198-4003-aaad-8448b3b78ad0",
-                "email": "louie1@gmail.com",
+                "email": "louie1@pos.idserve.net",
                 "password": "louie1!",
                 "icon": "usmong",
                 "isLogin": true,
@@ -119,7 +119,7 @@
         "nowPersons": [
             {
                 "id": "f7aba304-860f-44a9-bc00-0bf2922e7f50",
-                "email": "swiftist1@gmail.com",
+                "email": "swiftist1@pos.idserve.net",
                 "password": "swiftist1!",
                 "icon": "jjamong",
                 "isLogin": true,
@@ -142,7 +142,7 @@
         "nowPersons": [
             {
                 "id": "38e321eb-cfd6-4b09-b350-831d7a9dedcc",
-                "email": "qqqq",
+                "email": "qqqq@pos.idserve.net",
                 "password": "qqqq",
                 "icon": "jjamong",
                 "isLogin": true,
@@ -165,7 +165,7 @@
         "nowPersons": [
             {
                 "id": "221caaa4-2a4e-4c58-be8b-9ed3070404ba",
-                "email": "wwww",
+                "email": "wwww@pos.idserve.net",
                 "password": "wwww",
                 "icon": "usmong",
                 "isLogin": true,
@@ -176,7 +176,7 @@
             },
             {
                 "id": "686a50d7-e758-4790-ad40-84d8dfe84a96",
-                "email": "eeee",
+                "email": "eeee@pos.idserve.net",
                 "password": "eeee",
                 "icon": "bobmong",
                 "isLogin": true,
@@ -199,7 +199,7 @@
         "nowPersons": [
             {
                 "id": "805255ae-67f6-4944-a505-056da9ac00ad",
-                "email": "rrrr",
+                "email": "rrrr@pos.idserve.net",
                 "password": "rrrrr",
                 "icon": "angelmong",
                 "isLogin": true,
@@ -222,7 +222,7 @@
         "nowPersons": [
             {
                 "id": "5582abae-fc01-4192-bff8-a2edfc9e5043",
-                "email": "tttt",
+                "email": "tttt@pos.idserve.net",
                 "password": "tttt",
                 "icon": "thugmong",
                 "isLogin": true,
@@ -245,7 +245,7 @@
         "nowPersons": [
             {
                 "id": "80106bab-4601-440d-b630-8d95f6e59355",
-                "email": "yyyy",
+                "email": "yyyy@pos.idserve.net",
                 "password": "yyyy",
                 "icon": "jjamong",
                 "isLogin": true,
@@ -256,7 +256,7 @@
             },
             {
                 "id": "d46fa6be-86fd-463d-ad2e-aa8aacbb13bd",
-                "email": "uuuu",
+                "email": "uuuu@pos.idserve.net",
                 "password": "uuuu",
                 "icon": "bobmong",
                 "isLogin": true,
@@ -279,8 +279,8 @@
         "nowPersons": [
             {
                 "id": "2795c6f5-69d6-40ad-a4a5-2998683822ab",
-                "email": "uuuu",
-                "password": "uuuu",
+                "email": "popo@pos.idserve.net",
+                "password": "popo",
                 "icon": "jjamong",
                 "isLogin": true,
                 "isReady": true,
@@ -302,7 +302,7 @@
         "nowPersons": [
             {
                 "id": "37e98a3b-7f8d-4601-84cb-fd31e3923cd2",
-                "email": "aaaa",
+                "email": "aaaa@pos.idserve.net",
                 "password": "aaaa",
                 "icon": "jjamong",
                 "isLogin": true,

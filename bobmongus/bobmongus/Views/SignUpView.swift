@@ -37,6 +37,8 @@ struct SignUpView: View {
     @State private var checkNumberAlert = false
     @State private var nicknameAlert = false
     
+    @State private var isEmail: Bool = false
+    
     @State private var email = ""
     @State private var authNumber = ""
     @State private var password = ""
@@ -50,23 +52,36 @@ struct SignUpView: View {
         VStack(alignment: .leading) {
             VStack {
                 HStack {
+                    
                     Text("이메일")
                         .font(.custom("DungGeunMo", size: 15))
                         .padding(.trailing, 30)
+                    
                     TextField("@pos.idserve.net", text: $email)
+                    
                     Button(action: {
+                        
                         self.sendNumberAlert = true
+                        
                     }) {
+                        
                         Text("인증번호전송")
                             .font(.custom("NEXON", size: 12))
                             .fontWeight(.bold)
                             .frame(width: 70, height: 30)
                             .foregroundColor(.white)
+                        
                     }
                     .background(RoundedRectangle(cornerRadius: 10))
                     .foregroundColor(Color(red: 0.534, green: 0.189, blue: 0.488))
                     .alert(isPresented: $sendNumberAlert) {
-                        Alert(title: Text("알림"), message: Text("인증번호가 이메일로 전송되었습니다."), dismissButton: .default(Text("닫기")))
+                        if email.contains("@pos.idserve.net") {
+                            return Alert(title: Text("알림"), message: Text("인증번호가 이메일로 전송되었습니다."), dismissButton: .default(Text("확인"), action: {
+                                self.isEmail = true
+                            }))
+                        } else {
+                            return Alert(title: Text("알림"), message: Text("잘못된 이메일 형식입니다."), dismissButton: .default(Text("닫기")))
+                        }
                     }
                 }
                 
@@ -77,6 +92,7 @@ struct SignUpView: View {
                         .font(.custom("DungGeunMo", size: 15))
                         .padding(.trailing, 16)
                     TextField("", text: $authNumber)
+                        .disabled(isEmail ? false : true)
                     Button(action: {
                         self.checkNumberAlert = true
                     }) {
@@ -87,9 +103,11 @@ struct SignUpView: View {
                             .foregroundColor(.white)
                     }
                     .background(RoundedRectangle(cornerRadius: 10))
-                    .foregroundColor(Color(red: 0.534, green: 0.189, blue: 0.488))
+                    .foregroundColor(authNumber.isEmpty ? Color(hex: "#BBBBBB") : Color(red: 0.534, green: 0.189, blue: 0.488))
                     .alert(isPresented: $checkNumberAlert) {
+                        
                         Alert(title: Text("알림"), message: Text("인증되었습니다."), dismissButton: .default(Text("닫기")))
+                        
                     }
                 }
                 
