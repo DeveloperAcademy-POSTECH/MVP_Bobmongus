@@ -2,8 +2,8 @@
     {
         "id": "0f096708-e68f-4822-b2c7-a272e64b6d8f",
         "isStart": false,
-        "roomTitle": "이따 저녁시간 후에 배드민턴 치실분 모집",
-        "roomDetail": "오늘 저녁에 xxx에 있는 배드민턴장에서 함께 운동하실 분들 구해요!! 아직 저 혼자라서 세 분정도 모시고 복식으로 할 수 있었으면 좋겠습니다 ㅋㅋㅋㅋㅋ 선착순~!!!",
+        "roomTitle": "포항부대찌개 시켜먹으실 분?!",
+        "roomDetail": "포항부대",
         "nowPersons": [
             {
                 "id": "4a7e4f65-1e0c-4f9f-baaa-ee15e9d0ef0a",
@@ -40,9 +40,9 @@
             }
         ],
         "persons": 4,
-        "endTime": 90,
+        "endTime": 1000,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "20:20:20 PM"
+        "roomTimeStr": "11:48:00 PM"
     },
     {
         "id": "95da5236-b5e6-450d-870b-87b30625873d",
@@ -57,7 +57,7 @@
                 "icon": "bigsun",
                 "isLogin": true,
                 "isReady": true,
-                "isMakingRoom": false,
+                "isMakingRoom": true,
                 "nickName": "BigSun",
                 "userAddress": "포스빌(C5 근처)"
             },
@@ -79,7 +79,7 @@
                 "icon": "joon",
                 "isLogin": true,
                 "isReady": true,
-                "isMakingRoom": true,
+                "isMakingRoom": false,
                 "nickName": "Joon",
                 "userAddress": "포스빌 6동!"
             },
@@ -107,14 +107,14 @@
             }
         ],
         "persons": 6,
-        "endTime": 50,
+        "endTime": 1000,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:17:00 PM"
+        "roomTimeStr": "11:52:00 PM"
     },
     {
         "id": "7007d3b0-d530-48de-9f41-393c0526ebd5",
         "isStart": false,
-        "roomTitle": "소고기 먹으러 가실분!",
+        "roomTitle": "치킨을사랑한떡볶이-효자점 배달메이트 구합니다",
         "roomDetail": "포항 시내에 나가면 가성비 갑인 소고기 집 있다고 하는데, 같이 가실분들 모집해요 ~!!! 1.5kg에 7만원입니다~!!! 3~4명정도 모이면 확정하려구 합니다 ㅎㅎ 맛저맛저~!",
         "nowPersons": [
             {
@@ -130,9 +130,9 @@
             }
         ],
         "persons": 4,
-        "endTime": 60,
+        "endTime": 1000,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:17:00 PM"
+        "roomTimeStr": "11:57:00 PM"
     },
     {
         "id": "54891658-e2cc-4fac-82ae-56ab39f018c5",
@@ -153,14 +153,14 @@
             }
         ],
         "persons": 3,
-        "endTime": 70,
+        "endTime": 1000,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:17:00 PM"
+        "roomTimeStr": "11:55:00 PM"
     },
     {
         "id": "83b2db78-7946-40c5-ac3b-de1edf514eba",
         "isStart": false,
-        "roomTitle": "지곡회관 버거킹 가시죠.",
+        "roomTitle": "베라-포항지곡점 함께 시키실분!",
         "roomDetail": "지곡회관 버거킹 싸악 같이 먹을 분?! 요새 혼밥하느라 힘드네유...",
         "nowPersons": [
             {
@@ -187,14 +187,14 @@
             }
         ],
         "persons": 4,
-        "endTime": 30,
+        "endTime": 1000,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:17:00 PM"
+        "roomTimeStr": "11:50:00 PM"
     },
     {
         "id": "ffd84348-18cc-428a-83b9-6c8eb3afc72b",
         "isStart": false,
-        "roomTitle": "7시에 효자시장 가실분들있나유~!!!",
+        "roomTitle": "점심에 본가본죽에서 도시락 함께 시킬분 있나요~",
         "roomDetail": "효자시장에 나가면 가성비 갑인 소고기 집 있다고 하는데, 같이 가실분들 모집해요 ~!!! 1.5kg에 7만원입니다~!!! 3~4명정도 모이면 확정하려구 합니다 ㅎㅎ 맛저맛저~!",
         "nowPersons": [
             {
@@ -210,15 +210,15 @@
             }
         ],
         "persons": 4,
-        "endTime": 60,
+        "endTime": 1000,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:17:00 PM"
+        "roomTimeStr": "11:45:00 PM"
     },
     {
         "id": "84971370-7b85-40fd-8f89-96faf482b79d",
         "isStart": false,
-        "roomTitle": "주말에 저 포항바다 가보고픈데..가실분?",
-        "roomDetail": "그 손 솟아있다는 곳 가보고 싶어서요?! 혹시나 같이 가실분들 있을까 모집해요!!",
+        "roomTitle": "중국집 시켜먹을사람~!포스빌6이에유!",
+        "roomDetail": "미레도레미미밈레레렐",
         "nowPersons": [
             {
                 "id": "5582abae-fc01-4192-bff8-a2edfc9e5043",
@@ -230,17 +230,50 @@
                 "isMakingRoom": true,
                 "nickName": "Hoho",
                 "userAddress": "생활관(남)"
+            },
+            {
+                "id": "5582abae-fc01-4192-bff8-a2edfc9e5043",
+                "email": "wwee@pos.idserve.net",
+                "password": "weq",
+                "icon": "thugmong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Hoho",
+                "userAddress": "생활관(남)"
+            },
+            {
+                "id": "89b5af5f-42a2-455a-bc12-2db17a2bb862",
+                "email": "er@pos.idserve.net",
+                "password": "qwre",
+                "icon": "thugmong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Hoho",
+                "userAddress": "생활관(남)"
+            },
+            {
+                "id": "cf2d7ee2-0d76-426c-aea7-5df06ffa80dd",
+                "email": "rqr@pos.idserve.net",
+                "password": "rqer",
+                "icon": "thugmong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Hoho",
+                "userAddress": "생활관(남)"
             }
         ],
-        "persons": 6,
-        "endTime": 60,
+        "persons": 4,
+        "endTime": 1000,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:17:00 PM"
+        "roomTimeStr": "11:40:00 PM"
     },
     {
         "id": "da51c5a4-2e16-4e0e-947b-1e5469f285fe",
         "isStart": true,
-        "roomTitle": "코인 노래방 가실분?!",
+        "roomTitle": "아구해물찜 드실분있나요 ㅠ 배달요금 비싸네요...",
         "roomDetail": "코로나 때문에 노래방 못간지도 벌써 몇달째네요 ㅠ 같이가주시면 노래 한 곡조 제대로 뽑겠습니다 ㅎㅎ",
         "nowPersons": [
             {
@@ -267,14 +300,14 @@
             }
         ],
         "persons": 3,
-        "endTime": 40,
+        "endTime": 1000,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:17:00 PM"
+        "roomTimeStr": "11:35:00 PM"
     },
     {
         "id": "2795c6f5-69d6-40ad-a4a5-2998683822ab",
         "isStart": true,
-        "roomTitle": "저 내일 포항역가려하는데 같이 가실분 있나요?",
+        "roomTitle": "오리고기 땡기는분 있을까요~~ 배고플땐오리다!",
         "roomDetail": "내일 10시쯤 출발하려합니다~!! 모이는 인원만큼 N빵하시죠! 택시탈거라 저 포함 최대 4명까지 모집할게요 ㅎㅎ",
         "nowPersons": [
             {
@@ -290,14 +323,14 @@
             }
         ],
         "persons": 4,
-        "endTime": 55,
+        "endTime": 1000,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:17:00 PM"
+        "roomTimeStr": "10:15:00 PM"
     },
     {
         "id": "362c5dc0-e9df-44a4-870c-8706e4c2030f",
         "isStart": true,
-        "roomTitle": "우라라라라라 테러다다다다",
+        "roomTitle": "야식으로 막창 같이 시키실분?~!",
         "roomDetail": "사랑해요 아카데미 러너들~~",
         "nowPersons": [
             {
@@ -313,8 +346,98 @@
             }
         ],
         "persons": 6,
-        "endTime": 75,
+        "endTime": 1000,
         "linkURL": "https://openkakao.oneteam.bobmongus.com",
-        "roomTimeStr": "11:17:00 PM"
+        "roomTimeStr": "11:30:00 PM"
+    },
+    {
+        "id": "69db8924-60a2-4f80-bc8e-8c974ab96602",
+        "isStart": false,
+        "roomTitle": "마라탕 시켜먹으실 분? 포스빌6동!",
+        "roomDetail": "마라탕 맛집 xxx마라탕 가게에서 마라탕시켜먹으려하는데, 여기 최소주문금액이 좀 쎄네요 ㅠㅠ 최소 2개는 시켜야하는데 혹시 같이 시키실 분 있을까요??",
+        "nowPersons": [
+            {
+                "id": "8e04ca25-88c3-45d1-bc08-c6e383a577c6",
+                "email": "qwerfdfa@pos.idserve.net",
+                "password": "fasnfkl",
+                "icon": "bobmong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Luppy",
+                "userAddress": "포스빌 6"
+            },
+            {
+                "id": "47c0b785-a336-4af2-9633-6a19cef3d3e0",
+                "email": "fadsf@pos.idserve.net",
+                "password": "fdsafewf!",
+                "icon": "jjamong",
+                "isLogin": true,
+                "isReady": false,
+                "isMakingRoom": false,
+                "nickName": "Zoro",
+                "userAddress": "포스빌 6동"
+            },
+            {
+                "id": "1d3f1e0c-d51f-4ff7-bebe-99b6c8dffe76",
+                "email": "qereq@pos.idserve.net",
+                "password": "rwqere!",
+                "icon": "thugmong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Nami",
+                "userAddress": "포스빌6동쓰"
+            }
+        ],
+        "persons": 4,
+        "endTime": 1000,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com",
+        "roomTimeStr": "11:25:00 PM"
+    },
+    {
+        "id": "b428fa27-e19f-430c-89aa-d62272fd4e46",
+        "isStart": false,
+        "roomTitle": "오늘 족발같이 시키실 분 있나요~?!",
+        "roomDetail": "포항에 브런치카페 xxx라고 엄청유명한 곳이 있다더라구요!! 사진도 찍기좋대서 꼭가보고싶은데 몇명 모아서 다같이 가고싶어서요!! ㅎㅎ 택시타고 갈 생각이라 저 포함 4명모집합니다~!!!!! ",
+        "nowPersons": [
+            {
+                "id": "a5805941-ae18-4989-946f-77abd1c26cc0",
+                "email": "ghjk@pos.idserve.net",
+                "password": "fghfyh4",
+                "icon": "angelmong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": true,
+                "nickName": "Baam",
+                "userAddress": "포스빌 6"
+            },
+            {
+                "id": "b0752ff4-4ae4-4189-9a1f-6ff64ce2278b",
+                "email": "fadsf@pos.idserve.net",
+                "password": "fdsafewf!",
+                "icon": "jjamong",
+                "isLogin": true,
+                "isReady": false,
+                "isMakingRoom": false,
+                "nickName": "Sweet",
+                "userAddress": "생활관(남)"
+            },
+            {
+                "id": "833d2cc7-2315-4a63-925f-570e525e8dd1",
+                "email": "zxvcqe@pos.idserve.net",
+                "password": "fasdfsf!",
+                "icon": "thugmong",
+                "isLogin": true,
+                "isReady": true,
+                "isMakingRoom": false,
+                "nickName": "Robin",
+                "userAddress": "생활관(여)"
+            }
+        ],
+        "persons": 4,
+        "endTime": 1000,
+        "linkURL": "https://openkakao.oneteam.bobmongus.com",
+        "roomTimeStr": "11:20:00 PM"
     }
 ]

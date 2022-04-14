@@ -37,8 +37,7 @@ final class ModelData: ObservableObject {
         self.rooms = decodeToUserss(UserDefaults.standard.data(forKey: "rooms") ?? encodeToJJJson(testRooms.sorted(by: {
             timeCal(room: $0) < timeCal(room: $1)
         })))
-    }
-    
+    }    
 }
 
 var userArr: [Room.User] = loadJson("dummyusers.json")

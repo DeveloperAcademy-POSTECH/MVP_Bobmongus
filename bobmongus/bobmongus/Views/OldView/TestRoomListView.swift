@@ -191,7 +191,7 @@ struct TestRoomListView: View {
                 modelData.myProfile.isReady = false
                 modelData.myProfile.isMakingRoom = false
                 
-                
+//                print(modelData.timeCount)
             }
         }
         .alert("입장 불가능한 방입니다.", isPresented: $isEnable){
@@ -206,6 +206,8 @@ struct TestRoomCell: View {
     
     @EnvironmentObject var modelData: ModelData
     @Binding var room: Room
+    
+    @StateObject var timerData: ModelData = ModelData()
     
     //    var remainTimes: Int { //@State처리, @EnvironmentObject timer처리 이런게 필요가없음! 연산프로퍼티기에 실시간으로 Date()를 읽어온다. 새로운 값이 들어오면 새로 연산을 하게되고, room.endTime과 함께 연산하기에 뷰가 자동업데이트된다. -> 좀더 study필요.
     //        return Int(room.endTime.timeIntervalSince(Date())) / 60
@@ -239,6 +241,7 @@ struct TestRoomCell: View {
                 
                 Text(room.roomTitle) // 방 타이틀
                     .font(.custom("DungGeunMo", size: 17))
+                    
                 
                 Spacer()
                 
@@ -264,6 +267,17 @@ struct TestRoomCell: View {
                         modelData.rooms.remove(at: roomIndex)
                     }
                 }
+                
+                modelData.rooms = modelData.rooms.sorted(by: { //MARK: append할 때, sorted. Nice.
+                    if $0.isStart == false && $1.isStart == false {
+                        return timeCal(room: $0) < timeCal(room: $1)
+                    } else {
+                        return !$0.isStart  //MARK: !!!
+                    }
+                })
+                
+//                print(modelData.timeCount)
+                
             }
         }
         .padding(.horizontal, 6)        // 방 양으로 패딩

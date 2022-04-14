@@ -108,13 +108,14 @@ struct TestRoomMakingView: View {
                     let room: Room = Room(id: uuid, isStart: false, roomTitle: roomTitle, roomDetail: roomDetail, nowPersons: [], persons: persons, endTime: endTime, linkURL: linkURL, roomTimeStr: roomTime.formatted(date: .omitted, time: .standard))
                     
                     modelData.rooms.append(room)
-                    modelData.rooms = modelData.rooms.sorted(by: { //MARK: append할 때, sorted. Nice.
-                        if $0.isStart == false && $1.isStart == false {
-                            return timeCal(room: $0) < timeCal(room: $1)
-                        } else {
-                            return !$0.isStart //MARK: !!!
-                        }
-                    })
+                    
+//                    modelData.rooms = modelData.rooms.sorted(by: { //MARK: append할 때, sorted. Nice.
+//                        if $0.isStart == false && $1.isStart == false {
+//                            return timeCal(room: $0) < timeCal(room: $1)
+//                        } else {
+//                            return !$0.isStart  //MARK: !!!
+//                        }
+//                    })
                     
                     self.showModal.toggle()
                     

@@ -39,7 +39,7 @@
         "icon": "bigsun",
         "isLogin": true,
         "isReady": true,
-        "isMakingRoom": false,
+        "isMakingRoom": true,
         "nickName": "BigSun",
         "userAddress": "포스빌(C5 근처)"
     },
@@ -61,7 +61,7 @@
         "icon": "joon",
         "isLogin": true,
         "isReady": true,
-        "isMakingRoom": true,
+        "isMakingRoom": false,
         "nickName": "Joon",
         "userAddress": "포스빌 6동!"
     },

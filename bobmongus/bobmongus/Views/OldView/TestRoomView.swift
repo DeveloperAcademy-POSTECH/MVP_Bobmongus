@@ -14,6 +14,7 @@ struct TestRoomView: View {
     @State private var isClick: Bool = false
     
     @EnvironmentObject var modelData: ModelData
+    
     @State private var confirmationShown = false
     
     @Binding var room: Room
@@ -51,13 +52,13 @@ struct TestRoomView: View {
                 .font(.custom("NEXON", size: 17))
                 .foregroundColor(.blue)
                 
-//                Text("완료")
-//                    .font(.custom("NEXON", size: 15))
-//                    .foregroundColor(.white)
-//                    .padding(.horizontal)
-//                    .padding([.top, .bottom], 5)
-//                    .background(Capsule()
-//                        .foregroundColor(Color(hex: "#A265BC")))
+                //                Text("완료")
+                //                    .font(.custom("NEXON", size: 15))
+                //                    .foregroundColor(.white)
+                //                    .padding(.horizontal)
+                //                    .padding([.top, .bottom], 5)
+                //                    .background(Capsule()
+                //                        .foregroundColor(Color(hex: "#A265BC")))
                 
             } else if modelData.myProfile.isReady {
                 
@@ -77,15 +78,15 @@ struct TestRoomView: View {
                 }
                 .font(.custom("NEXON", size: 17))
                 .foregroundColor(.red)
-//                .padding(.horizontal)
-//                .padding([.top, .bottom], 5)
-//                .background(Capsule()
-//                    .foregroundColor(.red.opacity(0.8)))
+                //                .padding(.horizontal)
+                //                .padding([.top, .bottom], 5)
+                //                .background(Capsule()
+                //                    .foregroundColor(.red.opacity(0.8)))
             }
         }
         .modifier(ConfirmationDia(confirmationShown: $confirmationShown))
     }
-
+    
     var body: some View {
         
         let lightPurple = "#A265BC"
@@ -105,6 +106,8 @@ struct TestRoomView: View {
                 Button {
                     
                     self.isClick.toggle()
+                    
+                    //                    room.nowPersons.append(Room.User(id: UUID(), email: "faker", password: "asdfsdf", icon: "usmong", isLogin: true, isReady: false, isMakingRoom: false, nickName: "Chicken", userAddress: "포스빌 6동"))
                     
                 } label: {
                     
@@ -183,6 +186,7 @@ struct TestRoomView: View {
                     
                     Spacer()
                     
+                    
                     Button {
                         //If StartButton Tapped.
                         if (modelData.myProfile.isMakingRoom && (room.nowPersons.filter { $0.isReady == true }.count == room.nowPersons.count)) {
@@ -190,16 +194,16 @@ struct TestRoomView: View {
                             room.isStart = true
                             modelData.rooms[roomIndex].isStart = true
                             
-                            modelData.rooms = modelData.rooms.sorted(by: {
-                                if $0.isStart == false && $1.isStart == false {
-                                    return timeCal(room: $0) < timeCal(room: $1)
-                                } else {
-                                    return !$0.isStart //MARK: !!!
-                                }
-                            })
+                            //                            modelData.rooms = modelData.rooms.sorted(by: {
+                            //                                if $0.isStart == false && $1.isStart == false {
+                            //                                    return timeCal(room: $0) < timeCal(room: $1)
+                            //                                } else {
+                            //                                    return !$0.isStart //MARK: !!!
+                            //                                }
+                            //                            })
                             
                         } else { //If didn't StartButton Tapped.
-                        
+                            
                             //If I want to make allready, I must change rooms & myProfile.
                             room.nowPersons[myIndex].isReady.toggle()
                             modelData.myProfile.isReady.toggle()
@@ -237,32 +241,32 @@ struct TestRoomView: View {
                         .foregroundColor(
                             Color(hex:
                                     modelData.myProfile.isMakingRoom ?
-                                    ( //If I made room.
-                                        modelData.myProfile.isReady ?
-                                        ( //If I'm ready.
-                                            room.nowPersons.filter {
-                                                $0.isReady == true
-                                            }.count
-                                            == room.nowPersons.count ?
-                                            //If allReady.
-                                            lightPurple
-                                            :
+                                  ( //If I made room.
+                                    modelData.myProfile.isReady ?
+                                    ( //If I'm ready.
+                                        room.nowPersons.filter {
+                                            $0.isReady == true
+                                        }.count
+                                        == room.nowPersons.count ?
+                                        //If allReady.
+                                        lightPurple
+                                        :
                                             //If not allReady.
-                                            lightGray
-                                        ) //If I'm not ready.
-                                        : lightPurple
-                                    )
-                                    :
+                                        lightGray
+                                    ) //If I'm not ready.
+                                    : lightPurple
+                                  )
+                                  :
                                     ( //If I didn't make room.
                                         modelData.myProfile.isReady ?
                                         lightGray : lightPurple
-                                        )
-                            )
+                                    )
+                                 )
                         )
-                        .shadow(color: .black, radius: 5, x: 3, y: 3))
+                            .shadow(color: .black, radius: 5, x: 3, y: 3))
                     
                     Spacer().frame(height: 30)
-        
+                    
                 }
             }
             .navigationTitle(room.roomTitle)
@@ -288,12 +292,12 @@ struct TestRoomView: View {
                 
                 modelData.myProfile.isReady = false
                 
-//MARK: Method1 - 만약, 누군가 방을 생성하는 동시에 빈 방이 발생한다면, 그 방이 사라질 우려있음.
-//                modelData.rooms = modelData.rooms.filter({ room in
-//                    !room.nowPersons.isEmpty
-//                })
+                //MARK: Method1 - 만약, 누군가 방을 생성하는 동시에 빈 방이 발생한다면, 그 방이 사라질 우려있음.
+                //                modelData.rooms = modelData.rooms.filter({ room in
+                //                    !room.nowPersons.isEmpty
+                //                })
                 
-//MARK: Method2 - Index로 이 방만을 판단하기. (성공 시 가장 바람직) - Success !
+                //MARK: Method2 - Index로 이 방만을 판단하기. (성공 시 가장 바람직) - Success !
                 if room.nowPersons.isEmpty {
                     modelData.rooms.remove(at: roomIndex)
                 }
