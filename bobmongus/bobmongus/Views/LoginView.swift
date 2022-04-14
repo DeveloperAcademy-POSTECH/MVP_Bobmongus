@@ -61,6 +61,9 @@ struct LoginView: View {
             
             VStack(alignment: .leading) {
                 TextField("email", text: $email)
+//                    .textCase(.lowercase)
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
                     .padding()
                     .frame(width: width, height: height)
                     .background(RoundedRectangle(cornerRadius: 6)
@@ -68,6 +71,8 @@ struct LoginView: View {
                     .padding(.bottom, 5)
                 
                 SecureField("password", text: $password)
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
                     .padding()
                     .frame(width: width, height: height)
                     .background(RoundedRectangle(cornerRadius: 6)

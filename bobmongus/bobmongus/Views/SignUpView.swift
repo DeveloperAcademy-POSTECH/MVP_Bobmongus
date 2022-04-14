@@ -54,6 +54,8 @@ struct SignUpView: View {
                         .font(.custom("DungGeunMo", size: 15))
                         .padding(.trailing, 30)
                     TextField("@pos.idserve.net", text: $email)
+                        .disableAutocorrection(true)
+                        .autocapitalization(.none)
                     Button(action: {
                         self.sendNumberAlert = true
                     }) {
@@ -64,7 +66,7 @@ struct SignUpView: View {
                             .foregroundColor(.white)
                     }
                     .background(RoundedRectangle(cornerRadius: 10))
-                    .foregroundColor(Color(red: 0.534, green: 0.189, blue: 0.488))
+                    .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
                     .alert(isPresented: $sendNumberAlert) {
                         Alert(title: Text("알림"), message: Text("인증번호가 이메일로 전송되었습니다."), dismissButton: .default(Text("닫기")))
                     }
@@ -77,6 +79,8 @@ struct SignUpView: View {
                         .font(.custom("DungGeunMo", size: 15))
                         .padding(.trailing, 16)
                     TextField("", text: $authNumber)
+                        .disableAutocorrection(true)
+                        .autocapitalization(.none)
                     Button(action: {
                         self.checkNumberAlert = true
                     }) {
@@ -87,7 +91,7 @@ struct SignUpView: View {
                             .foregroundColor(.white)
                     }
                     .background(RoundedRectangle(cornerRadius: 10))
-                    .foregroundColor(Color(red: 0.534, green: 0.189, blue: 0.488))
+                    .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
                     .alert(isPresented: $checkNumberAlert) {
                         Alert(title: Text("알림"), message: Text("인증되었습니다."), dismissButton: .default(Text("닫기")))
                     }
@@ -103,6 +107,8 @@ struct SignUpView: View {
                         .font(.custom("DungGeunMo", size: 15))
                         .padding(.trailing, 16)
                     SecureField("", text: $password)
+                        .disableAutocorrection(true)
+                        .autocapitalization(.none)
                 }
                 .padding(.vertical, 5)
                 Divider()
@@ -112,6 +118,8 @@ struct SignUpView: View {
                         .font(.custom("DungGeunMo", size: 15))
                         .padding(.trailing, 30)
                     SecureField("", text: $passwordCheck)
+                        .disableAutocorrection(true)
+                        .autocapitalization(.none)
                 }
                 .padding(.vertical, 5)
                 Divider()
@@ -124,6 +132,8 @@ struct SignUpView: View {
                         .font(.custom("DungGeunMo", size: 15))
                         .padding(.trailing, 30)
                     TextField("", text: $nickname)
+                        .disableAutocorrection(true)
+                        .autocapitalization(.none)
                     
                     Button(action: {
                         self.nicknameAlert = true
@@ -135,9 +145,9 @@ struct SignUpView: View {
                             .foregroundColor(.white)
                     }
                     .background(RoundedRectangle(cornerRadius: 10))
-                    .foregroundColor(Color(red: 0.534, green: 0.189, blue: 0.488))
+                    .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
                     .alert(isPresented: $nicknameAlert) {
-                        Alert(title: Text("확인"), message: Text("해당 닉네임은 사용 가능합니다."), dismissButton: .default(Text("닫기")))
+                        Alert(title: Text("알림"), message: Text("해당 닉네임은 사용 가능합니다."), dismissButton: .default(Text("닫기")))
                     }
                 }
                 Divider()
@@ -187,25 +197,32 @@ struct SignUpView: View {
                     }
                 }
                 .padding(.bottom, 80)
+            
+            
+//            NavigationLink(destination: LoginView()) {
+//                Text("회원가입완료")
+//            }.simultaneousGesture(TapGesture().onEnded{
+                
+                Button {
+                    
+                    modelData.users.append(Room.User(id: UUID(), email: email, password: password, icon: "bobmong", isLogin: false, isReady: false, isMakingRoom: false, nickName: nickname, userAddress: "포스빌 6동"))
+                    
+                    self.rootPresentationMode.wrappedValue.dismiss()
+                    
+                    print(modelData.myProfile)
+                } label: {
+                    Text("회원가입완료")
+                }
+                .font(.custom("DungGeunMo", size: 20))
+                .foregroundColor(.white)
+                .frame(width: 155, height: 50)
+                .background(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
+                .cornerRadius(8)
+                .shadow(color:.black, radius: 0, x:2 ,y: 3)
+                .padding()
+                .offset(x: 85)
             }
             
-            NavigationLink(destination: LoginView()) {
-                Text("회원가입완료")
-            }.simultaneousGesture(TapGesture().onEnded{
-                
-                modelData.users.append(Room.User(id: UUID(), email: email, password: password, icon: "bobmong", isLogin: false, isReady: false, isMakingRoom: false, nickName: nickname, userAddress: "포스빌 6동"))
-                
-                self.rootPresentationMode.wrappedValue.dismiss()
-                
-            })
-            .font(.custom("DungGeunMo", size: 20))
-            .foregroundColor(.white)
-            .frame(width: 155, height: 50)
-            .background(Color(red: 136/255, green: 0.189, blue: 0.488))
-            .cornerRadius(8)
-            .shadow(color:.black, radius: 0, x:2 ,y: 3)
-            .padding()
-            .offset(x: 85)
         }
         .padding()
 //        .offset(y: -30)
