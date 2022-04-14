@@ -62,6 +62,8 @@ struct SignUpView: View {
                     
                     TextField("@pos.idserve.net", text: $email)
                         .modifier(ClearButton(text: $email))
+                        .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                        .autocapitalization(.none)
                         
                     Button(action: {
                         
@@ -77,7 +79,7 @@ struct SignUpView: View {
                         
                     }
                     .background(RoundedRectangle(cornerRadius: 10))
-                    .foregroundColor(Color(red: 0.534, green: 0.189, blue: 0.488))
+                    .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
                     .alert(isPresented: $sendNumberAlert) {
                         if email.contains("@pos.idserve.net") {
                             return Alert(title: Text("알림"), message: Text("인증번호가 이메일로 전송되었습니다."), dismissButton: .default(Text("확인"), action: {
@@ -97,6 +99,8 @@ struct SignUpView: View {
                         .padding(.trailing, 16)
                     TextField("", text: $authNumber)
                         .modifier(ClearButton(text: $authNumber))
+                        .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                        .autocapitalization(.none)
                         .disabled(isEmail ? false : true)
                     Button(action: {
                         self.checkNumberAlert = true
@@ -110,7 +114,7 @@ struct SignUpView: View {
                     }
                     .disabled(authNumber.isEmpty ? true : false)
                     .background(RoundedRectangle(cornerRadius: 10))
-                    .foregroundColor(authNumber.isEmpty ? Color(hex: "#BBBBBB") : Color(red: 0.534, green: 0.189, blue: 0.488))
+                    .foregroundColor(authNumber.isEmpty ? Color(hex: "#BBBBBB") : Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
                     .alert(isPresented: $checkNumberAlert) {
                         
                         Alert(title: Text("알림"), message: Text("인증되었습니다."), dismissButton: .default(Text("닫기")))
@@ -128,6 +132,8 @@ struct SignUpView: View {
                         .font(.custom("DungGeunMo", size: 15))
                         .padding(.trailing, 16)
                     SecureField("", text: $password)
+                        .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                        .autocapitalization(.none)
                 }
                 .padding(.vertical, 5)
                 Divider()
@@ -137,6 +143,8 @@ struct SignUpView: View {
                         .font(.custom("DungGeunMo", size: 15))
                         .padding(.trailing, 30)
                     SecureField("", text: $passwordCheck)
+                        .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                        .autocapitalization(.none)
                 }
                 .padding(.vertical, 5)
                 Divider()
@@ -150,6 +158,8 @@ struct SignUpView: View {
                         .padding(.trailing, 30)
                     TextField("", text: $nickname)
                         .modifier(ClearButton(text: $nickname))
+                        .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                        .autocapitalization(.none)
                         .onChange(of: nickname) { _ in
                             self.isNickNamePossible = false
                         }
@@ -164,7 +174,7 @@ struct SignUpView: View {
                             .foregroundColor(.white)
                     }
                     .background(RoundedRectangle(cornerRadius: 10))
-                    .foregroundColor(Color(red: 0.534, green: 0.189, blue: 0.488))
+                    .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
                     .alert(isPresented: $nicknameAlert) {
                         
                         let usersNickname = modelData.users.map { $0.nickName.lowercased() }
@@ -242,7 +252,7 @@ struct SignUpView: View {
                 .font(.custom("DungGeunMo", size: 20))
                 .foregroundColor(.white)
                 .frame(width: 155, height: 50)
-                .background(Color(red: 136/255, green: 0.189, blue: 0.488))
+                .background(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
                 .cornerRadius(8)
                 .shadow(color:.black, radius: 0, x:2 ,y: 3)
                 .padding()

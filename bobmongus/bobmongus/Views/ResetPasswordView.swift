@@ -46,6 +46,8 @@ struct ResetPasswordView: View {
                     .padding(.horizontal)
                     .padding(.trailing, 5.0)
                 SecureField("비밀번호 입력", text: $password)
+                    .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                    .autocapitalization(.none)
                     .padding(.trailing)
 //                .textFieldStyle(.roundedBorder)
             }.padding(.horizontal, 60.0)
@@ -59,6 +61,8 @@ struct ResetPasswordView: View {
                     .padding(.horizontal)
                     .padding(.trailing, 43.0)
                 SecureField("비밀번호 재입력", text: $checkpassword)
+                    .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                    .autocapitalization(.none)
                     .padding(.trailing)
 //                .textFieldStyle(.roundedBorder)
             }.padding(.horizontal, 60.0)

@@ -44,30 +44,43 @@ struct TestRoomView: View {
             
             if room.isStart {
                 
-                Text("완료")
-                    .font(.custom("NEXON", size: 15))
-                    .foregroundColor(.white)
-                    .padding(.horizontal)
-                    .padding([.top, .bottom], 5)
-                    .background(Capsule()
-                        .foregroundColor(Color(hex: "#A265BC")))
+                HStack {
+                    Image(systemName: "chevron.backward").offset(x: -5, y: -2)
+                    Text("Back").offset(x: -10, y: -2)
+                }
+                .font(.custom("NEXON", size: 17))
+                .foregroundColor(.blue)
+                
+//                Text("완료")
+//                    .font(.custom("NEXON", size: 15))
+//                    .foregroundColor(.white)
+//                    .padding(.horizontal)
+//                    .padding([.top, .bottom], 5)
+//                    .background(Capsule()
+//                        .foregroundColor(Color(hex: "#A265BC")))
                 
             } else if modelData.myProfile.isReady {
                 
-                Text("나가기")
-                    .font(.custom("NEXON", size: 15))
-                    .foregroundColor(.white)
-                    .hidden()
+                HStack {
+                    Image(systemName: "chevron.backward").offset(x: -5, y: -2)
+                    Text("Back").offset(x: -10, y: -2)
+                }
+                .font(.custom("NEXON", size: 17))
+                .foregroundColor(.red)
+                .hidden()
                 
             } else {
                 
-                Text("나가기")
-                    .font(.custom("NEXON", size: 15))
-                    .foregroundColor(.white)
-                    .padding(.horizontal)
-                    .padding([.top, .bottom], 5)
-                    .background(Capsule()
-                        .foregroundColor(.red.opacity(0.8)))
+                HStack {
+                    Image(systemName: "chevron.backward").offset(x: -5, y: -2)
+                    Text("Back").offset(x: -10, y: -2)
+                }
+                .font(.custom("NEXON", size: 17))
+                .foregroundColor(.red)
+//                .padding(.horizontal)
+//                .padding([.top, .bottom], 5)
+//                .background(Capsule()
+//                    .foregroundColor(.red.opacity(0.8)))
             }
         }
         .modifier(ConfirmationDia(confirmationShown: $confirmationShown))
@@ -175,12 +188,13 @@ struct TestRoomView: View {
                         if (modelData.myProfile.isMakingRoom && (room.nowPersons.filter { $0.isReady == true }.count == room.nowPersons.count)) {
                             
                             room.isStart = true
+                            modelData.rooms[roomIndex].isStart = true
                             
                             modelData.rooms = modelData.rooms.sorted(by: {
                                 if $0.isStart == false && $1.isStart == false {
                                     return timeCal(room: $0) < timeCal(room: $1)
                                 } else {
-                                    return $0.isStart
+                                    return !$0.isStart //MARK: !!!
                                 }
                             })
                             

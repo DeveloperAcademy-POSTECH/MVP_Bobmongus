@@ -60,8 +60,11 @@ struct LoginView: View {
 //                .padding(.bottom, 30)
             
             VStack(alignment: .leading) {
+                
                 TextField("email", text: $email)
                     .modifier(ClearButton(text: $email))
+                    .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                    .autocapitalization(.none) //MARK: 첫 글자 대문자 안나오게.
                     .padding()
                     .frame(width: width, height: height)
                     .background(RoundedRectangle(cornerRadius: 6)
@@ -69,11 +72,15 @@ struct LoginView: View {
                     .padding(.bottom, 5)
                 
                 SecureField("password", text: $password)
+                    .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                    .autocapitalization(.none)
                     .padding()
                     .frame(width: width, height: height)
                     .background(RoundedRectangle(cornerRadius: 6)
                         .stroke(.gray, lineWidth: 0.2))
                     .padding(.top, 5)
+            
+                    
                 
                 Toggle(isOn: $isStored) {
                     Text("로그인 정보 저장")

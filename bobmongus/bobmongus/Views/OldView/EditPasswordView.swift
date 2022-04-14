@@ -46,9 +46,12 @@ struct EditPasswordView: View {
                     
                     SecureField("기존 비밀번호를 입력해주세요", text: $typedPassword)
                         .textFieldStyle(.roundedBorder)
+                        .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                        .autocapitalization(.none)
 //                      .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding(.horizontal)
                         .font(.custom("NEXON Lv2 Gothic OTF", size: 16))
+                        .disabled(canEditPassword ? true : false)
                 }.padding()
                 
                 Button("비밀번호 확인") {
@@ -60,12 +63,13 @@ struct EditPasswordView: View {
                 }
                 .font(.custom("DungGeunMo", size: 17))
                 .background(RoundedRectangle(cornerRadius: 10)
-                .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
-                .frame(width: 135.0, height: 50.0)
-                .shadow(color:.black, radius: 0, x:2 ,y: 3))
-//                .frame(width: 135.0, height: 50.0)
+                    .foregroundColor(!canEditPassword ? Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844) :
+                                    Color(hex: "#BBBBBB"))
+                    .frame(width: 135.0, height: 50.0)
+                    .shadow(color:.black, radius: 0, x:2 ,y: 3))
+                //                .frame(width: 135.0, height: 50.0)
                 .foregroundColor(.white)
-                
+                .disabled(canEditPassword ? true : false)
                 .alert(isPresented: $checkPassword) {
                     if typedPassword == modelData.myProfile.password {
                         
@@ -94,10 +98,14 @@ struct EditPasswordView: View {
                             .padding(.horizontal)
                         SecureField("새 비밀번호를 입력해주세요", text: $newPassword1).font(.custom("NEXON Lv2 Gothic OTF", size: 17))
                             .modifier(ClearButton(text: $newPassword1))
+                            .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                            .autocapitalization(.none)
                             .padding(.horizontal)
                         //binding으로 받아야 함
                         SecureField("다시 입력해주세요", text: $newPassword2).font(.custom("NEXON Lv2 Gothic OTF", size: 17))
                             .modifier(ClearButton(text: $newPassword2))
+                            .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                            .autocapitalization(.none)
                             .padding(.horizontal)
                     }
                     .padding()

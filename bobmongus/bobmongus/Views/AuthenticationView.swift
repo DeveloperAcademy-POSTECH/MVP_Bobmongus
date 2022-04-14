@@ -38,6 +38,7 @@ struct AuthenticationView: View {
             
             TextField("가입한 이메일", text: $email)
                 .modifier(ClearButton(text: $email))
+                .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
                 .autocapitalization(.none)
                 .padding(.horizontal, 60.0)
             Divider()
@@ -76,6 +77,7 @@ struct AuthenticationView: View {
                 .padding(.bottom,20.0)
             
             SecureField("인증번호 작성", text: $certificationNumber)
+                .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
                 .autocapitalization(.none)
                 .padding(.horizontal, 60.0)
             Divider()

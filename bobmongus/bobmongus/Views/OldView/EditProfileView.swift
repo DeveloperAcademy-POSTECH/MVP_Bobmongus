@@ -20,121 +20,130 @@ struct EditProfileView: View {
     @State var editNicknameModal = false
     //각 모달창들의 Bool값
     
-//    @ObservedObject var user = User()
-//    @State var userImage = ""
+    //    @ObservedObject var user = User()
+    //    @State var userImage = ""
     
     var body: some View {
-        NavigationView{
-            ZStack{
-                VStack {
-//                    VStack{
-//                        Text("프로필 변경")
-//                            .font(.custom("DungGeunMo", size: 40))
-//                    }
-                    VStack{
-                        Image(modelData.myProfile.icon)
-                            .padding(.bottom)
-//                        Text(modelData.myProfile.nickName)
-//                            .font(.custom("DungGeunMo", size: 30))
-                        Text(modelData.myProfile.nickName)
-                            .fontWeight(.heavy)
-    //                        .padding(.vertical)
-                            .font(.custom("NEXON Lv2 Gothic OTF", size: 30))
-                            .padding(.bottom)
-                        Text(modelData.myProfile.email)
-                            .fontWeight(.medium)
-                            .padding(.bottom)
-                            .font(.custom("NEXON Lv2 Gothic OTF", size: 15))
-                            .foregroundColor(.gray)
-                        
-                    }
-                    .padding(.bottom)
+        
+        ZStack{
+            VStack {
+                //                    VStack{
+                //                        Text("프로필 변경")
+                //                            .font(.custom("DungGeunMo", size: 40))
+                //                    }
+                
+                Spacer()
+                
+                VStack{
+                    Image(modelData.myProfile.icon)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100, height: 100)
+                        .padding()
+                    //                        Text(modelData.myProfile.nickName)
+                    //                            .font(.custom("DungGeunMo", size: 30))
+                    Text(modelData.myProfile.nickName)
+                        .fontWeight(.heavy)
+                    //                        .padding(.vertical)
+                        .font(.custom("NEXON Lv2 Gothic OTF", size: 30))
+                        .padding(.bottom)
+                    Text(modelData.myProfile.email)
+                        .fontWeight(.medium)
+                        .padding(.bottom)
+                        .font(.custom("NEXON Lv2 Gothic OTF", size: 15))
+                        .foregroundColor(.gray)
                     
-                    VStack{
-                        Button("프로필 사진 변경") {
-//                            withAnimation {
-//                                self.showModal.toggle()
-                            showModal = true
-                        }.font(.custom("DungGeunMo", size: 15))
-                            .foregroundColor(.white)
-                        
-                    }
-                    .frame(width: 135.0, height: 50.0)
-                    .background(RoundedRectangle(cornerRadius: 10)
-                    .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
-                    .shadow(color:.black, radius: 0, x:2 ,y: 3))
-                    .padding(.vertical)
-                    
-                    Button("닉네임 변경") {
-                        editNicknameModal = true
-                    }
-                    .foregroundColor(.white)
-                    .frame(width: 135.0, height: 50.0)
-                    .background(RoundedRectangle(cornerRadius: 10)
-                    .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
-                    .shadow(color:.black, radius: 0, x:2 ,y: 3))
-                    .font(.custom("DungGeunMo", size: 15))
                 }
+                .padding(.bottom)
+                
+                VStack{
+                    Button("프로필 사진 변경") {
+                        //                            withAnimation {
+                        //                                self.showModal.toggle()
+                        showModal = true
+                    }.font(.custom("DungGeunMo", size: 15))
+                        .foregroundColor(.white)
+                    
+                }
+                .frame(width: 135.0, height: 50.0)
+                .background(RoundedRectangle(cornerRadius: 10)
+                    .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
+                    .shadow(color:.black, radius: 0, x:2 ,y: 3))
                 .padding(.vertical)
                 
-                ZStack{
-                    if showModal {
-                        Rectangle()
-                            .foregroundColor(Color.black.opacity(0.6))
-                            .edgesIgnoringSafeArea(.all)
-                        //모달창 배경
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 16)
-                                .padding(.horizontal)
-                                .frame(width: 390.0, height: 330.0)
-                                .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.917))
-                                .overlay(ModalContentView(showModal: self.$showModal)
-                        )}
-                        .transition(.move(edge: .bottom))
-                    }   //모달창 배경 끝
-                    
+                Button("닉네임 변경") {
+                    editNicknameModal = true
                 }
+                .foregroundColor(.white)
+                .frame(width: 135.0, height: 50.0)
+                .background(RoundedRectangle(cornerRadius: 10)
+                    .foregroundColor(Color(red: 0.6352941176470588, green: 0.396078431372549, blue: 0.7372549019607844))
+                    .shadow(color:.black, radius: 0, x:2 ,y: 3))
+                .font(.custom("DungGeunMo", size: 15))
                 
-                ZStack{
-                    if editNicknameModal {
-                        Rectangle()
-                            .foregroundColor(Color.black.opacity(0.6))
-                            .edgesIgnoringSafeArea(.all)
-                        //모달창 배경
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 16)
-                                .padding(.horizontal)
-                                .frame(width: 390.0, height: 330.0)
-                                .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.917))
-                                .overlay(EditNicknameView(editNicknameModal: self.$editNicknameModal))
-                        }
-                        .transition(.move(edge: .bottom))
-                        
-                    }
-                }
-                
+                Spacer()
+            }
+            .padding(.vertical)
+            
+            
+            ZStack{
+                if showModal {
+                    Rectangle()
+                        .foregroundColor(Color.black.opacity(0.6))
+                        .frame(width: 500, height: 1000)
+                        .edgesIgnoringSafeArea(.all)
+                    //모달창 배경
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 16)
+                            .padding(.horizontal)
+                            .frame(width: 350.0, height: 280.0)
+                            .foregroundColor(Color.white)
+                            .overlay(ModalContentView(showModal: self.$showModal)
+                            )}
+                    .transition(.move(edge: .bottom))
+                }   //모달창 배경 끝
                 
             }
             
-            
+            ZStack{
+                if editNicknameModal {
+                    Rectangle()
+                        .foregroundColor(Color.black.opacity(0.6))
+                        .frame(width: 500, height: 1000)
+                        .edgesIgnoringSafeArea(.all)
+                    //모달창 배경
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 16)
+                            .padding(.horizontal)
+                            .frame(width: 390.0, height: 210.0)
+                            .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.917))
+                            .overlay(EditNicknameView(editNicknameModal: self.$editNicknameModal))
+                    }
+                    .transition(.move(edge: .bottom))
+                }
+            }
         }
         Spacer()
-        
     }
-    
 }
 
 
 struct ModalContentView: View {
     @EnvironmentObject var modelData: ModelData
     @Binding var showModal: Bool
-//    @ObservedObject var user = User()
-//    @ObservedObject var user: User
-                                    
-//    @Binding var userImage: String
+    //    @ObservedObject var user = User()
+    //    @ObservedObject var user: User
+    
+    //    @Binding var userImage: String
+    
+    var myIndex: Int {
+        modelData.users.firstIndex {
+            $0.id == modelData.myProfile.id
+        }!
+    }
     
     var body: some View {
-//        var profileImage = user.image
+        //        var profileImage = user.image
         
         VStack(alignment: .leading) {
             Spacer()
@@ -158,16 +167,19 @@ struct ModalContentView: View {
                     Spacer()
                     Button(action: {
                         modelData.myProfile.icon = "bobmong"
+                        modelData.users[myIndex].icon = "bobmong"
                         self.showModal.toggle()
                     }){Image("bobmong")}
                     Spacer()
                     Button(action: {
                         modelData.myProfile.icon = "usmong"
+                        modelData.users[myIndex].icon = "usmong"
                         self.showModal.toggle()
                     }){Image("usmong")}
                     Spacer()
                     Button(action: {
                         modelData.myProfile.icon = "jjamong"
+                        modelData.users[myIndex].icon = "jjamong"
                         self.showModal.toggle()
                     }){Image("jjamong")}
                     Spacer()
@@ -177,16 +189,19 @@ struct ModalContentView: View {
                     Spacer()
                     Button(action: {
                         modelData.myProfile.icon = "eggmong"
+                        modelData.users[myIndex].icon = "eggmong"
                         self.showModal.toggle()
                     }){Image("eggmong")}
                     Spacer()
                     Button(action: {
                         modelData.myProfile.icon = "angelmong"
+                        modelData.users[myIndex].icon = "angelmong"
                         self.showModal.toggle()
                     }){Image("angelmong")}
                     Spacer()
                     Button(action: {
                         modelData.myProfile.icon = "thugmong"
+                        modelData.users[myIndex].icon = "thugmong"
                         self.showModal.toggle()
                     }){Image("thugmong")}
                     Spacer()
@@ -194,7 +209,7 @@ struct ModalContentView: View {
                 .padding(.bottom)
                 
             }
-
+            
             VStack(alignment: .center) {
                 Button(action: {
                     withAnimation {
@@ -210,10 +225,10 @@ struct ModalContentView: View {
                         
                     }
                     .padding(10.0)
-//                    .background(
-//                        RoundedRectangle(cornerRadius: 10)
-//                            .stroke(lineWidth: 2)
-//                    )
+                    //                    .background(
+                    //                        RoundedRectangle(cornerRadius: 10)
+                    //                            .stroke(lineWidth: 2)
+                    //                    )
                 }
                 .foregroundColor(.purple)
                 Spacer().frame(maxWidth:.infinity)
@@ -223,16 +238,24 @@ struct ModalContentView: View {
 }
 
 struct EditNicknameView: View {
+    
     @State private var editedNickname = ""
     @Binding var editNicknameModal: Bool
+    @State private var nickNameAlert: Bool = false
     
-//    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    //    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var modelData: ModelData
     
-//    @ObservedObject var user = User()
+    //    @ObservedObject var user = User()
+    
+    var myIndex: Int {
+        modelData.users.firstIndex {
+            $0.id == modelData.myProfile.id
+        }!
+    }
     
     var body: some View {
-//        var originNickname = user.nickname
+        //        var originNickname = user.nickname
         VStack(alignment: .leading) {
             Spacer()
             Button(action: {
@@ -248,15 +271,17 @@ struct EditNicknameView: View {
                 }
             }
             .foregroundColor(/*@START_MENU_TOKEN@*/.purple/*@END_MENU_TOKEN@*/)
-
+            
             Text("변경하실 닉네임을 입력해주세요")
                 .font(.custom("DungGeunMo", size: 17))
                 .padding(.top)
-
+            
             TextField("변경할 닉네임", text: $editedNickname)
                 .modifier(ClearButton(text: $editedNickname))
+                .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                .autocapitalization(.none)
                 .textFieldStyle(.roundedBorder)
-                .font(.custom("DungGeunMo", size: 16))
+            //                .font(.custom("NEXON", size: 16))
                 .padding(.bottom)
             
             
@@ -269,16 +294,32 @@ struct EditNicknameView: View {
                     }
                 }) {
                     HStack {
-                        Button("닉네임 변경"){
-                            modelData.myProfile.nickName = editedNickname
-//                            self.presentationMode.wrappedValue.dismiss()
-                            self.editNicknameModal.toggle()
+                        
+                        let usersNickname = modelData.users.map { $0.nickName.lowercased() }
+                        
+                        Button("닉네임 변경") {
+                            
+                            if usersNickname.contains(editedNickname.lowercased()) {
+                                
+                                self.nickNameAlert = true
+                                
+                            } else {
+                                modelData.myProfile.nickName = editedNickname
+                                
+                                modelData.users[myIndex].nickName = editedNickname
+                                
+                                self.editNicknameModal.toggle()
+                            }
+                            
                         }
                         .font(.custom("DungGeunMo", size: 17))
-//                        Image(systemName: "fork.knife")
-//                            .imageScale(.large)
-//                        Text("닉네임 변경")
-//                            .fontWeight(.bold)
+                        .alert(isPresented: $nickNameAlert) {
+                            Alert(title: Text("알림"), message: Text("중복된 닉네임입니다."), dismissButton: .default(Text("닫기")))
+                        }
+                        //                        Image(systemName: "fork.knife")
+                        //                            .imageScale(.large)
+                        //                        Text("닉네임 변경")
+                        //                            .fontWeight(.bold)
                         
                     }
                     .padding(10.0)

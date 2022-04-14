@@ -16,7 +16,7 @@ struct TestRoomListView: View {
     @State var isEnable: Bool = false
     
     var body: some View {
-       
+        
         let height = (UIScreen.main.bounds.height) / 11
         
         
@@ -46,7 +46,7 @@ struct TestRoomListView: View {
                         }.padding(.horizontal, 30)
                             .foregroundColor(.white)
                             .font(.custom("NEXON", size: 15))
-                            
+                        
                     }
                     
                     ScrollView {
@@ -96,7 +96,7 @@ struct TestRoomListView: View {
                                 
                                 EmptyView()
                             }
-//                            .disabled(true)
+                            //                            .disabled(true)
                         }   // VStack(Rooms) end
                     }   // ScrollView end
                     // 하단부에 사라지는 효과를 위해 mask 사용
@@ -107,7 +107,7 @@ struct TestRoomListView: View {
                             .foregroundColor(Color(red: 0.982, green: 0.71, blue: 0.629).opacity(0))
                             .edgesIgnoringSafeArea(.all)
                             .frame(height: 60)
-                            
+                        
                         HStack {    // 하단부 버튼 영역
                             NavigationLink( // 마이페이지
                                 destination: MypageView(),
@@ -146,14 +146,14 @@ struct TestRoomListView: View {
                             }
                             
                             Spacer()
-
+                            
                             Button {
                                 print()
                             } label: {
                                 Image("refresh")
                                     .frame(width:45, height:45)
                                     .padding(.top, 5)
-                                    
+                                
                             }
                             .padding(.trailing, 40)
                         }
@@ -174,23 +174,24 @@ struct TestRoomListView: View {
                     
                     ZStack {
                         
-                        let width = UIScreen.main.bounds.width
+                        //                        let width = UIScreen.main.bounds.width
                         
                         RoundedRectangle(cornerRadius: 16)
-                            .padding(.horizontal)
-                            .frame(width: width, height: width / 13 * 11) //aspect
-                            .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.917))
+                            .frame(width: 350.0, height: 340.0) //aspect
+                            .foregroundColor(Color.white)
                             .overlay {
                                 TestRoomMakingView(showModal: $showModal, isMake: $isMake, newRoom: $newRoom)
                                 
                             }
                     }
-                    .transition(.move(edge: .bottom))
+                    .transition(.opacity)
                 }
             }
             .onAppear {
                 modelData.myProfile.isReady = false
                 modelData.myProfile.isMakingRoom = false
+                
+                
             }
         }
         .alert("입장 불가능한 방입니다.", isPresented: $isEnable){
@@ -203,7 +204,18 @@ struct TestRoomListView: View {
 
 struct TestRoomCell: View {
     
+    @EnvironmentObject var modelData: ModelData
     @Binding var room: Room
+    
+    //    var remainTimes: Int { //@State처리, @EnvironmentObject timer처리 이런게 필요가없음! 연산프로퍼티기에 실시간으로 Date()를 읽어온다. 새로운 값이 들어오면 새로 연산을 하게되고, room.endTime과 함께 연산하기에 뷰가 자동업데이트된다. -> 좀더 study필요.
+    //        return Int(room.endTime.timeIntervalSince(Date())) / 60
+    //    }
+    
+    var roomIndex: Int {
+        modelData.rooms.firstIndex {
+            $0.id == room.id
+        }!
+    }
     
     var body: some View {
         
@@ -217,11 +229,12 @@ struct TestRoomCell: View {
             
             HStack {
                 
+                
                 Text("\(room.nowPersons.count)명/\(room.persons)명") // 인원수
                     .font(.custom("NEXON", size: 12))
                     .frame(width: 50)
                 
-
+                
                 Spacer()
                 
                 Text(room.roomTitle) // 방 타이틀
@@ -229,15 +242,15 @@ struct TestRoomCell: View {
                 
                 Spacer()
                 
-                if room.isStart {
+                if !room.isStart {
                     
-                    Text("매칭완료") // 방 남은시간
+                    Text("\(timeCal(room:room))분 남음") // 방 남은시간
                         .font(.custom("NEXON", size: 12))
                         .frame(width: 50)
                     
                 } else {
                     
-                    Text("\(timeCal(room:room))분 남음") // 방 남은시간
+                    Text("매칭완료") // 방 남은시간
                         .font(.custom("NEXON", size: 12))
                         .frame(width: 50)
                     
@@ -245,6 +258,13 @@ struct TestRoomCell: View {
             }
             .foregroundColor(.black)    // 방 내부 글자색
             .padding()
+            .onAppear { //시작된방은 안터지도록.
+                if !room.isStart {
+                    if timeCal(room:room) < 0 {
+                        modelData.rooms.remove(at: roomIndex)
+                    }
+                }
+            }
         }
         .padding(.horizontal, 6)        // 방 양으로 패딩
     }
@@ -304,13 +324,13 @@ func timeCal(room: Room) -> Int {
     
     // endtime - 현재시간 + 생성시간 - 24시간
     var timeGap = nowMinute - roomMinute
-        if timeGap < 0 {
-            timeGap += 1440
-        }
-        
-        return room.endTime - timeGap
+    if timeGap < 0 {
+        timeGap += 1440
+    }
+    
+    return room.endTime - timeGap
 }
-
+//
 //func timeCal(room: Room) -> Int {
 //    let nowTime = getNowDateTime24().components(separatedBy: ":")
 //    let roomTimeArr = room.roomTimeStr.components(separatedBy: " ")
@@ -341,4 +361,4 @@ func timeCal(room: Room) -> Int {
 //    // endtime - 현재시간 + 생성시간 - 24시간
 //    var answer = room.endTime - nowMinute + roomMinute
 //    if answer < 0 {
-//  
+//

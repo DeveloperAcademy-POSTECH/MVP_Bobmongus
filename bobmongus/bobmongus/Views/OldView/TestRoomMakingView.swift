@@ -26,8 +26,6 @@ struct TestRoomMakingView: View {
     
     var body: some View {
         
-        let lightPurple = "#A265BC"
-        
         VStack(alignment: .leading) {
             
             Spacer()
@@ -41,37 +39,44 @@ struct TestRoomMakingView: View {
             } label: {
                 
                 HStack {
-                    
                     Image(systemName: "xmark.circle.fill")
-                        .imageScale(.large)
+                        .imageScale(.medium)
+                        .foregroundColor(.red)
                     
                     Text("창 닫기")
                         .font(.custom("DungGeunMo", size: 17))
-                    
                 }
+                .foregroundColor(.black)
             }
-            .foregroundColor(Color(hex: lightPurple))
-    
-            TextField("방제목", text: $roomTitle)
+            .padding(.vertical, 10.0)
+            
+            TextField("방 제목", text: $roomTitle)
                 .modifier(ClearButton(text: $roomTitle))
+                .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                .autocapitalization(.none)
                 .textFieldStyle(.roundedBorder)
             
-            TextField("세부설명", text: $roomDetail)
+            TextField("세부 설명 (만남 위치, 배달비 등등)", text: $roomDetail)
                 .modifier(ClearButton(text: $roomDetail))
+                .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                .autocapitalization(.none)
                 .textFieldStyle(.roundedBorder)
             
             TextField("카카오톡 오픈채팅 주소", text: $linkURL)
                 .modifier(ClearButton(text: $linkURL))
+                .disableAutocorrection(true) //MARK: 자동완성 없애주는 친구.
+                .autocapitalization(.none)
                 .textFieldStyle(.roundedBorder)
             
             Stepper(value: $persons, in: 2...6) {
-                            
-                            Image(systemName: "person.fill")
-                            
-                            Text("\(persons)명 (본인포함)")
-                                .font(.custom("DungGeunMo", size: 17))
-                            
-                        }
+                
+                Image(systemName: "person.fill")
+                
+                Text("\(persons)명(본인포함)")
+                    .font(.custom("DungGeunMo", size: 17))
+                
+            }
+            .padding(.top, 10.0)
             
             Stepper(value: $endTime, in: 5...90, step: 5) {
                 Image(systemName: "timer")
@@ -79,16 +84,20 @@ struct TestRoomMakingView: View {
                     .font(.custom("DungGeunMo", size: 17))
             }
             
-//            DatePicker(selection: $endTime, displayedComponents: .hourAndMinute, label: {
+            //            let min = Date()
+            //            let max = Calendar.current.date(byAdding: .hour, value: 48, to: Date())! //MAKR: 여기서 max조절가능.
+//
+//
+//
+//            DatePicker(selection: $endTime, in: min..., displayedComponents: .hourAndMinute , label: {
 //
 //                Image(systemName: "timer")
-//
 //                Text("마감시간설정")
 //                    .font(.custom("DungGeunMo", size: 17))
 //
 //            })
             
-            VStack(alignment: .center) {
+            VStack {
                 
                 Button {
                     
@@ -100,7 +109,11 @@ struct TestRoomMakingView: View {
                     
                     modelData.rooms.append(room)
                     modelData.rooms = modelData.rooms.sorted(by: { //MARK: append할 때, sorted. Nice.
-                        timeCal(room: $0) < timeCal(room: $1)
+                        if $0.isStart == false && $1.isStart == false {
+                            return timeCal(room: $0) < timeCal(room: $1)
+                        } else {
+                            return !$0.isStart //MARK: !!!
+                        }
                     })
                     
                     self.showModal.toggle()
@@ -114,25 +127,27 @@ struct TestRoomMakingView: View {
                     HStack {
                         
                         Image(systemName: "fork.knife")
-                            .imageScale(.large)
+                            .imageScale(.medium)
                         
                         Text("방 만들기")
-                            .font(.custom("DungGeunMo", size: 17))
+                            .font(.custom("DungGeunMo", size: 20))
                         
                     }
                     .padding(10.0)
-                        .background(
-                            
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(lineWidth: 2)
-                            
-                        )
+                    .background(
+                        
+                        RoundedRectangle(cornerRadius: 10)
+                            .shadow(color:.black, radius: 0, x:2 ,y: 3)
+                            .foregroundColor(Color(red: 0.982, green: 0.71, blue: 0.629))
+                        
+                    )
                 }
-                .foregroundColor(Color(hex: lightPurple))
+                .foregroundColor(.white)
                 
                 Spacer().frame(maxWidth:.infinity)
             }
+            .padding(.top, 5.0)
         }
-        .padding(30)
+        .padding(.horizontal, 20)
     }
 }

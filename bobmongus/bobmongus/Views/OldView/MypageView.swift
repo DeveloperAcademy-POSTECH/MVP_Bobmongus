@@ -18,6 +18,12 @@ struct MypageView: View {
     //    @State private var nickname = "Nickname"
     //기존 유저 닉네임 편의상 Nickname으로 설정
     
+    var myIndex: Int {
+        modelData.users.firstIndex {
+            $0.id == modelData.myProfile.id
+        }!
+    }
+    
     var body: some View {
 //        VStack {
 //            Text("My Page")
@@ -29,6 +35,10 @@ struct MypageView: View {
                 VStack {
                     Spacer()
                     Image(modelData.myProfile.icon)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100, height: 100)
+                        .padding()
                     Text(modelData.myProfile.nickName)
                         .fontWeight(.heavy)
 //                        .padding(.vertical)
@@ -96,7 +106,7 @@ struct MypageView: View {
                             self.showingAlert = true
                         }
                         .font(.custom("DungGeunMo", size: 17))
-                        .padding(.horizontal)
+                        .padding()
 //                        .background(RoundedRectangle(cornerRadius: 10)
 //                        .foregroundColor(Color(red: 0.937, green: 0.937, blue: 0.942))
 //                        .frame(width: 135.0, height: 50.0)
@@ -110,7 +120,9 @@ struct MypageView: View {
                                 .destructive(Text("탈퇴"), action: {
                                     // Some action
                                     // json 파일에서 회원 정보 삭제
-                                    modelData.myProfile.isLogin = false
+                                    modelData.users.remove(at: myIndex)
+                                    modelData.myProfile.isLogin = false //users에서 삭제된것이지 myProfile이 삭제된 상태가 아님. 하지만 이젠 기존 정보론 로그인을 못함.
+                        
                                     self.rootPresentationMode.wrappedValue.dismiss()
                                 }),
                               secondaryButton:
