@@ -1,8 +1,8 @@
 //
-//  clearButton.swift
-//  bobmongus
+//  ClearButton.swift
+//  Tamongus
 //
-//  Created by Park Kangwook on 2022/04/11.
+//  Created by Hyeonsoo Kim on 2022/04/08.
 //
 
 import SwiftUI
@@ -22,8 +22,8 @@ struct ClearButton: ViewModifier {
                 Button {
                     self.text = ""
                 } label: {
-                    // Image(systemName: "delete.left")
-                    // .foregroundColor(.secondary)
+//                    Image(systemName: "delete.left")
+//                        .foregroundColor(.secondary)
                     Image(systemName: "multiply.circle.fill")
                         .foregroundColor(Color(UIColor.opaqueSeparator))
                     
