@@ -1,4 +1,4 @@
-![image-20220416222445984](README.assets/image-20220416222445984.png){:width="1000" height="300"}
+![image-20220416222445984](README.assets/image-20220416222445984.png)
 
 
 
