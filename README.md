@@ -46,11 +46,11 @@
 
 | Main                                                         | Room Create                                                  | Room detail                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image-20220416220318181](README.assets/image-20220416220318181.png) | ![image-20220416220329281](README.assets/image-20220416220329281.png) | ![image-20220416220351510](README.assets/image-20220416220351510.png) |
+| <img src="README.assets/image-20220416220318181.png" height="500px" width="250px"> | <img src="README.assets/image-20220416220329281.png" height="500px" width="250px"> | <img src="README.assets/image-20220416220351510.png" height="500px" width="250px"> |
 
 | Mypage                                                       | Mypage-1                                                     | Mypage-2                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image-20220416220428016](README.assets/image-20220416220428016.png) | ![image-20220416220438137](README.assets/image-20220416220438137.png) | ![image-20220416220450439](README.assets/image-20220416220450439.png) |
+| <img src="README.assets/image-20220416220428016.png" height="500px" width="250px"> | <img src="README.assets/image-20220416220438137.png" height="500px" width="250px"> | <img src="README.assets/image-20220416220450439.png" height="500px" width="250px"> |
 
 <br/>
 
