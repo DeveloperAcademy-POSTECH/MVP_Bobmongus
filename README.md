@@ -1,4 +1,4 @@
-<img src="git-logo.png" height="1000px" width="300px">
+<img src="README.assets/git-logo.png" height="300px" width="1000px">
 
 
 
